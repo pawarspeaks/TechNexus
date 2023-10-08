@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="include.css">
+    <script src="https://kit.fontawesome.com/13efbb5995.js" crossorigin="anonymous"></script>
+    <title>TechNexus - Home</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+        <img src="images/logo-no-background.png" class="logo">
+        <ul id="sidemenu">
+            <li> <a href="index.html" style="--i:1">Home</a></li>
+            <li> <a href="offline-events.html" style="--i:2">Offline Events</a></li>
+            <li> <a href="virtual-events.html" style="--i:3">Online Events</a></li>
+            <li> <a href="contributors.html" style="--i:4">Our Team</a></li>
+            <li> <a href="#contact" style="--i:5">contact</a></li>
+            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+
+
+  <div class="event-sort">
+    <div class="container">
+      <label for="sort-date"><i>Sort by Date:</i></label>
+      <input type="date" id="sort-date" name="sort-date">
+
+      <label for="sort-location"><i>Sort by Location:</i></label>
+      <input type="text" id="sort-location" name="sort-location" placeholder="Search by location">
+    </div>
+  </div>
+
+
+
+  
+  <div class="events">
+    <div class="container2">
+
+
+      
+
+    <a href="https://hack-unicorn2.devfolio.co/" target="_blank" class="event">
+      <div class="event-image">
+        <img src="images/Hack-unicorn2.0.png" alt="Event Image">
+      </div>
+      <div class="event-details">
+        <div class="event-title">Hack Unicorn 2.0</div>
+        <div class="event-date">2023-10-19</div>
+        <div class="event-location">Virtual</div>
+        <div class="event-description">
+            Hack Unicorn Club presents Hack Unicorn 2.0, India's prestigious hackathon, uniting tech enthusiasts nationwide. This hybrid event combines Online and Offline rounds, ensuring Innovation meets Tech.
+        </div>
+      </div>
+    </a>
+    
+    
+
+    <a href="https://unstop.com/competitions/761725" target="_blank" class="event">
+      <div class="event-image">
+        <img src="images/EY-techathon.png" alt="Event Image">
+      </div>
+      <div class="event-details">
+        <div class="event-title">EY Techathon 4.0</div>
+        <div class="event-date">2023-10-10</div>
+        <div class="event-location">Virtual</div>
+        <div class="event-description">
+            EY Techathon 4.0 | Re-imagining Possibilities with GenAI
+            Welcome to the 4th edition of EY Techathon, your opportunity to Re-imagine possibilities with GenAI. Let’s together unravel the impact of Gen AI, led by your innovations.
+            Ignite the spark of innovation in you, powered by EY’s cutting-edge Gen AI platform to accelerate your learning through personalized leadership connects!
+        </div>
+      </div>
+    </a>
+
+
+
+
+    <a href="https://www.youtube.com/@devcodecommunity" target="_blank" class="event">
+      <div class="event-image">
+        <img src="images/Dev-Code.png" alt="Event Image">
+      </div>
+      <div class="event-details">
+        <div class="event-title">Hacktoberfest A-Z</div>
+        <div class="event-date">2023-10-08</div>
+        <div class="event-location">Virtual</div>
+        <div class="event-description">
+          Hacktoberfest introduction session by Dev Code Community will not only help you learn about and dive into open source but will be an important step within your open source journey and you'll love it!!
+        </div>
+      </div>
+    </a>
+  
+
+
+
+    <a href="https://codegeistunleashed.devpost.com/?utm_source=devpost&utm_medium=alert&utm_campaign=20230915_allinterest" target="_blank" class="event">
+        <div class="event-image">
+          <img src="images/codegeist-unleased.png" alt="Event Image">
+        </div>
+        <div class="event-details">
+          <div class="event-title">Codegeist Unleashed by Atlassian</div>
+          <div class="event-date">2023-10-24</div>
+          <div class="event-location">Virtual</div>
+          <div class="event-description">
+            Gear up for Codegeist Unleashed - an exciting twist on Atlassian’s annual hackathon. This year, developers get a shot at winning cash prizes, PLUS the chance to compete live in Amsterdam at Atlassian Presents: Unleash and show off their AI building skills. 
+          </div>
+        </div>
+      </a>
+
+
+
+
+
+
+
+
+
+
+  </div>
+    </div>
+
+    </a>  
+
+
+
+        </div>
+  </div>
+
+  <script src="script.js"></script>
+
+<!-- -------------------------------contact------------------------------------ -->
+
+<div id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title1">Contact Us</h1>
+              <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a href = "mailto: devcode.community@gmail.com">devcode.community@gmail.com</a></p>
+              <div class="social-icons">
+                  <a href="https://instagram.com/devcode.community"><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="https://www.linkedin.com/company/85615906/admin/feed/posts/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://twitter.com/_DEVCODE_"><i class="fa-brands fa-square-x-twitter"></i></a>
+                  <a href="https://github.com/Dev-Code-Community"><i class="fa-brands fa-github"></i></a>
+
+          <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+          </div>
+      </div>
+  </div>
+  <div class="copyright">
+    <p>copyright © DEV CODE made with <i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab")
+
+}
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function closemenu(){
+      sidemenu.style.right = "-200px";
+  }
+
+  function openmenu(){
+      sidemenu.style.right = "0";
+  }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ztQSC2L8HM4WrDC4Y_ZmokBj2w0tGsgsHYavqAjLFLDhdREJNT65L7iZFP26j4in/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Messege Sent"
+          setTimeout(function(){
+              msg.innerHTML = ""
+          },2000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+

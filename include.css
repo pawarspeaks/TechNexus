@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    /* background-image: url(cool-background.png) ;
+    backdrop-filter: blur(20px); Adjust the blur radius as needed
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh; */
+
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 25px;
+    padding-top: 25px;
+    
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: large;
+    padding-top: 25px;
+}
+
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid white;
+}
+
+.toggle-bar {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.toggle-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.toggle-text {
+    margin-left: 10px;
+}
+
+.event-sort {
+    padding: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    background-color: rgb(42, 68, 68) ;
+    border: 2px solid #03f2ff;
+    /* backdrop-filter: blur(80px); Adjust the blur radius as needed */
+    
+}
+
+.event-sort input {
+    height: 40px;
+    width: 150px;
+    border: 2px solid #03f2ff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.event-sort label {
+    margin-right: 6px;
+    margin-left: 30px;
+}
+
+.events {
+    padding: 20px 0;
+    
+}
+
+
+.event {
+    border: 20px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(10px); 
+
+}
+
+.event-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(173, 195, 194);
+}
+
+.event-date, .event-location {
+    font-size: 14px;
+    color: rgb(173, 195, 194);
+}
+
+
+@media (min-width: 768px) {
+    .event {
+        width: 60%;
+    }
+
+    /* Hide hamburger icon on larger screens */
+    .hamburger-icon {
+        display: none;
+        cursor: pointer;
+        
+    }
+
+    /* Show nav links on larger screens */
+    .navbar-dropdown {
+        display: flex;
+    }
+}
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+        flex-direction: column; /* Adjust for proper stacking on smaller screens */
+    }
+
+    .nav-links li {
+        margin-right: 0; /* Remove right margin for list items */
+    }
+
+    .hamburger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-dropdown {
+        display: none;
+        flex-direction: column; /* Adjust for proper stacking on smaller screens */
+    }
+
+    .navbar-dropdown a {
+        padding: 10px;
+        text-align: center; /* Center align the links */
+    }
+}
+
+
+
+.event {
+    border: 1px solid #03f2ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex; /* Display elements in a row */
+    align-items: center; /* Center align elements vertically */
+}
+
+.event:hover{
+        /* background-color: #3b61c1; */
+        box-shadow: -10px 10px 0 #3e3d3e;
+        transform: translateY(-10px);
+}
+
+
+.event-image img {
+    max-width: 100px; /* Adjust the maximum width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Add some spacing between image and details */
+}
+
+
+.event-details {
+    flex: 1; /* Allow the details to grow and take available space */
+
+}
+
+.event-description {
+    flex: 1; /* Allow the description to grow and take available space */
+}
+
+/* Add other styles as needed */
+
+
+
+
+/* ... Your existing styles ... */
+
+.navbar {
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative; /* Make it relative for absolute positioning of the logo */
+}
+
+.logo {
+    height: 100%; /* Make the logo height same as the navbar */
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+    margin-right: 20px; /* Add some margin between the logo and nav-links */
+}
+
+.logo img {
+    height: 80px;
+    width: 320px;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Center the nav-links vertically */
+}
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 650px;
+}
+
+.nav-links a {
+    font-size:x-large;
+    font-style:italic;
+    text-decoration: wavy;
+    color: rgb(141, 204, 202);
+}
+
+/* ... Rest of your styles ... */
+
+
+/* TO avoid the visited links turn blue and underlined */
+
+.container2 a:link {
+    color: rgb(255, 255, 255); /* Default color for unvisited links */
+    text-decoration: none; /* Remove underline for unvisited links */
+    
+  }
+  
+.container2 a:visited {
+    color: rgb(255, 255, 255); /* Default color for unvisited links */
+    text-decoration: none; /* Remove underline for unvisited links */
+  }
+  
