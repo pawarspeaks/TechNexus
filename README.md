@@ -42,11 +42,34 @@ TechNexus is an open-source project and community-driven platform that lists tec
 Let's collaborate and make TechNexus a comprehensive platform for tech enthusiasts worldwide! 🚀
 
 Explore TechNexus: [TechNexus Website](https://devcode-technexus.vercel.app)
+ width="100px;" >![image](https://github.com/pawarspeaks/TechNexus/assets/87373605/b53b7f32-b13d-4847-9b51-e254f09be50e)
+
+
 
 ---
 Do Star the Repository for better reach!!⭐
-Do follow the repository owners:
-[Pratap Pawar](https://Github.com/pawarspeaks)
-[Atharva Awatade](https://Github.com/atharvaawatade)
+Do follow the repository owners:🚀
+
+<div>
+ <a href="https://github.com/pawarspeaks">
+    <kbd>
+      <img src="https://avatars3.githubusercontent.com/pawarspeaks?size=100" width="100px;" alt="pawarspeaks"/>
+    </kbd>
+    <br />
+    <sub><b>Pratap Pawar</b></sub>
+  </a>
+</div>
+
+
+<div>
+  <a href="https://github.com/atharvaawatade">
+    <kbd>
+      <img src="https://avatars3.githubusercontent.com/atharvaawatade?size=100" width="100px;" alt="atharvaawatade"/>
+    </kbd>
+    <br />
+    <sub><b>Atharva Awatade</b></sub>
+  </a>
+</div>
+
 
  
