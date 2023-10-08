@@ -1,9 +1,15 @@
 ***#HACKTOBERFEST2023***
 
+<img src="https://github.com/pawarspeaks/TechNexus/assets/87373605/85a0eb23-96b0-46dc-bd31-4ad99f831227" alt="logo-no-background" width="60%" height="60%">
+
+
 **TechNexus**
 **🌟 Welcome to TechNexus - Your Hub for Tech Events! 🌟**
 🚀 Welcome to TechNexus Events - a global tech event hub! Join the Dev Code community's open-source initiative to curate, add, and discover a wide array of tech events worldwide. Contribute now and be a part of this collaborative tech extravaganza! 
 TechNexus is an open-source project and community-driven platform that lists tech-related events worldwide. We believe in the power of collaboration and invite you to contribute, adding, updating, and enhancing events to make this platform more informative and useful for the tech community.
+
+<img src="https://github.com/pawarspeaks/TechNexus/assets/87373605/699f2fdf-73d5-4cbf-9b39-8313648cb7da" alt="logo-no-background" width="60%" height="60%">
+
 
 
 🚀 How to Contribute:
@@ -41,10 +47,10 @@ TechNexus is an open-source project and community-driven platform that lists tec
 
 Let's collaborate and make TechNexus a comprehensive platform for tech enthusiasts worldwide! 🚀
 
-Explore TechNexus: [TechNexus Website](https://devcode-technexus.vercel.app)
- width="100px;" >![image](https://github.com/pawarspeaks/TechNexus/assets/87373605/b53b7f32-b13d-4847-9b51-e254f09be50e)
+ <img src="https://github.com/pawarspeaks/TechNexus/assets/87373605/b53b7f32-b13d-4847-9b51-e254f09be50e" alt="TechNexus-Screenshot" width="60%" height="60%">
+<br><br>
 
-
+***Explore TechNexus: [TechNexus Website](https://devcode-technexus.vercel.app)***
 
 ---
 Do Star the Repository for better reach!!⭐
