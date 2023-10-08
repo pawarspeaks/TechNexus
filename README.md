@@ -50,26 +50,19 @@ Explore TechNexus: [TechNexus Website](https://devcode-technexus.vercel.app)
 Do Star the Repository for better reach!!⭐
 Do follow the repository owners:🚀
 
-<div>
- <a href="https://github.com/pawarspeaks">
-    <kbd>
-      <img src="https://avatars3.githubusercontent.com/pawarspeaks?size=100" width="100px;" alt="pawarspeaks"/>
-    </kbd>
-    <br />
-    <sub><b>Pratap Pawar</b></sub>
+| [![Pratap Pawar](https://avatars3.githubusercontent.com/pawarspeaks?size=100)](https://github.com/pawarspeaks) | [![Atharva Awatade](https://avatars3.githubusercontent.com/atharvaawatade?size=100)](https://github.com/atharvaawatade) |
+|:---:|:---:|
+| [**Pratap Pawar**](https://github.com/pawarspeaks) | [**Atharva Awatade**](https://github.com/atharvaawatade) |
+
+
+
+<br>
+
+****TechNexus Contributors:**** 💫 
+  <p align="center">
+  <a href="https://github.com/pawarspeaks/TechNexus/graphs/contributors">
+    <img src="https://contributors-img.web.app/image?repo=pawarspeaks/TechNexus" />
   </a>
-</div>
-
-
-<div>
-  <a href="https://github.com/atharvaawatade">
-    <kbd>
-      <img src="https://avatars3.githubusercontent.com/atharvaawatade?size=100" width="100px;" alt="atharvaawatade"/>
-    </kbd>
-    <br />
-    <sub><b>Atharva Awatade</b></sub>
-  </a>
-</div>
-
+</p>
 
  
