@@ -65,10 +65,9 @@ Do follow the repository owners:🚀
 <br>
 
 ****TechNexus Contributors:**** 💫 
-  <p align="center">
-  <a href="https://github.com/pawarspeaks/TechNexus/graphs/contributors">
-    <img src="https://contributors-img.web.app/image?repo=pawarspeaks/TechNexus" />
-  </a>
-</p>
+
+<p align="center"><a href="https://github.com/pawarspeaks/TechNexus/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=pawarspeaks/TechNexus" />
+</a></p>
 
  
