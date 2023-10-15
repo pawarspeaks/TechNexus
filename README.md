@@ -43,8 +43,6 @@ TechNexus is an open-source project and community-driven platform that lists tec
    - Click "New Pull Request."
    - Describe your changes and submit the pull request.
 
-7. Visit this original repository select the New Pull Request option and select your forked repository and submit a pull request. 
-
 Let's collaborate and make TechNexus a comprehensive platform for tech enthusiasts worldwide! 🚀
 
  <img src="https://github.com/pawarspeaks/TechNexus/assets/87373605/b53b7f32-b13d-4847-9b51-e254f09be50e" alt="TechNexus-Screenshot" width="60%" height="60%">

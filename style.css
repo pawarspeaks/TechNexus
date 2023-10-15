@@ -218,14 +218,14 @@ nav ul li a:hover::after{
     background: #262626;
     border-radius: 60px;
     transition: background 0.5s, transform 0.5s;
-    border: 2px solid #3b61c1;
+    border: 1px solid #3b61c1;
     color: #fff;
 }
 
 .btn.btn2:hover{
     background: #3b61c1;
-    box-shadow: -10px 10px 0 #532768;
-    transform: translateY(-10px);
+    box-shadow: 0px 6px 0 #532768;
+    transform: translateY(-7px);
 }
 
 .contact-right form{
