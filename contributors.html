@@ -1,126 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contributors.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contributors.css" />
     <title>TechNexus - Home</title>
-</head>
-<body>
-  <div class="container">
-    <nav>
-        <img src="images/logo-no-background.png" class="logo">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <img src="images/logo-no-background.png" class="logo" />
         <ul id="sidemenu">
-            <li> <a href="index.html" style="--i:1">Home</a></li>
-            <li> <a href="offline-events.html" style="--i:2">Offline Events</a></li>
-            <li> <a href="virtual-events.html" style="--i:3">Online Events</a></li>
-            <li> <a href="contributors.html" style="--i:4">Our Team</a></li>
-            <li> <a href="#contact" style="--i:5">contact</a></li>
-            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+          <li><a href="index.html" style="--i: 1">Home</a></li>
+          <li>
+            <a href="offline-events.html" style="--i: 2">Offline Events</a>
+          </li>
+          <li>
+            <a href="virtual-events.html" style="--i: 3">Online Events</a>
+          </li>
+          <li><a href="contributors.html" style="--i: 4">Our Team</a></li>
+          <li><a href="#contact" style="--i: 5">contact</a></li>
+          <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
+      </nav>
+    </div>
 
-<div id="load">
-    <div>G</div>
-    <div>N</div>
-    <div>I</div>
-    <div>D</div>
-    <div>A</div>
-    <div>O</div>
-    <div>L</div>
-  </div>
+    <div id="load">
+      <div>G</div>
+      <div>N</div>
+      <div>I</div>
+      <div>D</div>
+      <div>A</div>
+      <div>O</div>
+      <div>L</div>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
-<!-- -------------------------------contact------------------------------------ -->
+    <!-- About us -->
+    <div class="about container">
+      <h1 class="sub-title1">About us</h1>
+      <br />
+      TechNexus 🌟 Welcome to TechNexus - Your Hub for Tech Events! 🌟 🚀
+      Welcome to TechNexus Events - a global tech event hub! Join the Dev Code
+      community's open-source initiative to curate, add, and discover a wide
+      array of tech events worldwide. Contribute now and be a part of this
+      collaborative tech extravaganza! TechNexus is an open-source project and
+      community-driven platform that lists tech-related events worldwide. We
+      believe in the power of collaboration and invite you to contribute,
+      adding, updating, and enhancing events to make this platform more
+      informative and useful for the tech community.
+    </div>
 
-<div id="contact">
-    <div class="container">
+    <!-- -------------------------------contact------------------------------------ -->
+
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title1">Contact Us</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a href = "mailto: devcode.community@gmail.com">devcode.community@gmail.com</a></p>
-                <div class="social-icons">
-                    <a href="https://instagram.com/devcode.community"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/85615906/admin/feed/posts/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/_DEVCODE_"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="https://github.com/Dev-Code-Community"><i class="fa-brands fa-github"></i></a>
-
+          <div class="contact-left">
+            <h2 class="sub-title1">Contact Us</h2>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              ><a href="mailto: devcode.community@gmail.com"
+                >devcode.community@gmail.com</a
+              >
+            </p>
+          </div>
 
           <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                  <input type="text" name="Name" placeholder="Your Name" required>
-                  <input type="email" name="email" placeholder="Your Email" required>
-                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                  <button type="submit" class="btn btn2">Submit</button>
-              </form>
-              <span id="msg"></span>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
           </div>
+        </div>
       </div>
-  </div>
-  <div class="copyright">
-      <p>copyright © DEV CODE made with <i class="fa-solid fa-heart"></i></p>
-  </div>
-</div>
+      <div class="copyright">
+        <p>copyright © DEV CODE made with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
 
-<script>
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-  function opentab(tabname){
-      for(tablink of tablinks){
+      function opentab(tabname) {
+        for (tablink of tablinks) {
           tablink.classList.remove("active-link");
-      }
-      for(tabcontent of tabcontents){
+        }
+        for (tabcontent of tabcontents) {
           tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
       }
-      event.currentTarget.classList.add("active-link")
-      document.getElementById(tabname).classList.add("active-tab")
+    </script>
 
-}
-</script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-<script>
-  var sidemenu = document.getElementById("sidemenu");
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
 
-  function closemenu(){
-      sidemenu.style.right = "-200px";
-  }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+    </script>
 
-  function openmenu(){
-      sidemenu.style.right = "0";
-  }
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz9ztQSC2L8HM4WrDC4Y_ZmokBj2w0tGsgsHYavqAjLFLDhdREJNT65L7iZFP26j4in/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-</script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ztQSC2L8HM4WrDC4Y_ZmokBj2w0tGsgsHYavqAjLFLDhdREJNT65L7iZFP26j4in/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          msg.innerHTML = "Messege Sent"
-          setTimeout(function(){
-              msg.innerHTML = ""
-          },2000)
-          form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script src="script.js"></script>
-
-
-</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Messege Sent";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 2000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
-
-
