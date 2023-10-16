@@ -253,6 +253,9 @@ form .btn2 {
   margin-right: 0;
   margin-bottom: 0;
 }
+.copyright p{
+  font-size: 18px;
+}
 
 .copyright i {
   color: #00fce3;
