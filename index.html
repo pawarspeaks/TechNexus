@@ -52,20 +52,29 @@
     </div>
 
     <!-- -------------------------------contact------------------------------------ -->
-
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h1 class="sub-title1">Contact Us</h1>
-
-
+                    <div class="social-icons">
+                        <a href="https://instagram.com/devcode.community"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/85615906/admin/feed/posts/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/_DEVCODE_"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://github.com/Dev-Code-Community"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="Mail text-decoration:none"><i class="fa-sharp fa-solid fa-paper-plane "> </i>
+                        <a class="EMail text-decoration:none,color:#fff" href="mailto:devcode.community@gmail.com">
+                            devcode.community@gmail.com</a>
+                    </div>
                 </div>
                 <div class="col-md-12">
-                    <form name="submit-to-google-sheet">
+                    <form name="submit-to-google-sheet" method="POST">
                         <div class="mb-3">
                             <label for="Name" class="form-label">Name : </label>
-                            <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter Name"
+                            <input type="text" name="name" class="form-control" id="Name" placeholder="Enter Name"
                                 required>
                         </div>
                         <div class="mb-3">
@@ -82,18 +91,9 @@
 
                 </div>
                 <div>
-                    <div class="Mail text-decoration:none"><i class="fa-sharp fa-solid fa-paper-plane "> </i>
-                        <a class="EMail text-decoration:none,color:#fff" href="mailto:devcode.community@gmail.com">
-                            devcode.community@gmail.com</a>
-                    </div>
+
                 </div>
-                <div class="social-icons">
-                    <a href="https://instagram.com/devcode.community"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/85615906/admin/feed/posts/"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/_DEVCODE_"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="https://github.com/Dev-Code-Community"><i class="fa-brands fa-github"></i></a>
-                </div>
+
             </div>
         </div>
 
@@ -103,6 +103,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+
     </div>
     </div>
     <script>
@@ -136,22 +141,25 @@
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ztQSC2L8HM4WrDC4Y_ZmokBj2w0tGsgsHYavqAjLFLDhdREJNT65L7iZFP26j4in/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ztQSC2L8HM4WrDC4Y_ZmokBj2w0tGsgsHYavqAjLFLDhdREJNT65L7iZFP26j4in/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.createElement("div"); // Create a new element for the message
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Messege Sent"
+                .then(response => response.text())
+                .then(data => {
+                    msg.textContent = "Message Sent";
+                    form.appendChild(msg); // Append the message element to the form
                     setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 2000)
-                    form.reset()
+                        msg.textContent = ""; // Clear the message after 2 seconds
+                    }, 2000);
+                    form.reset();
                 })
-                .catch(error => console.error('Error!', error.message))
-        })
+                .catch(error => console.error('Error!', error.message));
+        });
+
     </script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="script.js"></script>
