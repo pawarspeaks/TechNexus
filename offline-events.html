@@ -1,230 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="include.css">
-    <script src="https://kit.fontawesome.com/13efbb5995.js" crossorigin="anonymous"></script>
-    <title>TechNexus - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="include.css">
+  <script src="https://kit.fontawesome.com/13efbb5995.js" crossorigin="anonymous"></script>
+  <title>TechNexus - Home</title>
 </head>
+
 <body>
   <div class="container">
     <nav>
-        <img src="images/logo-no-background.png" class="logo">
-        <ul id="sidemenu">
-            <li> <a href="index.html" style="--i:1">Home</a></li>
-            <li> <a href="offline-events.html" style="--i:2">Offline Events</a></li>
-            <li> <a href="virtual-events.html" style="--i:3">Online Events</a></li>
-            <li> <a href="contributors.html" style="--i:4">Our Team</a></li>
-            <li> <a href="#contact" style="--i:5">contact</a></li>
-            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      <img src="images/logo-no-background.png" class="logo">
+      <ul id="sidemenu">
+        <li> <a href="index.html" style="--i:1">Home</a></li>
+        <li> <a href="offline-events.html" style="--i:2">Offline Events</a></li>
+        <li> <a href="virtual-events.html" style="--i:3">Online Events</a></li>
+        <li> <a href="contributors.html" style="--i:4">Our Team</a></li>
+        <li> <a href="#contact" style="--i:5">contact</a></li>
+        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
 
 
 
-  <div class="event-sort">
-    <div class="container">
-      <label for="sort-date"><i>Sort by Date:</i></label>
-      <input type="date" id="sort-date" name="sort-date">
-<!-- <br> <br> -->
-      <label for="sort-location"><i>Sort by Location:</i></label>
-      <input type="text" id="sort-location" name="sort-location" placeholder="Search by location">
-    </div>
-  </div>
-
-
-
-  
-  <div class="events">
-    <div class="container2">
-
-
-
-   <div class="event-card">
-
-    <a href="https://www.spaceappschallenge.org/2023/locations/bhopal/" target="_blank" class="event">
-      <div class="event-image">
-        <img src="images/nasaspaceapps-bhopal.png" alt="Event Image">
+    <div class="event-sort">
+      <div class="container">
+        <label for="sort-date"><i>Sort by Date:</i></label>
+        <input type="date" id="sort-date" name="sort-date">
+        <!-- <br> <br> -->
+        <label for="sort-location"><i>Sort by Location:</i></label>
+        <input type="text" id="sort-location" name="sort-location" placeholder="Search by location">
       </div>
-      <div class="event-details">
-        <div class="event-title">NASA Space Apps Challenge 2023-Bhopal</div>
-        <div class="event-date">2023-10-07</div>
-        <div class="event-location">LNCT College, Bhopal</div>
-        <div class="event-description">
-          The Bhopal local event of the NASA Space Apps Challenge 2023 is your chance to be part of a global movement, driving real change. Whether you're a coding wizard, a creative thinker, a scientist, an engineer, or simply someone with a passion for space and technology, this event welcomes you with open arms.
-        </div>
-      </div>
-    </a>
-  </div>   
-    
-
-    <a href="https://www.techhunterssss.tech/" target="_blank" class="event">
-      <div class="event-image">
-        <img src="images/hack-hive.png" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">HackHive by TechHunters</div>
-        <div class="event-date">2023-10-27</div>
-        <div class="event-location">Indore, India</div>
-        <div class="event-description">
-          HackHive is a 36 hours long hackathon including every kind of facility for our hackers
-        </div>
-      </div>
-    </a>
-
-
-
-
-    <a href="https://konfhub.com/flutterconfin" target="_blank" class="event">
-      <div class="event-image">
-        <img src="images/flutterconfin.png" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">Flutter Conf India 2023</div>
-        <div class="event-date">2023-12-09</div>
-        <div class="event-location">Ahmedabad, India</div>
-        <div class="event-description">
-          Get ready to dive deep into the world of Dart and Flutter at Flutter Conf India, the country's leading conference dedicated to top-quality content.
-        </div>
-      </div>
-    </a>
-  
-    
-
-
-    <a href="https://konfhub.com/awsccsou" target="_blank" class="event">
-      <div class="event-image">
-        <img src="images/AWS-cloud-clubs.png" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">AWS Cloud Club Student Symposia 2023</div>
-        <div class="event-date">2023-10-11</div>
-        <div class="event-location">Ahmedabad, India</div>
-        <div class="event-description">
-          The "AWS Student Symposium" is an educational event hosted by AWS Cloud Club Captain's with a primary focus on engaging and empowering students who are interested in cloud computing and technology. This symposium is designed to provide students with valuable insights into AWS services, cloud computing trends, and practical knowledge that can enhance their academic and professional careers.
-        </div>
-      </div>
-    </a>
-  
-
-
-
-    <a href="https://hackthemountain.tech/" target="_blank" class="event">
-      <div class="event-image">
-        <img src="images/hack-the-moutain.png" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">Hack The Mountain 4.0</div>
-        <div class="event-date">2023-10-28</div>
-        <div class="event-location">Gurugram, India</div>
-        <div class="event-description">
-          We are absolutely delighted to share the exciting news of the forthcoming, much-anticipated 4th season of HACK THE MOUNTAINS! This announcement comes on the heels of the resounding success of our previous hackathons, and we are poised to take things to an even more remarkable level in this new season.
-        </div>
-      </div>
-    </a>
-
-    <a href="https://unstop.com/hackathons/cosmo-code-nutpam-2k23-sri-sairam-institute-of-technology-ssit-tamil-nadu-791817" target="_blank" class="event">
-      <div class="event-image">
-        <img src="./images/cosmoCode.jpg" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">Cosmo Code</div>
-        <div class="event-date">Registration Deadline: 2023-10-16</div>
-        <div class="event-location">Sri Sairam Institute of Technology, Chennai, Tamil Nadu, India</div>
-        <div class="event-description">
-          The Cosmo Code Event promises excitement, competition, and a chance to showcase your coding abilities. Whether you're a coding enthusiast or a seasoned programmer, this event is your opportunity to shine and earn recognition among your peers.
-        </div>
-      </div>
-    </a>
-    <a href="https://unstop.com/hackathons/css-battles-engineer-nitk-nitk-surathkal-790243" target="_blank" class="event">
-      <div class="event-image">
-        <img src="./images/cssBattles.jpg " alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">CSS Battles</div>
-        <div class="event-date">2023-10-13</div>
-        <div class="event-location">National Institute Of Technology Karnataka, Suratkal, Mangalore, Karnataka, India</div>
-        <div class="event-description">
-          IET NITK and Engineer 2023 is once again back with its electrifying Web Design Showdown, a grand spectacle of digital design innovation—the CSS Battles. Step into the arena of digital creativity, armed with nothing but your trusty HTML and CSS skills! Join us, as we venture into this enchanting world, where style is your sword, and the web is your battleground! Unleash your creativity, experiment with cutting-edge techniques, and transform your imaginative ideas into captivating web experiences.
-        </div>
-      </div>
-    </a>
-
-
-    <a href="https://www.cyberxindia.com/" target="_blank" class="event">
-      <div class="event-image">
-        <img src="images/cyberx.png" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">CYBERX INDIA ROADSHOW 2023</div>
-        <div class="event-date">2023-11-03</div>
-        <div class="event-location">Delhi, India</div>
-        <div class="event-description">
-          Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA including Cloud Security, Personal Data Protection Bill, Ransomware Response, Incident Response Plans, Zero Trust Security models, Proactive Threat Intelligence solutions and current initiatives, opportunities, and challenges, and innovation in IT & OT Cyber Security Technology
-        </div>
-      </div>
-    </a>
-
-    <a href="https://www.cyberxindia.com/" target="_blank" class="event">
-      <div class="event-image">
-        <img src="images/cyberx.png" alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">CYBERX INDIA ROADSHOW 2023</div>
-        <div class="event-date">2023-11-08</div>
-        <div class="event-location">Bangalore, India</div>
-        <div class="event-description">
-          Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA including Cloud Security, Personal Data Protection Bill, Ransomware Response, Incident Response Plans, Zero Trust Security models, Proactive Threat Intelligence solutions and current initiatives, opportunities, and challenges, and innovation in IT & OT Cyber Security Technology
-        </div>
-      </div>
-    </a>
-  
-
-
-    <a href="https://unstop.com/hackathons/pivot-ideathon-inderprastha-engineering-college-ipec-ghaziabad-791694" target="_blank" class="event">
-      <div class="event-image">
-        <img src="./images/bharat_yatra.jpg " alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">Pivot Ideathon</div>
-        <div class="event-date">2023-10-12</div>
-        <div class="event-location">Inderprastha Engineering College, Ghaziabad, Uttar Pradesh, India</div>
-        <div class="event-description">
-          Information Data Systems welcomes you to the 8th Event of the Bharat Blockchain Yatra powered by 
-          Hedera at Inderprastha Engineering College, Uttar Pradesh. We are excited to announce The Hashgraph 
-          Association powered by Hedera as "The Headline Sponsor” for Bharat Blockchain Yatra, India's 
-          first-of-its-kind tech tour focused on Web3 and Blockchain, dedicated to narrating India's 
-          remarkable Blockchain Story.
-        </div>
-      </div>
-    </a>
-
-
-    <a href="https://unstop.com/hackathons/fpga-hackathon-jaypee-institute-of-information-technology-jiit-noida-788326" target="_blank" class="event">
-      <div class="event-image">
-        <img src="./images/fpga.webp " alt="Event Image">
-      </div>
-      <div class="event-details">
-        <div class="event-title">FPGA Hackathon</div>
-        <div class="event-date">2023-10-10</div>
-        <div class="event-location">Jaypee Institute of Information Technology (JIIT), Noida, Uttar Pradesh, India</div>
-        <div class="event-description">
-          FPGA is a Field Programmable Gate Array. It is a development board, generally used for VLSI verification of IC. These development boards are now also used in embedded systems due to
-          their low power consumption, high-speed data processing, and various other key features.
-        </div>
-      </div>
-    </a>
-  </div>
     </div>
 
-    </a>  
 
 
 
+    <div class="events">
+      <div class="container2">
+
+
+
+        <div class="event-card">
+
+          <a href="https://www.spaceappschallenge.org/2023/locations/bhopal/" target="_blank" class="event">
+            <div class="event-image">
+              <img src="images/nasaspaceapps-bhopal.png" alt="Event Image">
+            </div>
+            <div class="event-details">
+              <div class="event-title">NASA Space Apps Challenge 2023-Bhopal</div>
+              <div class="event-date">2023-10-07</div>
+              <div class="event-location">LNCT College, Bhopal</div>
+              <div class="event-description">
+                The Bhopal local event of the NASA Space Apps Challenge 2023 is your chance to be part of a global
+                movement, driving real change. Whether you're a coding wizard, a creative thinker, a scientist, an
+                engineer, or simply someone with a passion for space and technology, this event welcomes you with open
+                arms.
+              </div>
+            </div>
+          </a>
         </div>
+
+
+        <a href="https://www.techhunterssss.tech/" target="_blank" class="event">
+          <div class="event-image">
+            <img src="images/hack-hive.png" alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">HackHive by TechHunters</div>
+            <div class="event-date">2023-10-27</div>
+            <div class="event-location">Indore, India</div>
+            <div class="event-description">
+              HackHive is a 36 hours long hackathon including every kind of facility for our hackers
+            </div>
+          </div>
+        </a>
+
+
+
+
+        <a href="https://konfhub.com/flutterconfin" target="_blank" class="event">
+          <div class="event-image">
+            <img src="images/flutterconfin.png" alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">Flutter Conf India 2023</div>
+            <div class="event-date">2023-12-09</div>
+            <div class="event-location">Ahmedabad, India</div>
+            <div class="event-description">
+              Get ready to dive deep into the world of Dart and Flutter at Flutter Conf India, the country's leading
+              conference dedicated to top-quality content.
+            </div>
+          </div>
+        </a>
+
+
+
+
+        <a href="https://konfhub.com/awsccsou" target="_blank" class="event">
+          <div class="event-image">
+            <img src="images/AWS-cloud-clubs.png" alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">AWS Cloud Club Student Symposia 2023</div>
+            <div class="event-date">2023-10-11</div>
+            <div class="event-location">Ahmedabad, India</div>
+            <div class="event-description">
+              The "AWS Student Symposium" is an educational event hosted by AWS Cloud Club Captain's with a primary
+              focus on engaging and empowering students who are interested in cloud computing and technology. This
+              symposium is designed to provide students with valuable insights into AWS services, cloud computing
+              trends, and practical knowledge that can enhance their academic and professional careers.
+            </div>
+          </div>
+        </a>
+
+
+
+
+        <a href="https://hackthemountain.tech/" target="_blank" class="event">
+          <div class="event-image">
+            <img src="images/hack-the-moutain.png" alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">Hack The Mountain 4.0</div>
+            <div class="event-date">2023-10-28</div>
+            <div class="event-location">Gurugram, India</div>
+            <div class="event-description">
+              We are absolutely delighted to share the exciting news of the forthcoming, much-anticipated 4th season of
+              HACK THE MOUNTAINS! This announcement comes on the heels of the resounding success of our previous
+              hackathons, and we are poised to take things to an even more remarkable level in this new season.
+            </div>
+          </div>
+        </a>
+
+        <a href="https://unstop.com/hackathons/cosmo-code-nutpam-2k23-sri-sairam-institute-of-technology-ssit-tamil-nadu-791817"
+          target="_blank" class="event">
+          <div class="event-image">
+            <img src="./images/cosmoCode.jpg" alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">Cosmo Code</div>
+            <div class="event-date">Registration Deadline: 2023-10-16</div>
+            <div class="event-location">Sri Sairam Institute of Technology, Chennai, Tamil Nadu, India</div>
+            <div class="event-description">
+              The Cosmo Code Event promises excitement, competition, and a chance to showcase your coding abilities.
+              Whether you're a coding enthusiast or a seasoned programmer, this event is your opportunity to shine and
+              earn recognition among your peers.
+            </div>
+          </div>
+        </a>
+        <a href="https://unstop.com/hackathons/css-battles-engineer-nitk-nitk-surathkal-790243" target="_blank"
+          class="event">
+          <div class="event-image">
+            <img src="./images/cssBattles.jpg " alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">CSS Battles</div>
+            <div class="event-date">2023-10-13</div>
+            <div class="event-location">National Institute Of Technology Karnataka, Suratkal, Mangalore, Karnataka,
+              India</div>
+            <div class="event-description">
+              IET NITK and Engineer 2023 is once again back with its electrifying Web Design Showdown, a grand spectacle
+              of digital design innovation—the CSS Battles. Step into the arena of digital creativity, armed with
+              nothing but your trusty HTML and CSS skills! Join us, as we venture into this enchanting world, where
+              style is your sword, and the web is your battleground! Unleash your creativity, experiment with
+              cutting-edge techniques, and transform your imaginative ideas into captivating web experiences.
+            </div>
+          </div>
+        </a>
+
+
+        <a href="https://www.cyberxindia.com/" target="_blank" class="event">
+          <div class="event-image">
+            <img src="images/cyberx.png" alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">CYBERX INDIA ROADSHOW 2023</div>
+            <div class="event-date">2023-11-03</div>
+            <div class="event-location">Delhi, India</div>
+            <div class="event-description">
+              Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and
+              cutting-edge discussions on latest cybersecurity trends in INDIA including Cloud Security, Personal Data
+              Protection Bill, Ransomware Response, Incident Response Plans, Zero Trust Security models, Proactive
+              Threat Intelligence solutions and current initiatives, opportunities, and challenges, and innovation in IT
+              & OT Cyber Security Technology
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.cyberxindia.com/" target="_blank" class="event">
+          <div class="event-image">
+            <img src="images/cyberx.png" alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">CYBERX INDIA ROADSHOW 2023</div>
+            <div class="event-date">2023-11-08</div>
+            <div class="event-location">Bangalore, India</div>
+            <div class="event-description">
+              Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and
+              cutting-edge discussions on latest cybersecurity trends in INDIA including Cloud Security, Personal Data
+              Protection Bill, Ransomware Response, Incident Response Plans, Zero Trust Security models, Proactive
+              Threat Intelligence solutions and current initiatives, opportunities, and challenges, and innovation in IT
+              & OT Cyber Security Technology
+            </div>
+          </div>
+        </a>
+
+
+
+        <a href="https://unstop.com/hackathons/pivot-ideathon-inderprastha-engineering-college-ipec-ghaziabad-791694"
+          target="_blank" class="event">
+          <div class="event-image">
+            <img src="./images/bharat_yatra.jpg " alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">Pivot Ideathon</div>
+            <div class="event-date">2023-10-12</div>
+            <div class="event-location">Inderprastha Engineering College, Ghaziabad, Uttar Pradesh, India</div>
+            <div class="event-description">
+              Information Data Systems welcomes you to the 8th Event of the Bharat Blockchain Yatra powered by
+              Hedera at Inderprastha Engineering College, Uttar Pradesh. We are excited to announce The Hashgraph
+              Association powered by Hedera as "The Headline Sponsor” for Bharat Blockchain Yatra, India's
+              first-of-its-kind tech tour focused on Web3 and Blockchain, dedicated to narrating India's
+              remarkable Blockchain Story.
+            </div>
+          </div>
+        </a>
+
+
+        <a href="https://unstop.com/hackathons/fpga-hackathon-jaypee-institute-of-information-technology-jiit-noida-788326"
+          target="_blank" class="event">
+          <div class="event-image">
+            <img src="./images/fpga.webp " alt="Event Image">
+          </div>
+          <div class="event-details">
+            <div class="event-title">FPGA Hackathon</div>
+            <div class="event-date">2023-10-10</div>
+            <div class="event-location">Jaypee Institute of Information Technology (JIIT), Noida, Uttar Pradesh, India
+            </div>
+            <div class="event-description">
+              FPGA is a Field Programmable Gate Array. It is a development board, generally used for VLSI verification
+              of IC. These development boards are now also used in embedded systems due to
+              their low power consumption, high-speed data processing, and various other key features.
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    </a>
+
+
+
+  </div>
   </div>
 
   <script src="script.js"></script>
@@ -233,88 +265,107 @@
 
   <div id="contact">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title1">Contact Us</h1>
-                <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a href = "mailto: devcode.community@gmail.com">devcode.community@gmail.com</a></p>
-                <div class="social-icons">
-                    <a href="https://instagram.com/devcode.community"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/85615906/admin/feed/posts/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/_DEVCODE_"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="https://github.com/Dev-Code-Community"><i class="fa-brands fa-github"></i></a>
-
-          <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                  <input type="text" name="Name" placeholder="Your Name" required>
-                  <input type="email" name="email" placeholder="Your Email" required>
-                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                  <button type="submit" class="btn btn2">Submit</button>
-              </form>
-              <span id="msg"></span>
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="sub-title1">Contact Us</h1>
+          <div class="social-icons">
+            <a href="https://instagram.com/devcode.community"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/85615906/admin/feed/posts/"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/_DEVCODE_"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://github.com/Dev-Code-Community"><i class="fa-brands fa-github"></i></a>
           </div>
+          <div class="Mail text-decoration:none"><i class="fa-sharp fa-solid fa-paper-plane "> </i>
+            <a class="EMail text-decoration:none,color:#fff" href="mailto:devcode.community@gmail.com">
+              devcode.community@gmail.com</a>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <form name="submit-to-google-sheet" method="POST">
+            <div class="mb-3">
+              <label for="Name" class="form-label">Name : </label>
+              <input type="text" name="name" class="form-control" id="Name" placeholder="Enter Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email : </label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
+            </div>
+            <div class="mb-3">
+              <label for="Message" class="form-label">Message : </label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Message">
+              <button type="submit" class="myButton btn-primary">Submit</button>
+          </form>
+
+        </div>
+        <div>
+
+        </div>
+
       </div>
-  </div>
-  <div class="copyright">
-    <p>copyright © DEV CODE made with <i class="fa-solid fa-heart"></i></p>
-  </div>
-</div>
+    </div>
 
-<script>
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
+    <div class="">
+      <div class="copyright">
+        <p>copyright © DEV CODE made with <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+  </div>
 
-  function opentab(tabname){
-      for(tablink of tablinks){
-          tablink.classList.remove("active-link");
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
       }
-      for(tabcontent of tabcontents){
-          tabcontent.classList.remove("active-tab");
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
       }
       event.currentTarget.classList.add("active-link")
       document.getElementById(tabname).classList.add("active-tab")
 
-}
-</script>
+    }
+  </script>
 
-<script>
-  var sidemenu = document.getElementById("sidemenu");
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
 
-  function closemenu(){
+    function closemenu() {
       sidemenu.style.right = "-200px";
-  }
+    }
 
-  function openmenu(){
+    function openmenu() {
       sidemenu.style.right = "0";
-  }
+    }
 
-</script>
+  </script>
 
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ztQSC2L8HM4WrDC4Y_ZmokBj2w0tGsgsHYavqAjLFLDhdREJNT65L7iZFP26j4in/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9ztQSC2L8HM4WrDC4Y_ZmokBj2w0tGsgsHYavqAjLFLDhdREJNT65L7iZFP26j4in/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.createElement("div"); // Create a new element for the message
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          msg.innerHTML = "Messege Sent"
-          setTimeout(function(){
-              msg.innerHTML = ""
-          },2000)
-          form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script src="script.js"></script>
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => response.text())
+        .then(data => {
+          msg.textContent = "Message Sent";
+          form.appendChild(msg); // Append the message element to the form
+          setTimeout(function () {
+            msg.textContent = ""; // Clear the message after 2 seconds
+          }, 2000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
