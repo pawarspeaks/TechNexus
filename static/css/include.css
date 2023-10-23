@@ -178,17 +178,24 @@ body {
 
 .event {
     border: 1px solid #03f2ff;
-    border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
     display: flex; /* Display elements in a row */
     align-items: center; /* Center align elements vertically */
+    transition: transform .2s ease-in-out; /* transition smoothness */
+    /* gradient background */
+    background: linear-gradient(71deg, #080509, #13333f, #080509);
+    background-clip: padding-box;
+    border-radius: 30px;
+    img {
+        margin-bottom: 32px;
+    } 
 }
 
 .event:hover{
         /* background-color: #3b61c1; */
         box-shadow: -10px 10px 0 #3e3d3e;
-        transform: translateY(-10px);
+        transform: translateY(-7px);
 }
 
 
