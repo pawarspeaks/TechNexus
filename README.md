@@ -2,6 +2,7 @@
 
 <img src="https://github.com/pawarspeaks/TechNexus/assets/87373605/85a0eb23-96b0-46dc-bd31-4ad99f831227" alt="logo-no-background" width="60%" height="60%">
 
+****You can keep Contributing to this initiative even after the Hacktoberfest****
 
 **TechNexus**
 **🌟Welcome to TechNexus, Your Tech Event Hub! 🌟**
