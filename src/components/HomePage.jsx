@@ -168,7 +168,7 @@ const HomePage = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img src="../../src/images/logos/DevCode-without-BG.png" alt="Dev Code Logo" className="max-w-full h-auto" />
+              <img src="/images/logos/DevCode-without-BG.png" alt="Dev Code Logo" className="max-w-full h-auto" />
             </motion.a>
           </div>
         </div>

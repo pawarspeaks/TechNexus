@@ -93,7 +93,7 @@ function Footer() {
                 whileHover={{ scale: 1.05 }}
               >
                 <img 
-                  src="../../src/images/logos/logo-no-background.png" 
+                  src="/images/logos/logo-no-background.png" 
                   alt="TechNexus Logo" 
                   className="h-16 w-auto"
                 />
@@ -105,7 +105,7 @@ function Footer() {
                 whileHover={{ scale: 1.05 }}
               >
                 <img 
-                  src="../../src/images/logos/DevCode-without-BG.png" 
+                  src="/images/logos/DevCode-without-BG.png" 
                   alt="Dev Code Logo" 
                   className="h-16 w-auto"
                 />

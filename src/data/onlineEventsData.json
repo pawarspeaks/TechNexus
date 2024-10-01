@@ -4,7 +4,7 @@
       "title": "Flutter Conf India 2023",
       "date": "2023-12-09",
       "description": "Get ready to dive deep into the world of Dart and Flutter at Flutter Conf India, the country's leading conference dedicated to top-quality content.",
-      "image": "../../src/images/onlineEvents/flutterconfin.png",
+      "image": "/images/onlineEvents/flutterconfin.png",
       "link": "https://konfhub.com/flutterconfin"
     },
     {
@@ -12,7 +12,7 @@
       "title": "CYBERX INDIA ROADSHOW 2023",
       "date": "2023-11-03",
       "description": "Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA.",
-      "image": "../../src/images/onlineEvents/cyberx.png",
+      "image": "/images/onlineEvents/cyberx.png",
       "link": "https://www.cyberxindia.com/"
     }
     

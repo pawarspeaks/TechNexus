@@ -1,10 +1,10 @@
 # HACKTOBERFEST 2024
 
-![Hacktoberfest 2024 Banner](src/images/hacktoberfest_logo.jpg)
+![Hacktoberfest 2024 Banner](public/images/hacktoberfest_logo.jpg)
 
 # TechNexus
 
-![TechNexus Logo](src/images/logos/logo-no-background.png)
+![TechNexus Logo](public/images/logos/logo-no-background.png)
 
 Welcome to TechNexus, Your Tech Event Hub! 🌟
 
@@ -12,7 +12,7 @@ TechNexus is a community-driven open-source project that catalogs tech-related e
 
 ## About Dev Code Community
 
-![Dev Code Community Logo](src/images/logos/DevCode-without-BG.png)
+![Dev Code Community Logo](public/images/logos/DevCode-without-BG.png)
 
 Dev Code Community is a vibrant group of tech enthusiasts and developers. We're dedicated to fostering collaboration, learning, and growth in the world of technology.
 
@@ -30,7 +30,7 @@ There are two main ways you can contribute to TechNexus:
 4. In your forked repo, which must be visible in your repositories, navigate to the `src/data` folder.
 5. Choose the relevant event type: `offlineEventsData.json` or `onlineEventsData.json`.
 6. Add your event details to the JSON file. Please ensure your event details are accurate and follow the existing format in the JSON files.
-7. If you have an event image, add it to `src/images/offlineEvents` or `src/images/onlineEvents` as appropriate.
+7. If you have an event image, add it to `public/images/offlineEvents` or `public/images/onlineEvents` as appropriate.
 8. Commit your changes with a descriptive message.
 9. Visit your forked repository and make sure your code is upto date with the TechNexus's main repo, if not something similar to following should be visible on your forked repo:
 
