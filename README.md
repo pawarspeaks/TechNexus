@@ -1,6 +1,6 @@
 # HACKTOBERFEST 2024
 
-![Hacktoberfest 2024 Banner](src/images/hacktoberfest logo.jpg)
+![Hacktoberfest 2024 Banner](src/images/hacktoberfest_logo.jpg)
 
 # TechNexus
 
@@ -86,7 +86,7 @@ Your star helps us reach more contributors and grow our community!
 |:---:|:---:|:---:|
 | [**Dev Code Community**](https://github.com/Dev-Code-Community) | [**Pratap Pawar**](https://github.com/pawarspeaks) | [**Atharva Awatade**](https://github.com/atharvaawatade) |
 
-2. Follow [Dev Code Community](https://github.com/Dev-Code-Community) for updates!
+Follow [Dev Code Community](https://github.com/Dev-Code-Community) for updates!
 
 ## TechNexus Contributors 💫
 
