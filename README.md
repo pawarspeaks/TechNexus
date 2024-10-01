@@ -82,7 +82,7 @@ Your star helps us reach more contributors and grow our community!
 
 ## Follow the Repository Owners
 
-| [![Dev Code Community](https://avatars.githubusercontent.com/u/113856219?s=1000&v=664)](https://github.com/Dev-Code-Community) | [![Pratap Pawar](https://avatars3.githubusercontent.com/pawarspeaks?size=100)](https://github.com/pawarspeaks) | [![Atharva Awatade](https://avatars3.githubusercontent.com/atharvaawatade?size=100)](https://github.com/atharvaawatade) |
+| [![Dev Code Community](https://avatars.githubusercontent.com/u/113856219?s=200&v=664)](https://github.com/Dev-Code-Community) | [![Pratap Pawar](https://avatars3.githubusercontent.com/pawarspeaks?size=100)](https://github.com/pawarspeaks) | [![Atharva Awatade](https://avatars3.githubusercontent.com/atharvaawatade?size=100)](https://github.com/atharvaawatade) |
 |:---:|:---:|:---:|
 | [**Dev Code Community**](https://github.com/Dev-Code-Community) | [**Pratap Pawar**](https://github.com/pawarspeaks) | [**Atharva Awatade**](https://github.com/atharvaawatade) |
 
