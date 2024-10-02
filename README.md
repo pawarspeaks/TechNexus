@@ -29,8 +29,8 @@ There are two main ways you can contribute to TechNexus:
 3. Follow [Dev Code Community](https://github.com/Dev-Code-Community) (ensure to do so to support our open source initiatives!)
 4. In your forked repo, which must be visible in your repositories, navigate to the `src/data` folder.
 5. Choose the relevant event type: `offlineEventsData.json` or `onlineEventsData.json`.
-6. Add your event details to the JSON file. Please ensure your event details are accurate and follow the existing format in the JSON files.
-7. If you have an event image, add it to `public/images/offlineEvents` or `public/images/onlineEvents` as appropriate.
+6. Add your event details to the JSON file. Please ensure your event details are accurate and follow the existing format in the JSON files.Follow the date format as present in the event json files!.
+7. Add relevant event banner/logo/image, add it to `public/images/offlineEvents` or `public/images/onlineEvents` as appropriate.
 8. Commit your changes with a descriptive message.
 9. Visit your forked repository and make sure your code is upto date with the TechNexus's main repo, if not something similar to following should be visible on your forked repo:
 
