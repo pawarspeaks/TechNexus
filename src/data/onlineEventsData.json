@@ -14,6 +14,14 @@
       "description": "Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA.",
       "image": "/images/onlineEvents/cyberx.png",
       "link": "https://www.cyberxindia.com/"
+    },
+    {
+      "id": 3,
+      "title": "Good Tech Fest",
+      "date": "2024-09-28",
+      "description": "Good Tech Fest is a one-day conference that brings together students, faculty, and industry professionals to discuss the latest trends in technology.",
+      "image": "/images/onlineEvents/GoodTechFest.png",
+      "link": "https://www.goodtechfest.com/"
     }
     
   ]
