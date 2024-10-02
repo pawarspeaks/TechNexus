@@ -16,6 +16,15 @@
       "description": "Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA.",
       "image": "/images/offlineEvents/cyberx.png",
       "link": "https://www.cyberxindia.com/"
+    },
+    {
+      "id": 3,
+      "title": "Morgan TechFest",
+      "date": "September 28, 2024",
+      "location": "1700 E. Cold Spring Lane, Baltimore, MD 21251",
+      "description": "Morgan TechFest is a one-day conference that brings together students, faculty, and industry professionals to discuss the latest trends in technology.",
+      "image": "/images/offlineEvents/morgan-techfest.png",
+      "link": "https://events.morgan.edu/event/morgan-techfest"
     }
     
   ]
