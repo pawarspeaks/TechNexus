@@ -8,7 +8,47 @@
     "link": "https://vipas.ai/hackathon/register"
   },
   {
-      "id": 2,
+    "id": 2,
+    "title": "Prod-E-G Hackathon 2024",
+    "date": "2024-10-01",
+    "description": "Use your creativity and think of amazing products that could solve any sustainability or technology-based problem. This National-Level Hackathon is designed to ignite your entrepreneurial, inventor, and problem-solving skills. This platform is open to all individuals to foster diversity and inclusion. Get ready for an exciting event ahead!",
+    "image": "/images/onlineEvents/prod-e-g.png",
+    "link": "https://lnkd.in/gT3_EGDu"
+  },
+  {
+    "id": 3,
+    "title": "Algorithimia 2024",
+    "date": "2024-10-24",
+    "description": "Algorithmia is a ICPC style contest held by IIIT Nagpur - for participants to showcase their abilities in competitive programming.",
+    "image": "/images/onlineEvents/algorithimia.png",
+    "link": "https://unstop.com/hackathons/algorithmia-the-icpc-style-coding-challenge-tantrafiesta24-iiit-nagpur-1152434"
+  },
+  {
+    "id": 4,
+    "title": "L'Oréal Sustainability Challenge 2024",
+    "date": "2024-10-25",
+    "description": "This year for the L’Oréal Sustainability Challenge we will be focusing on the PEOPLE, PLANET & PRODUCT pillars. We want to create long-term and sustainable impact and to achieve this, we want young and passionate change agents like you, to contribute to a better and more sustainable planet, while also creating a community of our consumers and supporters who can take this journey with us.",
+    "image": "/images/onlineEvents/loreal_sustainability.png",
+    "link": "https://unstop.com/competitions/loreal-sustainability-challenge-2024-loreal-1114541?refId=FECOM"
+  },
+  {
+    "id": 5,
+    "title": "i.mobilothon 4.0",
+    "date": "2024-10-20",
+    "description": "The 4th edition of i.mobilothon is here. The vision behind i.mobilothon (VWITS’ very own hackathon) has always been to fuel innovation and build product ideas that add concrete value to the Volkswagen Group. In its 4th edition, we would like to bring the i.mobilothon with its four themes right up to your working desk!",
+    "image": "/images/onlineEvents/i_mobilothon.png",
+    "link": "https://unstop.com/hackathons/imobilothon-40-volkswagen-group-technology-solutions-india-1172855"
+  },
+  {
+    "id": 6,
+    "title": "IdeaHub 2.0: The Ultimate Tech Challenge",
+    "date": "2024-10-10",
+    "description": "IdeaHub 2.0 is an ideation organized by TechCider Club as part of IGNITE 7.0, the flagship tech fest of NMIMS Navi Mumbai. This competition challenges participants to develop innovative solutions across various technology domains.",
+    "image": "/images/onlineEvents/ideathon.png",
+    "link": "https://unstop.com/hackathons/ideahub-20-the-ultimate-tech-challenge-nmims-navi-mumbai-1176613?utm_source=Opportunities&utm_medium=D2C-Newsletters&utm_campaign=Eng-1st-Year&ref=UnstopNewsletters"
+  },
+  {
+      "id": 7,
       "title": "Flutter Conf India 2023",
       "date": "2023-12-09",
       "description": "Get ready to dive deep into the world of Dart and Flutter at Flutter Conf India, the country's leading conference dedicated to top-quality content.",
@@ -16,7 +56,7 @@
       "link": "https://konfhub.com/flutterconfin"
     },
     {
-      "id": 3,
+      "id": 8,
       "title": "CYBERX INDIA ROADSHOW 2023",
       "date": "2023-11-03",
       "description": "Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA.",
