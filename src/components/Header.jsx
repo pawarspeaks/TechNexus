@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <motion.header 
-      className="bg-gray-900 text-white p-6"
+      className="bg-gray-900 text-white p-6 fixed top-0 left-0 w-full z-50 transition duration-300"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -75,18 +75,30 @@ function Header() {
               { to: "/contributors", label: "Contributors ♥️" },
               { href: "#contact", label: "Contact" }
             ].map((item, index) => (
-              <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <motion.li 
+                key={index} 
+                whileHover={{ scale: 1.1 }} 
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 {item.to ? (
                   <Link 
                     to={item.to} 
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                    className="text-lg font-medium transition duration-300 hover:text-purple-400"
                   >
                     {item.label}
                   </Link>
                 ) : (
                   <a 
                     href={item.href} 
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                    className="text-lg font-medium transition duration-300 hover:text-purple-400"
+                    onClick={(e) => {
+                      e.preventDefault(); // Prevent default anchor behavior
+                      const target = document.querySelector(item.href);
+                      if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
                   >
                     {item.label}
                   </a>
