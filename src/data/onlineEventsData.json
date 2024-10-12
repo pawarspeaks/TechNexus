@@ -48,12 +48,28 @@
     "link": "https://unstop.com/hackathons/ideahub-20-the-ultimate-tech-challenge-nmims-navi-mumbai-1176613?utm_source=Opportunities&utm_medium=D2C-Newsletters&utm_campaign=Eng-1st-Year&ref=UnstopNewsletters"
   },
   {
+    "id": 7,
+    "title": "She Builds AI: Hackathon 2024",
+    "date": "2024-10-09",
+    "description": "Collaborate with other technologists to design and develop AI-powered solutions to help women and girls thrive during our global hackathon.",
+    "image": "public/images/onlineEvents/hackathonai.jpg",
+    "link": "https://developers.google.com/womentechmakers/initiatives/she-builds-ai"
+  },
+  {
       "id": 7,
       "title": "Flutter Conf India 2023",
       "date": "2023-12-09",
       "description": "Get ready to dive deep into the world of Dart and Flutter at Flutter Conf India, the country's leading conference dedicated to top-quality content.",
       "image": "/images/onlineEvents/flutterconfin.png",
       "link": "https://konfhub.com/flutterconfin"
+    },
+    {
+      "id": 8,
+      "title": "CYBERX INDIA ROADSHOW 2023",
+      "date": "2023-11-03",
+      "description": "Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA.",
+      "image": "/images/onlineEvents/cyberx.png",
+      "link": "https://www.cyberxindia.com/"
     },
     {
       "id": 8,
