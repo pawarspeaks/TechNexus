@@ -11,7 +11,18 @@ function Footer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // ... (rest of the handleSubmit function remains the same)
+    // Here you can add your form submission logic
+    // Simulated response for demonstration
+    if (name && email && message) {
+      setMsg("Message sent successfully!");
+      setError('');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      setError("Please fill all fields!");
+      setMsg('');
+    }
   };
 
   const containerVariants = {
@@ -38,7 +49,7 @@ function Footer() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="bg-gray-900 text-white p-8"
+      className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-8"
       id="contact"
     >
       <div className="max-w-6xl mx-auto">
@@ -49,8 +60,10 @@ function Footer() {
           Contact Us
         </motion.h2>
         <div className="flex flex-wrap -mx-4">
+          {/* Contact Information */}
           <motion.div className="w-full md:w-1/2 px-4 mb-8" variants={itemVariants}>
             <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
+            {/* Email Links */}
             <motion.p 
               className="mb-2"
               whileHover={{ scale: 1.05, color: "#bb86fc" }}
@@ -65,6 +78,7 @@ function Footer() {
               <i className="fa-sharp fa-solid fa-paper-plane mr-2"></i>
               <a href="mailto:devcode.community@gmail.com">devcode.community@gmail.com</a>
             </motion.p>
+            {/* Social Links */}
             <div className="flex space-x-4 mb-8">
               {[
                 { name: 'instagram', link: 'https://www.instagram.com/dev_codecommunity/' },
@@ -77,14 +91,15 @@ function Footer() {
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.2, rotate: 360 }}
+                  whileHover={{ scale: 1.2, rotate: 360, transition: { duration: 0.5 } }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-2xl"
+                  className="text-2xl text-gray-400 hover:text-purple-400 transition duration-300"
                 >
                   <i className={`fa-brands fa-${social.name}`}></i>
                 </motion.a>
               ))}
             </div>
+            {/* Logos */}
             <div className="flex items-center justify-between">
               <motion.a 
                 href="https://devcode-technexus.vercel.app/" 
@@ -112,6 +127,7 @@ function Footer() {
               </motion.a>
             </div>
           </motion.div>
+          {/* Contact Form */}
           <motion.div className="w-full md:w-1/2 px-4" variants={itemVariants}>
             <form onSubmit={handleSubmit} className="space-y-4">
               <motion.input
@@ -119,7 +135,7 @@ function Footer() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your Name"
-                className="w-full p-2 bg-gray-800 rounded"
+                className="w-full p-2 bg-gray-800 rounded focus:outline-none focus:ring focus:ring-purple-500 transition duration-300"
                 whileFocus={{ scale: 1.02, boxShadow: "0 0 0 2px #bb86fc" }}
               />
               <motion.input
@@ -127,7 +143,7 @@ function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your Email"
-                className="w-full p-2 bg-gray-800 rounded"
+                className="w-full p-2 bg-gray-800 rounded focus:outline-none focus:ring focus:ring-purple-500 transition duration-300"
                 whileFocus={{ scale: 1.02, boxShadow: "0 0 0 2px #bb86fc" }}
               />
               <motion.textarea
@@ -135,13 +151,13 @@ function Footer() {
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Your Message"
                 rows="4"
-                className="w-full p-2 bg-gray-800 rounded"
+                className="w-full p-2 bg-gray-800 rounded focus:outline-none focus:ring focus:ring-purple-500 transition duration-300"
                 whileFocus={{ scale: 1.02, boxShadow: "0 0 0 2px #bb86fc" }}
               ></motion.textarea>
               <motion.button
                 type="submit"
                 className="bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors"
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)" }}
                 whileTap={{ scale: 0.95 }}
               >
                 Send Message
@@ -171,6 +187,7 @@ function Footer() {
             </AnimatePresence>
           </motion.div>
         </div>
+        {/* Footer Copyright */}
         <motion.div 
           className="text-center mt-12"
           variants={itemVariants}
