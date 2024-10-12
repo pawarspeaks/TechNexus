@@ -1,6 +1,14 @@
 [
-    {
-      "id": 1,
+  {
+    "id": 1,
+    "title": "AI Driven India Hackathon 2024",
+    "date": "2024-11-15",
+    "description": "The AI-Driven India Hackathon is proudly organized by XLRI Jamshedpur in collaboration with Vipas.AI, empowering AI creators to create and showcase innovative AI solutions.",
+    "image": "/images/onlineEvents/ai_driven_india_hackathon.png",
+    "link": "https://vipas.ai/hackathon/register"
+  },
+  {
+      "id": 2,
       "title": "Flutter Conf India 2023",
       "date": "2023-12-09",
       "description": "Get ready to dive deep into the world of Dart and Flutter at Flutter Conf India, the country's leading conference dedicated to top-quality content.",
@@ -8,12 +16,11 @@
       "link": "https://konfhub.com/flutterconfin"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "CYBERX INDIA ROADSHOW 2023",
       "date": "2023-11-03",
       "description": "Join over 200+ leading cybersecurity experts with this Roadshow in Delhi and Bangalore for insightful and cutting-edge discussions on latest cybersecurity trends in INDIA.",
       "image": "/images/onlineEvents/cyberx.png",
       "link": "https://www.cyberxindia.com/"
     }
-    
-  ]
+]
