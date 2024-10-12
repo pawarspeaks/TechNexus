@@ -8,6 +8,7 @@ import offlineEventsData from './data/offlineEventsData.json';
 import onlineEventsData from './data/onlineEventsData.json';
 import HomePage from './components/HomePage'; 
 import './index.css';
+import ContactForm from './components/ContactForm';
 function App() {
   const [offlineEvents, setOfflineEvents] = useState([]);
   const [onlineEvents, setOnlineEvents] = useState([]);
@@ -62,6 +63,7 @@ function App() {
 
         {/* Route for Contributors Page */}
         <Route path="/contributors" element={<ContributorsPage />} />
+        <Route path="/contact" element={<ContactForm />} />
       </Routes>
 
         </main>
