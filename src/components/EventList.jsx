@@ -17,11 +17,13 @@ function EventList({ events, filters, onFilterChange }) {
       (!startDate || eventDate >= startDate) &&
       (!endDate || eventDate <= endDate);
 
-    const locationPass =
+      const locationPass =
       !filters.location ||
-      event.location.toLowerCase().includes(filters.location.toLowerCase());
-
-    return datePass && locationPass;
+      (event.location && event.location.toLowerCase().includes(filters.location.toLowerCase())) || 
+      event.isOnline; // Skips location filter for online events
+    
+      return datePass && locationPass;
+    
   });
 
   // Calculate total pages

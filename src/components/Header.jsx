@@ -68,31 +68,57 @@ function Header() {
             className="flex justify-center space-x-6 flex-wrap"
             variants={itemVariants}
           >
-            {[
-              { to: "/", label: "Home" },
-              { to: "/offline-events", label: "Offline Events" },
-              { to: "/virtual-events", label: "Online Events" },
-              { to: "/contributors", label: "Contributors ♥️" },
-              { href: "#contact", label: "Contact" }
-            ].map((item, index) => (
-              <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                {item.to ? (
+            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <Link 
+                to="/" 
+                className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+              >
+                Home
+              </Link>
+            </motion.li>
+
+            {/* Dropdown for Events */}
+            <motion.li className="relative group" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <span className="text-lg font-medium hover:text-purple-400 transition-colors duration-300 cursor-pointer">
+                Events
+              </span>
+              <motion.ul className="absolute left-0 mt-2 bg-gray-800 rounded-lg p-2 invisible group-hover:visible transition-all duration-300">
+                <motion.li whileHover={{ scale: 1.1 }}>
                   <Link 
-                    to={item.to} 
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                    to="/offline-events" 
+                    className="block text-lg font-medium text-white hover:text-purple-400 transition-colors duration-300"
                   >
-                    {item.label}
+                    Offline Events
                   </Link>
-                ) : (
-                  <a 
-                    href={item.href} 
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}>
+                  <Link 
+                    to="/virtual-events" 
+                    className="block text-lg font-medium text-white hover:text-purple-400 transition-colors duration-300"
                   >
-                    {item.label}
-                  </a>
-                )}
-              </motion.li>
-            ))}
+                    Online Events
+                  </Link>
+                </motion.li>
+              </motion.ul>
+            </motion.li>
+
+            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <Link 
+                to="/contributors" 
+                className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+              >
+                Contributors ♥️
+              </Link>
+            </motion.li>
+
+            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+              <a 
+                href="#contact" 
+                className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+              >
+                Contact
+              </a>
+            </motion.li>
           </motion.ul>
         </nav>
       </div>
