@@ -1,6 +1,24 @@
 [
     {
       "id": 1,
+      "title": "Devcon 7, 2024",
+      "date": "2024-11-12",
+      "location": "Bangkok, Thailand",
+      "description": "Join the global community at Devcon, the foremost Ethereum conference, dedicated to in-depth discussions, innovation, and networking within the blockchain and Ethereum ecosystem.",
+      "image": "/images/offlineEvents/devcon.jpg",
+      "link": "https://devcon.org/en/"
+    },
+    {
+      "id": 2,
+      "title": "Open Source India 2024",
+      "date": "2024-10-23",
+      "location": "Bengaluru, India",
+      "description": "Explore the vibrant world of open source at Open Source India, the premier conference for engaging with cutting-edge open source technology and leading community experts.",
+      "image": "/images/offlineEvents/opensource.jpg",
+      "link": "https://www.opensourceindia.in/"
+    },
+    {
+      "id": 3,
       "title": "Flutter Conf India 2023",
       "date": "2023-12-09",
       "location": "Ahmedabad, India",
@@ -9,7 +27,7 @@
       "link": "https://konfhub.com/flutterconfin"
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "CYBERX INDIA ROADSHOW 2023",
       "date": "2023-11-03",
       "location": "Delhi, India",
