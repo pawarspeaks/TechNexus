@@ -1,13 +1,21 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTelegram,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
     message: "",
   });
 
@@ -113,15 +121,71 @@ function ContactForm() {
 
           <motion.div className="mt-4" variants={itemVariants}>
             <h2 className="text-lg font-semibold">Socials</h2>
-            <div className="flex space-x-4 mt-2">
+            <div className="flex space-x-4 mt-4">
               <motion.div whileHover={{ scale: 1.1 }}>
-                <FaFacebook size={30} />
+                <a
+                  href="https://discord.com/invite/xqesRN5FfW"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaDiscord size={30} />
+                </a>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }}>
-                <FaLinkedin size={30} />
+                <a
+                  href="https://x.com/_DEVCODE_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter size={30} />
+                </a>
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }}>
-                <FaInstagram size={30} />
+                <a
+                  href="https://www.youtube.com/@devcodecommunity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube size={30} />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <a
+                  href="https://www.instagram.com/devcode.community/?igshid=YmMyMTA2M2Y%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram size={30} />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <a
+                  href="https://www.linkedin.com/company/dev-code-community/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={30} />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <a
+                  href="https://t.me/DevCodeCommunity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTelegram size={30} />
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }}>
+                <a href="">
+                  <a
+                    href="https://chat.whatsapp.com/F2njAIyHZzyEoE8BP75crT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaWhatsapp size={30} />
+                  </a>
+                </a>
               </motion.div>
             </div>
           </motion.div>
@@ -164,16 +228,7 @@ function ContactForm() {
                 className="w-full p-4 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                 variants={itemVariants}
               />
-              <motion.input
-                type="text"
-                placeholder="Subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full p-4 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                variants={itemVariants}
-              />
+
               <motion.textarea
                 placeholder="Message"
                 name="message"
