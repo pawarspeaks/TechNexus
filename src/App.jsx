@@ -9,6 +9,8 @@ import offlineEventsData from './data/offlineEventsData.json';
 import onlineEventsData from './data/onlineEventsData.json';
 import HomePage from './components/HomePage'; 
 import './index.css';
+import ScrollToTopButton from "./components/ScrollToTopButton";
+
 function App() {
   const [offlineEvents, setOfflineEvents] = useState([]);
   const [onlineEvents, setOnlineEvents] = useState([]);
@@ -29,9 +31,10 @@ function App() {
   };
 
   return (
-    <Router>
+    
       <div className="App">
         <Header />
+        <ScrollToTopButton/>
         <main className="container">
         <Routes>
         {/* Home Route (Displays the Introductory Home Page) */}
@@ -67,9 +70,12 @@ function App() {
       </Routes>
 
         </main>
+       
         <Footer />
+        
       </div>
-    </Router>
+   
+
   );
 }
 
