@@ -73,6 +73,7 @@ function Header() {
               { to: "/offline-events", label: "Offline Events" },
               { to: "/virtual-events", label: "Online Events" },
               { to: "/contributors", label: "Contributors ♥️" },
+              { to: "/favorites", label: "Favorites ♥️" },
               { href: "#contact", label: "Contact" }
             ].map((item, index) => (
               <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
