@@ -23,6 +23,7 @@ function Header() {
   };
 
   return (
+    
     <motion.header 
       className="bg-gray-900 text-white p-6"
       variants={containerVariants}
