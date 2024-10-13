@@ -102,5 +102,13 @@
     "description": "Collaborate with other technologists to design and develop AI-powered solutions to help women and girls thrive during our global hackathon.",
     "image": "/images/onlineEvents/hackathonai.jpg",
     "link": "https://developers.google.com/womentechmakers/initiatives/she-builds-ai"
+  },
+  {
+    "id": 14,
+    "title": "MongoDB AI Hackathon: Code for a Cause",
+    "date": "2024-10-14",
+    "description": "Unleash the power of MongoDB Atlas on AWS to build solutions that make a real difference.",
+    "image": "/images/onlineEvents/MongoDB-aws.png",
+    "link": "https://mongodb-ai.devpost.com/"
   }
 ]
