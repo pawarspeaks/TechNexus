@@ -41,6 +41,7 @@ function Footer() {
       className="bg-gray-900 text-white p-8"
       id="contact"
     >
+
       <div className="max-w-6xl mx-auto">
         <motion.h2
           className="text-4xl font-bold text-center mb-12 text-purple-400"
@@ -52,7 +53,7 @@ function Footer() {
           <motion.div className="w-full md:w-1/2 px-4 mb-8" variants={itemVariants}>
             <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
             <motion.p
-              className="mb-2"
+  className="mb-2"
               whileHover={{ scale: 1.05, color: "#bb86fc" }}
             >
               <i className="fa-sharp fa-solid fa-paper-plane mr-2"></i>
@@ -85,7 +86,10 @@ function Footer() {
                 </motion.a>
               ))}
             </div>
+
+
             <div className="flex items-center justify-between">
+
               <motion.a
                 href="https://devcode-technexus.vercel.app/"
                 target="_blank"
@@ -110,67 +114,15 @@ function Footer() {
                   className="h-16 w-auto"
                 />
               </motion.a>
+
             </div>
           </motion.div>
-          <motion.div className="w-full md:w-1/2 px-4" variants={itemVariants}>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <motion.input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Your Name"
-                className="w-full p-2 bg-gray-800 rounded"
-                whileFocus={{ scale: 1.02, boxShadow: "0 0 0 2px #bb86fc" }}
-              />
-              <motion.input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your Email"
-                className="w-full p-2 bg-gray-800 rounded"
-                whileFocus={{ scale: 1.02, boxShadow: "0 0 0 2px #bb86fc" }}
-              />
-              <motion.textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Your Message"
-                rows="4"
-                className="w-full p-2 bg-gray-800 rounded"
-                whileFocus={{ scale: 1.02, boxShadow: "0 0 0 2px #bb86fc" }}
-              ></motion.textarea>
-              <motion.button
-                type="submit"
-                className="bg-purple-500 text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Send Message
-              </motion.button>
-            </form>
-            <AnimatePresence>
-              {msg && (
-                <motion.p
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  className="text-green-400 mt-4"
-                >
-                  {msg}
-                </motion.p>
-              )}
-              {error && (
-                <motion.p
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  className="text-red-400 mt-4"
-                >
-                  {error}
-                </motion.p>
-              )}
-            </AnimatePresence>
-          </motion.div>
+         
         </div>
+        </div>
+      <div className="max-w-6xl mx-auto">
+           
+      
         <motion.div 
           className="text-center mt-12"
           variants={itemVariants}
