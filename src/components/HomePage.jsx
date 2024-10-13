@@ -59,7 +59,7 @@ const HomePage = () => {
             <motion.button 
               whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgb(59, 130, 246)" }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
+              className="bg-gradient-to-r from-blue-900 via-cyan-400 to-purple-500 text-white border-0 hover:bg-blue-500 font-bold py-3 px-8 rounded-full transition-all duration-300"
             >
               Join the Movement
             </motion.button>
@@ -155,7 +155,7 @@ const HomePage = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
+              className="inline-block bg-gradient-to-r from-blue-900 via-cyan-400 to-purple-500 text-white border-0 hover:bg-blue-500 font-bold py-3 px-8 rounded-full transition-all duration-300"
             >
               Join Dev Code Community
             </motion.a>
@@ -189,7 +189,7 @@ const HomePage = () => {
           <motion.button 
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 12px rgb(16, 185, 129)" }}
             whileTap={{ scale: 0.95 }}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-xl transition-all duration-300"
+            className="bg-gradient-to-r from-green-800 via-lime-400 to-emerald-400 text-white border-0 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-xl transition-all duration-300"
           >
             Get Started Now
           </motion.button>
