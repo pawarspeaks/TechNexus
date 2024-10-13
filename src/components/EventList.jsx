@@ -52,6 +52,14 @@ function EventList({ events }) {
     }
   };
 
+  const goToFirstPage = () => {
+    setCurrentPage(1);
+  };
+
+  const goToLastPage = () => {
+    setCurrentPage(totalPages);
+  };
+
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
   };
@@ -135,6 +143,20 @@ function EventList({ events }) {
             variants={itemVariants}
           >
             <motion.button
+              onClick={goToFirstPage}
+              disabled={currentPage === 1}
+              className={`px-4 py-2 rounded-full ${
+                currentPage === 1
+                  ? 'bg-gray-600 cursor-not-allowed'
+                  : 'bg-purple-500 hover:bg-purple-600'
+              } transition-colors duration-300`}
+              whileHover={currentPage !== 1 ? { scale: 1.05 } : {}}
+              whileTap={currentPage !== 1 ? { scale: 0.95 } : {}}
+            >
+              First
+            </motion.button>
+
+            <motion.button
               onClick={goToPreviousPage}
               disabled={currentPage === 1}
               className={`px-4 py-2 rounded-full ${
@@ -147,9 +169,11 @@ function EventList({ events }) {
             >
               Previous
             </motion.button>
+            
             <span className="text-lg">
               Page {currentPage} of {totalPages}
             </span>
+            
             <motion.button
               onClick={goToNextPage}
               disabled={currentPage === totalPages}
@@ -162,6 +186,20 @@ function EventList({ events }) {
               whileTap={currentPage !== totalPages ? { scale: 0.95 } : {}}
             >
               Next
+            </motion.button>
+
+            <motion.button
+              onClick={goToLastPage}
+              disabled={currentPage === totalPages}
+              className={`px-4 py-2 rounded-full ${
+                currentPage === totalPages
+                  ? 'bg-gray-600 cursor-not-allowed'
+                  : 'bg-purple-500 hover:bg-purple-600'
+              } transition-colors duration-300`}
+              whileHover={currentPage !== totalPages ? { scale: 1.05 } : {}}
+              whileTap={currentPage !== totalPages ? { scale: 0.95 } : {}}
+            >
+              Last
             </motion.button>
           </motion.div>
         )}
