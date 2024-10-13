@@ -97,5 +97,14 @@
       "description": "Explore the vibrant world of open source at Open Source India, the premier conference for engaging with cutting-edge open source technology and leading community experts.",
       "image": "/images/offlineEvents/opensource.jpg",
       "link": "https://www.opensourceindia.in/"
-    }
+    },
+      {
+    "id": 12,
+    "title": "NAIROBI COLOUR FESTIVAL 2024",
+    "date": "2024-11-23",
+    "location": "Nairobi, Kenya",
+    "description": "The Nairobi Colour Festival is a vibrant celebration of unity, diversity, and inclusivity. Inspired by the traditional Hindu festival of Holi, join us for a day filled with music, art, food, and a burst of color! Enjoy live performances by top DJs and artists, a gaming area, food & thrift stalls, a kids' area, and more. Let’s come together for an unforgettable experience of fun and togetherness.",
+    "image": "/images/offlineEvents/nairobicolourfestival.png",
+    "link": "https://allevents.in/nairobi/nairobi-colour-festival/80002759281787"
+  }
   ]
