@@ -6,7 +6,8 @@ import FilterForm from './FilterForm';
 function EventList({ events }) {
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 10;
-  const [filters, setFilters] = useState({ eventName : '',startDate: '', endDate: '', location: '' });
+  const initialFilters = { eventName: '', startDate: '', endDate: '', location: '' };
+  const [filters, setFilters] = useState(initialFilters);
 
   // Filter the events based on the provided filters
   const filteredEvents = events.filter(event => {
@@ -22,7 +23,7 @@ function EventList({ events }) {
       !filters.location ||
       event.location.toLowerCase().includes(filters.location.toLowerCase());
 
-      const namePass =
+    const namePass =
       !filters.eventName ||
       event.title.toLowerCase().includes(filters.eventName.toLowerCase());
 
@@ -53,6 +54,11 @@ function EventList({ events }) {
 
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
+  };
+
+  const handleResetFilters = () => {
+    setFilters(initialFilters);
+    setCurrentPage(1);
   };
 
   // Animation variants
@@ -90,7 +96,7 @@ function EventList({ events }) {
 
         {/* Filter Form */}
         <motion.div variants={itemVariants}>
-          <FilterForm filters={filters} onFilterChange={handleFilterChange} />
+          <FilterForm filters={filters} onFilterChange={handleFilterChange} onReset={handleResetFilters} />
         </motion.div>
 
         {/* Display paginated events */}

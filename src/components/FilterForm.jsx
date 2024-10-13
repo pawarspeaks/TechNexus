@@ -2,12 +2,16 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
-function FilterForm({ filters, onFilterChange }) {
+function FilterForm({ filters, onFilterChange, onReset }) {
   const location = useLocation();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     onFilterChange({ ...filters, [name]: value });
+  };
+
+  const handleReset = () => {
+    onReset(); // Call the reset function passed from EventList
   };
 
   const formVariants = {
@@ -36,6 +40,7 @@ function FilterForm({ filters, onFilterChange }) {
       initial="hidden"
       animate="visible"
     >
+      {/* Event Name Filter */}
       <motion.div className="mb-6" variants={inputVariants}>
         <label htmlFor="sort-event-name" className="block text-purple-400 mb-2">Event Name:</label>
         <motion.input
@@ -50,6 +55,7 @@ function FilterForm({ filters, onFilterChange }) {
         />
       </motion.div>
 
+      {/* Start Date Filter */}
       <motion.div className="mb-6" variants={inputVariants}>
         <label htmlFor="sort-start-date" className="block text-purple-400 mb-2">Start Date:</label>
         <motion.input
@@ -63,6 +69,7 @@ function FilterForm({ filters, onFilterChange }) {
         />
       </motion.div>
 
+      {/* End Date Filter */}
       <motion.div className="mb-6" variants={inputVariants}>
         <label htmlFor="sort-end-date" className="block text-purple-400 mb-2">End Date:</label>
         <motion.input
@@ -76,6 +83,7 @@ function FilterForm({ filters, onFilterChange }) {
         />
       </motion.div>
 
+      {/* Location Filter */}
       <AnimatePresence>
         {location.pathname !== '/virtual-events' && (
           <motion.div 
@@ -100,6 +108,13 @@ function FilterForm({ filters, onFilterChange }) {
         )}
       </AnimatePresence>
 
+      {/* Reset Button */}
+      <motion.button
+        onClick={handleReset}
+        className="mt-4 px-4 py-2 w-full bg-purple-500 text-white p-2 rounded hover:bg-purple-600 transition-colors duration-300"
+      >
+        Reset Filters
+      </motion.button>
     </motion.form>
   );
 }
