@@ -78,31 +78,16 @@ function Header() {
             </motion.li>
 
             {/* Dropdown for Events */}
-            <motion.li className="relative group" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <span className="text-lg font-medium hover:text-purple-400 transition-colors duration-300 cursor-pointer">
-                Events
-              </span>
-              <motion.ul className="absolute left-0 mt-2 bg-gray-800 rounded-lg p-2 invisible group-hover:visible transition-all duration-300">
-                <motion.li whileHover={{ scale: 1.1 }}>
-                  <Link 
-                    to="/offline-events" 
-                    className="block text-lg font-medium text-white hover:text-purple-400 transition-colors duration-300"
-                  >
-                    Offline Events
-                  </Link>
-                </motion.li>
-                <motion.li whileHover={{ scale: 1.1 }}>
-                  <Link 
-                    to="/virtual-events" 
-                    className="block text-lg font-medium text-white hover:text-purple-400 transition-colors duration-300"
-                  >
-                    Online Events
-                  </Link>
-                </motion.li>
-              </motion.ul>
-            </motion.li>
+            <div className="relative group">
+      <button className="dropbtn">Events</button>
+      <div className="dropdown-menu absolute bg-transparent p-4 z-10 group-hover:relative group-hover:block">
+     <a href="/offline-events" className="block text-white hover:text-purple-400">Offline Events</a>
+      <a href="/virtual-events" className="block text-white hover:text-purple-400">Online Events</a>
+  </div>
+</div>
 
-            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+
+            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="relative">
               <Link 
                 to="/contributors" 
                 className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
