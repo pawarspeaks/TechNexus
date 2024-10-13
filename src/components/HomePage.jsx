@@ -40,7 +40,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white font-sans p-8">
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -50,13 +50,13 @@ const HomePage = () => {
           Welcome to TechNexus
         </h1>
         <p className="text-2xl mb-12 text-gray-300">Your Global Tech Event Hub by Dev Code Community</p>
-        <div className="space-x-4">
-          <motion.a 
-            href="https://github.com/pawarspeaks/TechNexus/" 
-            target="_blank" 
+        <div className="space-x-4 flex flex-col gap-4">
+          <motion.a
+            href="https://github.com/pawarspeaks/TechNexus/"
+            target="_blank"
             rel="noopener noreferrer"
           >
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgb(59, 130, 246)" }}
               whileTap={{ scale: 0.95 }}
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
@@ -66,7 +66,7 @@ const HomePage = () => {
           </motion.a>
 
           <Link to="/virtual-events">
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgb(255, 255, 255)" }}
               whileTap={{ scale: 0.95 }}
               className="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 rounded-full border-2 border-white transition-all duration-300"
@@ -75,9 +75,10 @@ const HomePage = () => {
             </motion.button>
           </Link>
         </div>
+
       </motion.section>
 
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -111,7 +112,7 @@ const HomePage = () => {
         </AnimatePresence>
       </motion.section>
 
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
@@ -124,7 +125,7 @@ const HomePage = () => {
             { title: "Connect", icon: "🤝", description: "Network with like-minded professionals and enthusiasts." },
             { title: "Contribute", icon: "🚀", description: "Add events, share knowledge, and grow the community." }
           ].map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="bg-gray-800 p-6 rounded-lg text-center"
               whileHover={{ scale: 1.05, boxShadow: "0px 0px 12px rgba(59, 130, 246, 0.5)" }}
@@ -137,7 +138,7 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
@@ -149,9 +150,9 @@ const HomePage = () => {
             <p className="text-lg text-gray-300 mb-6">
               Dev Code Community is a passionate group of developers and tech enthusiasts dedicated to fostering growth, collaboration, and innovation in the tech world. Our mission is to create a supportive environment where members can learn, share knowledge, and contribute to exciting open-source projects like TechNexus.
             </p>
-            <motion.a 
+            <motion.a
               href="https://dev-code-community.github.io/bio/"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -174,19 +175,19 @@ const HomePage = () => {
         </div>
       </motion.section>
 
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.8 }}
         className="py-20 text-center"
       >
         <h2 className="text-4xl font-bold mb-8">Ready to dive in?</h2>
-        <motion.a 
-          href="https://github.com/pawarspeaks/TechNexus/" 
-          target="_blank" 
+        <motion.a
+          href="https://github.com/pawarspeaks/TechNexus/"
+          target="_blank"
           rel="noopener noreferrer"
         >
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 12px rgb(16, 185, 129)" }}
             whileTap={{ scale: 0.95 }}
             className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-xl transition-all duration-300"
