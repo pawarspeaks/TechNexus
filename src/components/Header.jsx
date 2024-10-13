@@ -79,12 +79,12 @@ function Header() {
 
             {/* Dropdown for Events */}
             <div className="relative group">
-      <button className="dropbtn">Events</button>
-      <div className="dropdown-menu absolute bg-transparent p-4 z-10 group-hover:relative group-hover:block">
-     <a href="/offline-events" className="block text-white hover:text-purple-400">Offline Events</a>
-      <a href="/virtual-events" className="block text-white hover:text-purple-400">Online Events</a>
-  </div>
-</div>
+            <button className="dropbtn">Events</button>
+            <div className="dropdown-menu absolute bg-transparent p-4 z-10 group-hover:relative group-hover:block">
+            <a href="/offline-events" className="block text-white hover:text-purple-400">Offline Events</a>
+            <a href="/virtual-events" className="block text-white hover:text-purple-400">Online Events</a>
+            </div>
+            </div>
 
 
             <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="relative">

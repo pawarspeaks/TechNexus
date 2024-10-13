@@ -58,15 +58,14 @@ nav a:hover {
 /* Dropdown Styles */
 .dropdown-menu {
   position: absolute;
-/* Ensure it is on top of other elements */
   padding: 10px; /* Add some padding */
   display: none; /* Initially hidden */
   background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .group:hover .dropdown-menu {
