@@ -76,14 +76,16 @@ return(
                 className="w-full p-2 bg-gray-800 rounded"
                 whileFocus={{ scale: 1.02, boxShadow: "0 0 0 2px #bb86fc" }}
               ></motion.textarea>
+              <div className="text-center">
               <motion.button
                 type="submit"
-                className="bg-purple-500 ml-40 text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors"
+                className="bg-purple-500   text-white px-6 py-2 rounded-full hover:bg-purple-600 transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Send Message
               </motion.button>
+              </div>
             </form>
             <AnimatePresence>
               {msg && (

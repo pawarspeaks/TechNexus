@@ -41,7 +41,7 @@ function Footer() {
       className="bg-gray-900 text-white p-8"
       id="contact"
     >
-    <div className="flex flex-wrap top-10 justify-between">
+    <div className="flex flex-wrap gap-16 top-10 justify-between">
        <motion.a 
                 href="https://devcode-technexus.vercel.app/" 
                 target="_blank"
@@ -51,7 +51,7 @@ function Footer() {
                 <img 
                   src="/images/logos/logo-no-background.png" 
                   alt="TechNexus Logo" 
-                  className="h-16 w-auto"
+                  className="h-16 w-auto ml-3 "
                 />
               </motion.a>
 
@@ -65,13 +65,13 @@ function Footer() {
                 <img 
                   src="/images/logos/DevCode-without-BG.png" 
                   alt="Dev Code Logo" 
-                  className="h-16 w-auto"
+                  className="h-16 w-auto "
                 />
               </motion.a>
 
-              <div className="flex  flex-wrap -mx-4">
+              <div className="flex  flex-wrap -mx-4 ml-3">
           <motion.div className="w-full md:w-1/2 px-4 mb-8" variants={itemVariants}>
-            <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
+            <h3 className="text-2xl font-semibold mb-4 ml-2">Get in Touch</h3>
             <motion.p 
               className="mb-2"
               whileHover={{ scale: 1.05, color: "#bb86fc" }}
