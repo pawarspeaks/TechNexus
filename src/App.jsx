@@ -4,10 +4,13 @@ import Header from './components/Header';
 import EventList from './components/EventList';
 import Footer from './components/Footer';
 import ContributorsPage from './pages/ContributorsPage';
+import Contact from './pages/Contact';
 import offlineEventsData from './data/offlineEventsData.json';
 import onlineEventsData from './data/onlineEventsData.json';
 import HomePage from './components/HomePage'; 
 import './index.css';
+import ScrollToTopButton from "./components/ScrollToTopButton";
+
 function App() {
   const [offlineEvents, setOfflineEvents] = useState([]);
   const [onlineEvents, setOnlineEvents] = useState([]);
@@ -28,9 +31,10 @@ function App() {
   };
 
   return (
-    <Router>
+    
       <div className="App">
         <Header />
+        <ScrollToTopButton/>
         <main className="container">
         <Routes>
         {/* Home Route (Displays the Introductory Home Page) */}
@@ -62,12 +66,16 @@ function App() {
 
         {/* Route for Contributors Page */}
         <Route path="/contributors" element={<ContributorsPage />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
         </main>
+       
         <Footer />
+        
       </div>
-    </Router>
+   
+
   );
 }
 
