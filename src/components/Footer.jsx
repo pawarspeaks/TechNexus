@@ -17,11 +17,11 @@ const Footer = () => {
               placeholder="Your email address"
               className="bg-transparent text-lg text-white placeholder-gray-400 w-full focus:outline-none pr-6"
             />
-            <div className="bg-white text-black rounded-full p-2 transition-transform duration-300 transform hover:scale-125 hover:bg-[#24246a] hover:text-white">
+            <button className="bg-white text-black rounded-full p-2 transition-transform duration-300 transform hover:scale-125 hover:bg-[#24246a] hover:text-white">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.5 5.25L18 8M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z" />
               </svg>
-            </div>
+            </button>
           </div>
           <div className="mt-8">
             <p className="text-base text-gray-400 mb-4">FOLLOW US:</p>
@@ -54,18 +54,17 @@ const Footer = () => {
           <h3 className="text-3xl font-semibold mb-4">Share</h3>
           <ul className="space-y-2">
             {[
-              // if you want add more sharing links ovr here ,also change the codddde a bit as i dont have your reddit etc.
               { name: 'X (Twitter)', link: 'https://twitter.com/share?url=https://twitter.com/devcodecommunity' },
-              { name: 'Facebook', link: 'https://www.facebook.com/sharer/sharer.php?u=YOUR_URL' },
-              { name: 'LinkedIn', link: 'https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE' },
-              { name: 'Reddit', link: 'https://reddit.com/submit?url=YOUR_URL&title=YOUR_TITLE' }
+              { name: 'WhatsApp', link: 'https://api.whatsapp.com/send?text=Check%20this%20out!%20https://chat.whatsapp.com/F2njAIyHZzyEoE8BP75crT' },
+              { name: 'LinkedIn', link: 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/dev-code-community/' },
+              { name: 'Telegram', link: 'https://t.me/share/url?url=https://t.me/DevCodeCommunity' }
             ].map(({ name, link }) => (
               <li key={name}>
                 <a 
-                  href={link.replace('YOUR_URL', encodeURIComponent(window.location.href)).replace('YOUR_TEXT', encodeURIComponent('Check this out!')).replace('YOUR_TITLE', encodeURIComponent('Your Title Here'))} 
+                  href={link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="relative inline-block text-white transition-colors duration-300 items-center justify-center md:justify-start before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:transform before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-white hover:before:scale-x-[1] before:scale-x-[0]"
+                  className="relative inline-block text-white transition-colors duration-300 before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-white hover:before:scale-x-[1] before:scale-x-[0]"
                 >
                   {name}
                 </a>
@@ -78,14 +77,13 @@ const Footer = () => {
         <div className="text-center md:text-left mb-8">
           <h3 className="text-3xl font-semibold mb-4">Feedback</h3>
           <p className="text-sm text-gray-400 mb-2">DROP US A LINE</p>
-          <a href="mailto:iampratappawar@gmail.com" className="relative inline-block text-blue-400 transition-colors duration-300 items-center justify-center md:justify-start before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:transform before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-blue-400 hover:before:scale-x-[1] before:scale-x-[0]">iampratappawar@gmail.com</a><br/>
-          <a href="mailto:devcode.community@gmail.com" className="relative inline-block text-blue-400 transition-colors duration-300 items-center justify-center md:justify-start before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:transform before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-blue-400 hover:before:scale-x-[1] before:scale-x-[0]">devcode.community@gmail.com</a>
+          <a href="mailto:iampratappawar@gmail.com" className="relative inline-block text-blue-400 transition-colors duration-300 before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-blue-400 hover:before:scale-x-[1] before:scale-x-[0]">iampratappawar@gmail.com</a><br/>
+          <a href="mailto:devcode.community@gmail.com" className="relative inline-block text-blue-400 transition-colors duration-300 before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-blue-400 hover:before:scale-x-[1] before:scale-x-[0]">devcode.community@gmail.com</a>
         </div>
       </div>
 
       {/* Image Section for the Logos */}
       <div className="max-w-6xl mx-auto flex justify-center md:justify-between items-center space-x-6 mt-8">
-        {/* Logo with Animation */}
         {[
           { src: "/images/logos/logo-no-background.png", alt: "Dev Code Logo", link: "https://devcode-technexus.vercel.app" },
           { src: "/images/logos/DevCode-without-BG.png", alt: "TechNexus Logo", link: "https://dev-code-community.github.io/bio/" }
@@ -115,7 +113,7 @@ const Footer = () => {
           <a href="#" className="hover:text-white transition-colors duration=300">Guidelines</a>
         </div>
       </div>
-    </footer>
+    </footer> 
   );
 };
 
