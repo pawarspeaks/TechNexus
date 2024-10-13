@@ -114,6 +114,12 @@ nav a:hover {
   color: var(--bg-primary);
   text-decoration: none;
   border-radius: 4px;
+  transition: .3s ease-in;
+}
+
+.event-link:hover {
+  scale: 1.05;
+  color: white;
 }
 
 /* Footer Styles */
