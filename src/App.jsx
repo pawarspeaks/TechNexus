@@ -22,7 +22,6 @@ function App() {
     setOfflineEvents(offlineEventsData);
   }, []);
 
-  // Load online events from JSON
   useEffect(() => {
     setOnlineEvents(onlineEventsData);
   }, []);
@@ -36,6 +35,7 @@ function App() {
       <Router>
         <div className="App">
           <Header />
+          <ScrollToTopButton />
           <main className="container">
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -61,58 +61,13 @@ function App() {
               />
               <Route path="/contributors" element={<ContributorsPage />} />
               <Route path="/favorites" element={<Favorites />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
           <Footer />
         </div>
       </Router>
     </FavoritesProvider>
-
-    
-      <div className="App">
-        <Header />
-        <ScrollToTopButton/>
-        <main className="container">
-        <Routes>
-        {/* Home Route (Displays the Introductory Home Page) */}
-        <Route path="/" element={<HomePage />} />
-
-        {/* Route for Offline Events */}
-        <Route 
-          path="/offline-events" 
-          element={
-            <EventList 
-              events={offlineEvents} 
-              filters={filters} 
-              onFilterChange={handleFilterChange} 
-            />
-          } 
-        />
-
-        {/* Route for Online Events */}
-        <Route 
-          path="/virtual-events" 
-          element={
-            <EventList 
-              events={onlineEvents} 
-              filters={filters} 
-              onFilterChange={handleFilterChange} 
-            />
-          } 
-        />
-
-        {/* Route for Contributors Page */}
-        <Route path="/contributors" element={<ContributorsPage />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-
-        </main>
-       
-        <Footer />
-        
-      </div>
-   
-
   );
 }
 
