@@ -6,7 +6,7 @@ import FilterForm from './FilterForm';
 function EventList({ events }) {
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 10;
-  const [filters, setFilters] = useState({ eventName : '',startDate: '', endDate: '', location: '' });
+  const [filters, setFilters] = useState({ eventName : '',startDate: '', endDate: '', location: '', sortBy: '' });
 
   // Filter the events based on the provided filters
   const filteredEvents = events.filter(event => {
@@ -27,6 +27,16 @@ function EventList({ events }) {
       event.title.toLowerCase().includes(filters.eventName.toLowerCase());
 
     return datePass && locationPass && namePass;
+  }).sort((a,b)=>{
+    const firstDate = new Date(a.date);
+    const secondDate = new Date(b.date);
+    if(filters.sortBy === 'earliest') {
+      return firstDate.getTime() - secondDate.getTime();
+    } else if(filters.sortBy === 'upcoming') {
+      return secondDate.getTime() - firstDate.getTime();
+    } else {
+      return 0;
+    }
   });
 
   // Calculate total pages
@@ -100,9 +110,9 @@ function EventList({ events }) {
               className="grid gap-6 mt-8"
               variants={containerVariants}
             >
-              {paginatedEvents.map(event => (
+              {paginatedEvents.map((event, index) => (
                 <motion.div
-                  key={event.id}
+                  key={index}
                   variants={itemVariants}
                   initial="hidden"
                   animate="visible"
