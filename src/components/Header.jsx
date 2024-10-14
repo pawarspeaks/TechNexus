@@ -22,8 +22,16 @@ function Header() {
     visible: { opacity: 1, y: 0 }
   };
 
+  const navItems = [
+    { to: "/", label: "Home" },
+    { to: "/offline-events", label: "Offline Events" },
+    { to: "/virtual-events", label: "Online Events" },
+    { to: "/contributors", label: "Contributors ♥️" },
+    { to: "/favorites", label: "Favorites ♥️" },
+    { to: "/contact", label: "Contact" }
+  ];
+
   return (
-    
     <motion.header 
       className="bg-gray-900 text-white p-6"
       variants={containerVariants}
@@ -48,7 +56,6 @@ function Header() {
               whileHover={{ rotate: 5 }}
             />
           </motion.a>
-
           <motion.a 
             href="https://dev-code-community.github.io/bio/" 
             target="_blank"
@@ -63,35 +70,19 @@ function Header() {
             />
           </motion.a>
         </motion.div>
-
         <nav>
           <motion.ul 
             className="flex justify-center space-x-6 flex-wrap"
             variants={itemVariants}
           >
-            {[
-              { to: "/", label: "Home" },
-              { to: "/offline-events", label: "Offline Events" },
-              { to: "/virtual-events", label: "Online Events" },
-              { to: "/contributors", label: "Contributors ♥️" },
-              { to: "/contact", label: "Contact" }
-            ].map((item, index) => (
+            {navItems.map((item, index) => (
               <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                {item.to ? (
-                  <Link 
-                    to={item.to} 
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <a 
-                    href={item.href} 
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
-                  >
-                    {item.label}
-                  </a>
-                )}
+                <Link 
+                  to={item.to} 
+                  className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                >
+                  {item.label}
+                </Link>
               </motion.li>
             ))}
           </motion.ul>
