@@ -1,8 +1,8 @@
 import React from 'react';
 import EventCard from './EventCard';
 import { useFavorites } from './FavoritesContext.jsx';
-import offlineEventsData from '../data/offlineEventsData.json'; // Adjust this path based on your structure
-import onlineEventsData from '../data/onlineEventsData.json'; // Adjust this path based on your structure
+import offlineEventsData from '../data/offlineEventsData.json'; 
+import onlineEventsData from '../data/onlineEventsData.json'; 
 
 const Favorites = () => {
   const { favorites } = useFavorites();
