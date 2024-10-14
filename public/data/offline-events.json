@@ -1,0 +1,116 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "badge": "expo",
+            "title": "Internet of Things India Expo 2025",
+            "date": "19:03:2025",
+            "location": "New Delhi, India",
+            "description": "One of the biggest platforms for IoT innovations in India.",
+            "image": "/images/offlineEvents/iotindiaexpo.png",
+            "link": "https://iotindiaexpo.com"
+        },
+        {
+            "id": 2,
+            "badge": "expo",
+            "title": "Mobile India Expo 2025",
+            "date": "19:03:2025",
+            "location": "New Delhi, India",
+            "description": "Brings together the mobile device and accessories ecosystem.",
+            "image": "/images/offlineEvents/mobileindiaexpo.png",
+            "link": "https://mobileindiaexpo.com"
+        },
+        {
+            "id": 3,
+            "badge": "expo",
+            "title": "Fintech India 2025",
+            "date": "19:03:2025",
+            "location": "New Delhi, India",
+            "description": "Exploring advancements in the financial technology sector.",
+            "image": "/images/offlineEvents/fintechindia.png",
+            "link": "https://fintechindiaexpo.com"
+        },
+        {
+            "id": 4,
+            "badge": "Forum",
+            "title": "Nasscom Technology & Leadership Forum 2025",
+            "date": "24:02:2025",
+            "location": "Mumbai, India",
+            "description": "Tech-driven insights combined with leadership, pushing forward India's tech future.",
+            "image": "/images/offlineEvents/nasscomtl2025.png",
+            "link": "https://nasscom.in/ntlf"
+        },
+        {
+            "id": 5,
+            "badge": "Tech Summit",
+
+            "title": "Bengaluru Tech Summit 2024",
+            "date": "19:11:2024",
+            "location": "Bengaluru, India",
+            "description": "Asia's most prestigious technology summit with a focus on innovation across multiple sectors.",
+            "image": "/images/offlineEvents/bengalurutechsummit.png",
+            "link": "https://bengalurutechsummit.com"
+        },
+        {
+            "id": 6,
+            "badge": "Hackathon",
+            "title": "hackCBS 7.0",
+            "date": "15:11:2024",
+            "location": "New Delhi, India",
+            "description": "India's largest student-run hackathon, featuring open-source development and community building.",
+            "image": "/images/offlineEvents/hackcbs.png",
+            "link": "https://hackcbs.tech"
+        },
+        {
+            "id": 7,
+            "badge": "Conference",
+            "title": "IndiaFOSS 2024",
+            "date": "21:10:2024",
+            "location": "Bengaluru, India",
+            "description": "A focused conference on Free and Open Source Software, organized by FOSS United.",
+            "image": "/images/offlineEvents/indiafoss.png",
+            "link": "https://fossunited.org"
+        },
+        {
+            "id": 8,
+            "badge": "Conference",
+            "title": "Flutter Conf India 2023",
+            "date": "09:12:2023",
+            "location": "Ahmedabad, India",
+            "description": "Dive deep into Dart and Flutter at this leading conference dedicated to top-quality content.",
+            "image": "/images/offlineEvents/flutterconfin.png",
+            "link": "https://flutterindia.dev"
+        },
+        {
+            "id": 9,
+            "badge": "Roadshow",
+            "title": "CYBERX INDIA ROADSHOW 2023",
+            "date": "03:11:2023",
+            "location": "Delhi, India",
+            "description": "Join over 200+ leading cybersecurity experts for insightful discussions on the latest trends.",
+            "image": "/images/offlineEvents/cyberx.png",
+            "link": "https://cyberxindia.com"
+        },
+        {
+            "id": 10,
+            "badge": "Conference",
+            "title": "Devcon 7, 2024",
+            "date": "12:11:2024",
+            "location": "Bangkok, Thailand",
+            "description": "Join the global community at Devcon, the foremost Ethereum conference, dedicated to in-depth discussions, innovation, and networking within the blockchain and Ethereum ecosystem.",
+            "image": "/images/offlineEvents/devcon.jpg",
+            "link": "https://devcon.org/en/"
+        },
+        {
+            "id": 11,
+            "badge": "Conference",
+            "title": "Open Source India 2024",
+            "date": "23:10:2024",
+            "location": "Bengaluru, India",
+            "description": "Explore the vibrant world of open source at Open Source India, the premier conference for engaging with cutting-edge open source technology and leading community experts.",
+            "image": "/images/offlineEvents/opensource.jpg",
+            "link": "https://www.opensourceindia.in/"
+        }
+    ]
+
+}

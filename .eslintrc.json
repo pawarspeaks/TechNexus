@@ -1,0 +1,6 @@
+{
+    "extends": "next/core-web-vitals",
+    "rules": {
+      "react/hydration-error": "off" // Disable hydration error rule
+    }
+  }
