@@ -84,6 +84,23 @@ function FilterForm({ filters, onFilterChange, onReset }) {
       </motion.div>
 
       {/* Location Filter */}
+      <motion.div className="mb-6" variants={inputVariants}>
+        <label htmlFor="sort-by" className="block text-purple-400 mb-2">
+          Sort By:
+        </label>
+        <motion.select
+          id="sort-by"
+          name="sortBy"
+          onChange={handleInputChange}
+          className="w-full bg-gray-800 text-white p-2 rounded border border-purple-500 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50"
+          whileFocus={{ scale: 1.02 }}
+        >
+          <motion.option className="w-full" value="" selected>Select</motion.option>
+          <motion.option className="w-full" value="earliest">Earliest Events</motion.option>
+          <motion.option className="w-full" value="upcoming">Upcoming Events</motion.option>
+        </motion.select>
+      </motion.div>
+
       <AnimatePresence>
         {location.pathname !== '/virtual-events' && (
           <motion.div 

@@ -182,6 +182,11 @@ footer {
   text-decoration: none;
 }
 
+.space-x-4{
+  padding: 10px;
+  margin: 20px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   header {
