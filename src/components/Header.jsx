@@ -29,6 +29,15 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const navItems = [
+    { to: "/", label: "Home" },
+    { to: "/offline-events", label: "Offline Events" },
+    { to: "/virtual-events", label: "Online Events" },
+    { to: "/contributors", label: "Contributors ♥️" },
+    { to: "/favorites", label: "Favorites ♥️" },
+    { to: "/contact", label: "Contact" }
+  ];
+
   return (
     <motion.header
       className="bg-gray-900 text-white p-6"
@@ -41,6 +50,7 @@ function Header() {
           className="flex justify-between items-center mb-6"
           variants={itemVariants}
         >
+          {/* Logo 1 */}
           <motion.a
             href="https://devcode-technexus.vercel.app/"
             target="_blank"
@@ -55,8 +65,9 @@ function Header() {
             />
           </motion.a>
 
-          <motion.a
-            href="https://dev-code-community.github.io/bio/"
+          {/* Logo 2 */}
+          <motion.a 
+            href="https://dev-code-community.github.io/bio/" 
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -79,38 +90,22 @@ function Header() {
 
         {/* Navigation Menu */}
         <nav className={`md:flex md:justify-center md:space-x-6 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <motion.ul
-            className={`flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 flex-wrap`}
+          <motion.ul 
+            className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 flex-wrap"
             variants={itemVariants}
           >
-            {[
-              { to: "/", label: "Home" },
-              { to: "/offline-events", label: "Offline Events" },
-              { to: "/virtual-events", label: "Online Events" },
-              { to: "/contributors", label: "Contributors ♥️" },
-              { to: "/contact", label: "Contact" }
-            ].map((item, index) => (
+            {navItems.map((item, index) => (
               <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                {item.to ? (
-                  <Link
-                    to={item.to}
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <a
-                    href={item.href}
-                    className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
-                  >
-                    {item.label}
-                  </a>
-                )}
+                <Link
+                  to={item.to}
+                  className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                >
+                  {item.label}
+                </Link>
               </motion.li>
             ))}
           </motion.ul>
         </nav>
-
       </div>
     </motion.header>
   );
