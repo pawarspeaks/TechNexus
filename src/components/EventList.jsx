@@ -3,9 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import EventCard from './EventCard';
 import FilterForm from './FilterForm';
 
-function EventList({ events, filters, onFilterChange }) {
+function EventList({ events }) {
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 10;
+  const [filters, setFilters] = useState({ eventName : '',startDate: '', endDate: '', location: '' });
 
   // Filter the events based on the provided filters
   const filteredEvents = events.filter(event => {
@@ -21,7 +22,11 @@ function EventList({ events, filters, onFilterChange }) {
       !filters.location ||
       event.location.toLowerCase().includes(filters.location.toLowerCase());
 
-    return datePass && locationPass;
+      const namePass =
+      !filters.eventName ||
+      event.title.toLowerCase().includes(filters.eventName.toLowerCase());
+
+    return datePass && locationPass && namePass;
   });
 
   // Calculate total pages
@@ -44,6 +49,10 @@ function EventList({ events, filters, onFilterChange }) {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
+  };
+
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
   };
 
   // Animation variants
@@ -81,7 +90,7 @@ function EventList({ events, filters, onFilterChange }) {
 
         {/* Filter Form */}
         <motion.div variants={itemVariants}>
-          <FilterForm filters={filters} onFilterChange={onFilterChange} />
+          <FilterForm filters={filters} onFilterChange={handleFilterChange} />
         </motion.div>
 
         {/* Display paginated events */}

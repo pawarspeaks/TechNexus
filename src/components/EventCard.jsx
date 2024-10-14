@@ -28,8 +28,13 @@ function EventCard({ event }) {
             isFavorited ? 'bg-purple-600 text-white' : 'bg-gray-700 text-gray-400'
           }`}
         >
-          {isFavorited ? '💖' : '🤍'}
+          {isFavorited ? '❤️' : '🤍'}
         </button>
+        <h2>{event.title}</h2>
+        <p className="event-date">{new Date(event.date).toLocaleDateString('en-GB', options)}</p>
+        <p className="event-location">{event.location}</p>
+        <p className="event-description">{event.description}</p>
+        <a href={event.link} target="_blank" rel="noopener noreferrer" className="event-link">Learn More</a>
       </div>
     </div>
   );
