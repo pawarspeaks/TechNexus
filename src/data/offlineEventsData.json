@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "title": "Internet of Things India Expo 2025",
     "date": "2025-03-19",
     "location": "New Delhi, India",
@@ -9,7 +8,6 @@
     "link": "https://iotindiaexpo.com"
   },
   {
-    "id": 2,
     "title": "Mobile India Expo 2025",
     "date": "2025-03-19",
     "location": "New Delhi, India",
@@ -18,7 +16,6 @@
     "link": "https://mobileindiaexpo.com"
   },
   {
-    "id": 3,
     "title": "Fintech India 2025",
     "date": "2025-03-19",
     "location": "New Delhi, India",
@@ -27,7 +24,6 @@
     "link": "https://fintechindiaexpo.com"
   },
   {
-    "id": 4,
     "title": "Nasscom Technology & Leadership Forum 2025",
     "date": "2025-02-24",
     "location": "Mumbai, India",
@@ -36,7 +32,6 @@
     "link": "https://nasscom.in/ntlf"
   },
   {
-    "id": 5,
     "title": "Bengaluru Tech Summit 2024",
     "date": "2024-11-19",
     "location": "Bengaluru, India",
@@ -45,7 +40,6 @@
     "link": "https://bengalurutechsummit.com"
   },
   {
-    "id": 6,
     "title": "hackCBS 7.0",
     "date": "2024-11-15",
     "location": "New Delhi, India",
@@ -54,7 +48,6 @@
     "link": "https://hackcbs.tech"
   },
   {
-    "id": 7,
     "title": "IndiaFOSS 2024",
     "date": "2024-10-21",
     "location": "Bengaluru, India",
@@ -63,7 +56,6 @@
     "link": "https://fossunited.org"
   },
   {
-    "id": 8,
     "title": "Flutter Conf India 2023",
     "date": "2023-12-09",
     "location": "Ahmedabad, India",
@@ -72,7 +64,6 @@
     "link": "https://flutterindia.dev"
   },
   {
-    "id": 9,
     "title": "CYBERX INDIA ROADSHOW 2023",
     "date": "2023-11-03",
     "location": "Delhi, India",
@@ -81,7 +72,6 @@
     "link": "https://cyberxindia.com"
   },
   {
-      "id": 10,
       "title": "Devcon 7, 2024",
       "date": "2024-11-12",
       "location": "Bangkok, Thailand",
@@ -90,7 +80,6 @@
       "link": "https://devcon.org/en/"
     },
     {
-      "id": 11,
       "title": "Open Source India 2024",
       "date": "2024-10-23",
       "location": "Bengaluru, India",
