@@ -97,5 +97,14 @@
       "description": "Explore the vibrant world of open source at Open Source India, the premier conference for engaging with cutting-edge open source technology and leading community experts.",
       "image": "/images/offlineEvents/opensource.jpg",
       "link": "https://www.opensourceindia.in/"
+    },
+    {
+      "id": 12,
+      "title": "International Conference on Soft Computing: Theories and Applications",
+      "date": "2024-11-21",
+      "location": "Punjab, India",
+      "description": "The aim of the conference is to highlight the latest advances, problems and challenges and to present the latest research results in the field of soft computing with a link to scientific research and its practical implementation. ",
+      "image": "public/images/offlineEvents/g81.jpg",
+      "link": "http://2018.socta.in/"
     }
   ]
