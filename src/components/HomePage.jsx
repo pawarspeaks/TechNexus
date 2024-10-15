@@ -120,18 +120,19 @@ const HomePage = () => {
         <h2 className="text-4xl font-bold mb-12 text-center">How It Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { title: "Discover", icon: "🔍", description: "Find exciting tech events happening around the globe." },
-            { title: "Connect", icon: "🤝", description: "Network with like-minded professionals and enthusiasts." },
-            { title: "Contribute", icon: "🚀", description: "Add events, share knowledge, and grow the community." }
+            { title: "Discover", icon: "🔍", description: "Find exciting tech events happening around the globe." , clr:"#048727" },
+            { title: "Connect", icon: "🤝", description: "Network with like-minded professionals and enthusiasts." , clr:"#b447fc" },
+            { title: "Contribute", icon: "🚀", description: "Add events, share knowledge, and grow the community." , clr:"#f23a68" }
           ].map((item, index) => (
             <motion.div 
               key={index}
-              className="bg-gray-800 p-6 rounded-lg text-center"
-              whileHover={{ scale: 1.05, boxShadow: "0px 0px 12px rgba(59, 130, 246, 0.5)" }}
+              className="bg-gray-800 p-6 rounded-lg text-center shadow-lg"
+              whileHover={{ scale: 1.1, boxShadow: `${item.clr} 2px 2px 15px`, transition: { duration: 0.5 } }}
+              whileTap={{ scale: 0.95, transition: { duration: 0.5 } }}
             >
-              <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-2xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-400">{item.description}</p>
+              <div className="text-5xl mb-4">{item.icon}</div>
+              <h3 className="text-3xl font-bold mb-2">{item.title}</h3>
+              <p className="text-gray-500">{item.description}</p>
             </motion.div>
           ))}
         </div>
