@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import '../HamburgerMenu.css';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const containerVariants = {
     hidden: { opacity: 0, y: -50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
-        type: "spring", 
+      transition: {
+        type: "spring",
         stiffness: 300,
         damping: 20,
         staggerChildren: 0.1
@@ -22,88 +25,85 @@ function Header() {
     visible: { opacity: 1, y: 0 }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const navItems = [
+    { to: "/", label: "Home" },
+    { to: "/offline-events", label: "Offline Events" },
+    { to: "/virtual-events", label: "Online Events" },
+    { to: "/contributors", label: "Contributors ♥️" },
+    { to: "/favorites", label: "Favorites ♥️" },
+    { to: "/contact", label: "Contact" }
+  ];
+
   return (
-    <motion.header 
+    <motion.header
       className="bg-gray-900 text-white p-6"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
       <div className="max-w-6xl mx-auto">
-        <motion.div 
+        <motion.div
           className="flex justify-between items-center mb-6"
           variants={itemVariants}
         >
-          <motion.a 
-            href="https://devcode-technexus.vercel.app/" 
+          {/* Logo 1 */}
+          <motion.a
+            href="https://devcode-technexus.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
           >
-            <motion.img 
-              src="/images/logos/logo-no-background.png" 
-              alt="TechNexus Logo" 
+            <motion.img
+              src="/images/logos/logo-no-background.png"
+              alt="TechNexus Logo"
               className="h-16 w-auto"
               whileHover={{ rotate: 5 }}
             />
           </motion.a>
 
+          {/* Logo 2 */}
           <motion.a 
             href="https://dev-code-community.github.io/bio/" 
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
           >
-            <motion.img 
-              src="/images/logos/DevCode-without-BG.png" 
-              alt="Dev Code Logo" 
+            <motion.img
+              src="/images/logos/DevCode-without-BG.png"
+              alt="Dev Code Logo"
               className="h-16 w-auto"
               whileHover={{ rotate: -5 }}
             />
           </motion.a>
+
+          {/* Hamburger Icon */}
+          <div className="hamburger-icon md:hidden" onClick={toggleMenu}>
+            <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+            <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+            <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+          </div>
         </motion.div>
 
-        <nav>
+        {/* Navigation Menu */}
+        <nav className={`md:flex md:justify-center md:space-x-6 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
           <motion.ul 
-            className="flex justify-center space-x-6 flex-wrap"
+            className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 flex-wrap"
             variants={itemVariants}
           >
-            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <Link 
-                to="/" 
-                className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
-              >
-                Home
-              </Link>
-            </motion.li>
-
-            {/* Dropdown for Events */}
-            <div className="relative group">
-            <button className="dropbtn">Events</button>
-            <div className="dropdown-menu absolute bg-transparent p-4 z-10 group-hover:relative group-hover:block">
-            <a href="/offline-events" className="block text-white hover:text-purple-400">Offline Events</a>
-            <a href="/virtual-events" className="block text-white hover:text-purple-400">Online Events</a>
-            </div>
-            </div>
-
-
-            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} className="relative">
-              <Link 
-                to="/contributors" 
-                className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
-              >
-                Contributors ♥️
-              </Link>
-            </motion.li>
-
-            <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-              <a 
-                href="#contact" 
-                className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
-              >
-                Contact
-              </a>
-            </motion.li>
+            {navItems.map((item, index) => (
+              <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+                <Link
+                  to={item.to}
+                  className="text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                >
+                  {item.label}
+                </Link>
+              </motion.li>
+            ))}
           </motion.ul>
         </nav>
       </div>

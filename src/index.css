@@ -23,7 +23,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  overflow: visible;
 }
 
 /* Header Styles */
@@ -33,6 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -43,40 +43,27 @@ nav ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: var(--text-primary);
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5rem;
 }
 
 nav a:hover {
   color: var(--accent-color);
 }
 
-/* Dropdown Styles */
-.dropdown-menu {
-  position: absolute;
-  padding: 10px; /* Add some padding */
-  display: none; /* Initially hidden */
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.group:hover .dropdown-menu {
-  display: block; /* Show on hover */
-  width: 160px; /* Set a width to prevent content from pushing other elements */
-}
-
 /* Event List Styles */
 .event-sort {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
+
 .event-sort label {
   margin-right: 0.5rem;
 }
@@ -114,7 +101,8 @@ nav a:hover {
   color: var(--accent-color);
 }
 
-.event-date, .event-location {
+.event-date,
+.event-location {
   color: var(--text-secondary);
 }
 
@@ -133,6 +121,9 @@ footer {
   background-color: var(--bg-secondary);
   padding: 2rem;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-left h1 {
@@ -150,12 +141,13 @@ footer {
 
 .social-icons {
   margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .social-icons a {
   color: var(--text-primary);
   font-size: 1.5rem;
-  margin-right: 1rem;
 }
 
 .copyright {
@@ -190,29 +182,26 @@ footer {
   text-decoration: none;
 }
 
+.space-x-4{
+  padding: 10px;
+  margin: 20px;
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header {
     flex-direction: column;
   }
 
-  .group-hover\\:visible {
-    position: static;
-  }
-
-  .flex-wrap {
-    flex-wrap: wrap;
+  nav ul {
     justify-content: center;
+    gap: 0.5rem;
   }
+}
 
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  li {
-    margin-right: 10px;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
   }
 
   nav ul {
@@ -227,22 +216,22 @@ footer {
   .event-image {
     height: 150px;
   }
+}
 
-  /* Ensure contributors and contact align properly */
-  .contributors-page {
-    position: relative;
-    margin-top: 20px;
-    z-index: 1; /* Ensures contributors do not overlap the dropdown */
-  }
-  .dropdown-menu {
-    display: none; /* Hide by default */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
   }
 
-  .dropdown-menu.block {
-    display: block; /* Show when dropdownVisible is true */
+  .event-image {
+    height: 120px;
   }
-  
-  .dropdown-menu:hover {
-    display: block; /* Optional: show on hover for desktop */
+
+  footer {
+    padding: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
   }
 }

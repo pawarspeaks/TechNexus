@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
-function FilterForm({ filters, onFilterChange, onSearch }) {
+function FilterForm({ filters, onFilterChange, onReset }) {
   const location = useLocation();
 
   const handleInputChange = (e) => {
@@ -10,15 +10,8 @@ function FilterForm({ filters, onFilterChange, onSearch }) {
     onFilterChange({ ...filters, [name]: value });
   };
 
-  const handleSearch = (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      onSearch();
-    }
-  };
-
-  const handleButtonClick = () => {
-    onSearch();
+  const handleReset = () => {
+    onReset(); // Call the reset function passed from EventList
   };
 
   const formVariants = {
@@ -46,8 +39,23 @@ function FilterForm({ filters, onFilterChange, onSearch }) {
       variants={formVariants}
       initial="hidden"
       animate="visible"
-      onKeyPress={handleSearch}
     >
+      {/* Event Name Filter */}
+      <motion.div className="mb-6" variants={inputVariants}>
+        <label htmlFor="sort-event-name" className="block text-purple-400 mb-2">Event Name:</label>
+        <motion.input
+          type="text"
+          id="sort-event-name"
+          name="eventName"
+          value={filters.eventName}
+          placeholder="Search by event name"
+          onChange={handleInputChange}
+          className="w-full bg-gray-800 text-white p-2 rounded border border-purple-500 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50"
+          whileFocus={{ scale: 1.02 }}
+        />
+      </motion.div>
+
+      {/* Start Date Filter */}
       <motion.div className="mb-6" variants={inputVariants}>
         <label htmlFor="sort-start-date" className="block text-purple-400 mb-2">Start Date:</label>
         <motion.input
@@ -60,6 +68,8 @@ function FilterForm({ filters, onFilterChange, onSearch }) {
           whileFocus={{ scale: 1.02 }}
         />
       </motion.div>
+
+      {/* End Date Filter */}
       <motion.div className="mb-6" variants={inputVariants}>
         <label htmlFor="sort-end-date" className="block text-purple-400 mb-2">End Date:</label>
         <motion.input
@@ -71,6 +81,24 @@ function FilterForm({ filters, onFilterChange, onSearch }) {
           className="w-full bg-gray-800 text-white p-2 rounded border border-purple-500 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50"
           whileFocus={{ scale: 1.02 }}
         />
+      </motion.div>
+
+      {/* Location Filter */}
+      <motion.div className="mb-6" variants={inputVariants}>
+        <label htmlFor="sort-by" className="block text-purple-400 mb-2">
+          Sort By:
+        </label>
+        <motion.select
+          id="sort-by"
+          name="sortBy"
+          onChange={handleInputChange}
+          className="w-full bg-gray-800 text-white p-2 rounded border border-purple-500 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50"
+          whileFocus={{ scale: 1.02 }}
+        >
+          <motion.option className="w-full" value="" selected>Select</motion.option>
+          <motion.option className="w-full" value="earliest">Earliest Events</motion.option>
+          <motion.option className="w-full" value="upcoming">Upcoming Events</motion.option>
+        </motion.select>
       </motion.div>
 
       <AnimatePresence>
@@ -97,14 +125,12 @@ function FilterForm({ filters, onFilterChange, onSearch }) {
         )}
       </AnimatePresence>
 
+      {/* Reset Button */}
       <motion.button
-        type="button"
-        className="w-full bg-purple-500 text-white p-2 rounded hover:bg-purple-600 transition-colors duration-300"
-        onClick={handleButtonClick}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
+        onClick={handleReset}
+        className="mt-4 px-4 py-2 w-full bg-purple-500 text-white p-2 rounded hover:bg-purple-600 transition-colors duration-300"
       >
-        Apply Filters
+        Reset Filters
       </motion.button>
     </motion.form>
   );
