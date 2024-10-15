@@ -6,8 +6,10 @@ import Footer from './components/Footer';
 import ContributorsPage from './pages/ContributorsPage';
 import offlineEventsData from './data/offlineEventsData.json';
 import onlineEventsData from './data/onlineEventsData.json';
-import HomePage from './components/HomePage'; 
+import HomePage from './components/HomePage';
 import './index.css';
+import { fetchOfflineEvents, fetchOnlineEvents } from './services/eventsservice';
+
 function App() {
   const [offlineEvents, setOfflineEvents] = useState([]);
   const [onlineEvents, setOnlineEvents] = useState([]);
@@ -15,12 +17,28 @@ function App() {
 
   // Load offline events from JSON
   useEffect(() => {
-    setOfflineEvents(offlineEventsData);
+    const loadOfflineEvents = async () => {
+      try {
+        const data = await fetchOfflineEvents();
+        setOfflineEvents(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    loadOfflineEvents();
   }, []);
 
   // Load online events from JSON
   useEffect(() => {
-    setOnlineEvents(onlineEventsData);
+    const loadOnlineEvents = async () => {
+      try {
+        const data = await fetchOnlineEvents();
+        setOnlineEvents(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    loadOnlineEvents();
   }, []);
 
   const handleFilterChange = (newFilters) => {
@@ -32,37 +50,37 @@ function App() {
       <div className="App">
         <Header />
         <main className="container">
-        <Routes>
-        {/* Home Route (Displays the Introductory Home Page) */}
-        <Route path="/" element={<HomePage />} />
+          <Routes>
+            {/* Home Route (Displays the Introductory Home Page) */}
+            <Route path="/" element={<HomePage />} />
 
-        {/* Route for Offline Events */}
-        <Route 
-          path="/offline-events" 
-          element={
-            <EventList 
-              events={offlineEvents} 
-              filters={filters} 
-              onFilterChange={handleFilterChange} 
+            {/* Route for Offline Events */}
+            <Route
+              path="/offline-events"
+              element={
+                <EventList
+                  events={offlineEvents}
+                  filters={filters}
+                  onFilterChange={handleFilterChange}
+                />
+              }
             />
-          } 
-        />
 
-        {/* Route for Online Events */}
-        <Route 
-          path="/virtual-events" 
-          element={
-            <EventList 
-              events={onlineEvents} 
-              filters={filters} 
-              onFilterChange={handleFilterChange} 
+            {/* Route for Online Events */}
+            <Route
+              path="/virtual-events"
+              element={
+                <EventList
+                  events={onlineEvents}
+                  filters={filters}
+                  onFilterChange={handleFilterChange}
+                />
+              }
             />
-          } 
-        />
 
-        {/* Route for Contributors Page */}
-        <Route path="/contributors" element={<ContributorsPage />} />
-      </Routes>
+            {/* Route for Contributors Page */}
+            <Route path="/contributors" element={<ContributorsPage />} />
+          </Routes>
 
         </main>
         <Footer />
