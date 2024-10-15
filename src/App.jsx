@@ -8,15 +8,13 @@ import Contact from './pages/Contact';
 import offlineEventsData from './data/offlineEventsData.json';
 import onlineEventsData from './data/onlineEventsData.json';
 import HomePage from './components/HomePage';
-<<<<<<< HEAD
 import './index.css';
 import { fetchOfflineEvents, fetchOnlineEvents } from './services/eventsservice';
-=======
 import { FavoritesProvider } from './components/FavoritesContext';
 import './index.css';
 import Favorites from './components/Favorites';
 import ScrollToTopButton from "./components/ScrollToTopButton";
->>>>>>> refs/remotes/origin/main
+
 
 function App() {
   const [offlineEvents, setOfflineEvents] = useState([]);
