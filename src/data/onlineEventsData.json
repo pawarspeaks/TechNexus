@@ -110,5 +110,45 @@
     "description": "Unleash the power of MongoDB Atlas on AWS to build solutions that make a real difference.",
     "image": "/images/onlineEvents/MongoDB-aws.png",
     "link": "https://mongodb-ai.devpost.com/"
+  },
+  {
+    "id": 15,
+    "title": "ignITe Challenge",
+    "date": "2024-10-15",
+    "description": "Join Asian Paints hiring challenge “ignITe” and showcase your coding skills. Compete with other tech enthusiasts and impress our team of experts.",
+    "image": "/images/onlineEvents/b498e93f8a-asian_paints_banner.jpg",
+    "link": "https://assessment.hackerearth.com/challenges/new/hiring/ignite-hiring-challenge/"
+  },
+  {
+    "id": 16,
+    "title": "GSK E^3 - Engaging and Exciting minds for Excellence 2024",
+    "date": "2024-10-15",
+    "description": "GSK Pharmaceuticals Limited is back with its riveting strategy competition, Engaging and Exciting minds for Excellence (E^3) 2024, which puts to test your expertise and out-of-the-box thinking skills in connecting with the intended audience and penetrate the market to tap potential stakeholders.",
+    "image": "/images/onlineEvents/gsk2024.webp",
+    "link": "https://unstop.com/competitions/gsk-e3-engaging-and-exciting-minds-for-excellence-2024-glaxosmithkline-pharmaceuticals-limited-1177561"
+  },
+  {
+    "id": 17,
+    "title": "Unstop's Got Latent",
+    "date": "2024-10-15",
+    "description": "Unstop is looking for individuals who wear creativity like a charm, can turn their hobby into talent, and know exactly how to put classroom lessons to use.",
+    "image": "/images/onlineEvents/670e3ca72f94e_unstops-got-latent.webp",
+    "link": "https://unstop.com/competitions/unstops-got-latent-unstop-1170608"
+  },
+  {
+    "id": 18,
+    "title": "Red Hat and Intel AI Hackathon",
+    "date": "2024-10-15",
+    "description": "Gen AI and Retrieval-Augmented Generation (RAG) is here!  This is your chance to explore the formidable combination of Intel®  Xeon® Processors with AMX (Advanced Matrix Extensions), Intel OpenVINO™, and Red Hat OpenShift AI.",
+    "image": "/images/onlineEvents/full_width (1).png",
+    "link": "https://redhat-intel.devpost.com/"
+  },
+  {
+    "id": 19,
+    "title": "Microsoft Fabric and AI Learning Hackathon",
+    "date": "2024-10-15",
+    "description": "This is your chance to dive deep into the future of AI and cloud innovation, leveraging the powerful capabilities of Microsoft Fabric and Azure OpenAI services.",
+    "image": "/images/onlineEvents/Screenshot 2024-10-16 012348.png",
+    "link": "https://microsoftfabric.devpost.com/"
   }
 ]
