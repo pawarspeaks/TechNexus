@@ -62,7 +62,7 @@ function App() {
             />
             <Route path="/contributors" element={<ContributorsPage />} />
             <Route path="/favorites" element={<Favorites />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactForm />} />
           </Routes>
         </main>
         <Footer />
