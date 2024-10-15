@@ -50,9 +50,11 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ className, childre
             {latestContributors.map((contributor) => (
               <div key={contributor.login} className="flex flex-col items-center">
                 <Link href={contributor.html_url} target="_blank">
-                  <img
+                  <Image
                     src={contributor.avatar_url}
                     alt={contributor.login}
+                    width={48} // Set width for the avatar
+                    height={48} // Set height for the avatar
                     className="w-12 h-12 rounded-full border border-secondary hover:border-primary transition-all"
                   />
                 </Link>
@@ -95,9 +97,11 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ className, childre
             {contributors.map((contributor) => (
               <div key={contributor.login} className="flex flex-col items-center">
                 <Link href={contributor.html_url} target="_blank">
-                  <img
+                  <Image
                     src={contributor.avatar_url}
                     alt={contributor.login}
+                    width={64}
+                    height={64}
                     className="w-16 h-16 rounded-full border border-secondary hover:border-primary transition-all"
                   />
                 </Link>

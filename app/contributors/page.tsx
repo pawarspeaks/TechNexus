@@ -1,10 +1,11 @@
 "use client"
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const Contributors = () => {
     const [contributors, setContributors] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null); 
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         const fetchContributors = async () => {
@@ -47,18 +48,20 @@ const Contributors = () => {
 
     return (
         <div className="bg-background min-h-screen p-5">
-            <h2 className="text-3xl  my-8 font-bold md:text-4xl text-center tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-200 via-primary to-indigo-200">
+            <h2 className="text-3xl my-8 font-bold md:text-4xl text-center tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-200 via-primary to-indigo-200">
                 Our Precious Contributors
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:mx-36 gap-5">
                 {contributors.map((contributor: any) => (
-                    <div key={contributor.login} className="bg-card p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"> {/* Enhanced hover effect */}
-                        <img
-                            src={contributor.avatar_url}
+                    <div key={contributor.login} className="bg-card p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+                        <Image
+                            src={contributor.avatar_url || '/path/to/default/image.png'} // Use a default image if avatar_url is invalid
                             alt={contributor.login}
-                            className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white shadow-md" // Added border and shadow
+                            width={250}
+                            height={250}
+                            className="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-white shadow-md"
                         />
-                        <h3 className="text-xl font-semibold text-white text-center">{contributor.login}</h3> {/* Enhanced typography */}
+                        <h3 className="text-xl font-semibold text-white text-center">{contributor.login}</h3>
                         <p className="text-gray-200 text-center">Contributions: {contributor.contributions}</p>
                         <a
                             href={contributor.html_url}

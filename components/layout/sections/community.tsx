@@ -58,7 +58,13 @@ const CommunitySection = () => {
                             </div>
                         </div>
                         <div className="relative mt-6 h-30 lg:mt-4">
-                            <img className="absolute left-0 top-0 w-[80rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="CodeINBlogs" />
+                            <Image
+                                src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
+                                alt="CodeINBlogs"
+                                width={800} // Add width
+                                height={600} // Add height
+                                className="absolute left-0 top-0 w-[80rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                            />
                         </div>
                     </div>
                 </div>

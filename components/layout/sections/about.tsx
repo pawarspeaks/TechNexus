@@ -103,7 +103,7 @@ export const BenefitsSection = () => {
                     >
                         <h3 className="text-2xl font-bold">Contribute Year-Round</h3>
                         <p className="text-xl text-muted-foreground mb-8">
-                            The spirit of open-source collaboration doesn't end with Hacktoberfest or any open source event. At TechNexus, we believe in fostering a community of continuous contribution. Your input shapes the future of our global tech community.
+                            The spirit of open-source collaboration doesn&apos;t end with Hacktoberfest or any open source event. At TechNexus, we believe in fostering a community of continuous contribution. Your input shapes the future of our global tech community.
                         </p>
                         <Button asChild className="mb-4">
                             <a href="https://github.com/" target="_blank">

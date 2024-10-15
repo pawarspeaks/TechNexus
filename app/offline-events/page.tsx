@@ -142,7 +142,7 @@ const EventsPage = () => {
                                 </div>
                                 <div className="flex justify-center w-full md:w-1/3">
                                     <div className="w-250 h-250 rounded-2xl border-1 border-[#363A42]">
-                                        <img
+                                        <Image
                                             src={event.image}
                                             alt={event.title}
                                             width={250}

@@ -44,7 +44,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ maxWidth = 'lg:max-w-s
                         </div>
 
                         <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-                            Welcome to the TechNexus! Let's innovate together.
+                            Welcome to the TechNexus! Let&apos;s innovate together.
                         </p>
 
                         <div className="space-y-4 md:space-y-0 md:space-x-4">
