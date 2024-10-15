@@ -44,6 +44,10 @@ const routeList: RouteProps[] = [
         label: "Contributor",
     },
     {
+        href: "/favourites",
+        label: "Favourites",
+    },
+    {
         href: "/#contact",
         label: "Contact",
     },
