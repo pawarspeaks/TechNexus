@@ -55,7 +55,6 @@ function Footer() {
                 />
               </motion.a>
 
-
               <motion.a 
                 href="https://dev-code-community.github.io/bio/" 
                 target="_blank"
