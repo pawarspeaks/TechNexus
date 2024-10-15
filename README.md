@@ -24,8 +24,8 @@ There are two main ways you can contribute to TechNexus:
 
 ### 1. Adding an Event to TechNexus (beginner friendly)
 
-1. Fork this repository (click the Fork button at the top of this page).
-2. Star the repository for your PR to be accepted.
+1. Star the repository for your PR to be accepted. [link](https://github.com/pawarspeaks/TechNexus)
+2. Fork this repository (click the Fork button at the top of this page).
 3. Follow [Dev Code Community](https://github.com/Dev-Code-Community) (ensure to do so to support our open source initiatives!)
 4. In your forked repo, which must be visible in your repositories, navigate to the `src/data` folder.
 5. Choose the relevant event type: `offlineEventsData.json` or `onlineEventsData.json`.
@@ -43,8 +43,8 @@ click and update your fork, to avoid conflicts and easier pull request acceptanc
 
 To contribute new features or improvements to the TechNexus website:
 
-1. Fork this repository.
-2. Star the repository for your PR to be accepted.
+1. Star the repository for your PR to be accepted. [link](https://github.com/pawarspeaks/TechNexus)
+2. Fork this repository.
 3. Follow [Dev Code Community](https://github.com/Dev-Code-Community) (ensure to do so to support our open source initiatives!)
 4. Clone your fork:
    ```
