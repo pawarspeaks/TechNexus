@@ -12,6 +12,8 @@ import { FavoritesProvider } from './components/FavoritesContext';
 import './index.css';
 import Favorites from './components/Favorites';
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   const [offlineEvents, setOfflineEvents] = useState([]);
