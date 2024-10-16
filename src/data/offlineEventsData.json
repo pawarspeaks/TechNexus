@@ -106,5 +106,14 @@
       "description": "The aim of the conference is to highlight the latest advances, problems and challenges and to present the latest research results in the field of soft computing with a link to scientific research and its practical implementation. ",
       "image": "public/images/offlineEvents/g81.jpg",
       "link": "http://2018.socta.in/"
+    },
+    {
+      "id": 13,
+      "title": "AI Reality Tour Mumbai",
+      "date": "2024-10-24",
+      "location": "Mumbai, India",
+      "description": "This year’s AI Reality Tour is making a stop in Mumbai, where you will learn how your organisation can leverage the latest advancements in AI to maximise the value of your data ",
+      "image": "public/images/offlineEvents/dwnld.jpg",
+      "link": "https://www.eventbrite.com/e/ai-reality-tour-mumbai-tickets-1029626208707?aff=ebdssbdestsearch&_gl=1*1j0z2eg*_up*MQ..*_ga*MTI0MjY3MzcwMC4xNzI5MTA0NjU4*_ga_TQVES5V6SH*MTcyOTEwNDY1OC4xLjAuMTcyOTEwNDY1OC4wLjAuMA.."
     }
   ]
