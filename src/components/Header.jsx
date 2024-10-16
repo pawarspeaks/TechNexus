@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../HamburgerMenu.css';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isShrunk, setIsShrunk] = useState(false);
+
+  // Effect to handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 150) {
+        setIsShrunk(true);
+      } else {
+        setIsShrunk(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const containerVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -40,7 +57,8 @@ function Header() {
 
   return (
     <motion.header
-      className="bg-gray-900 text-white p-6"
+      // className={`sticky bg-gray-900 text-white p-6 border-2 border-gray-500 m-0 lg:m-6 rounded-2xl ${isShrunk ? "max-w-6xl" : "max-w-screen-2xl"} `}
+      className={`flex flex-col md:flex-row items-center justify-between bg-gray-900 z-50 bg-opacity-60 backdrop-blur-lg text-white p-3 rounded-xl border-2 border-gray-500 sticky md:top-7 top-0 transition-all duration-500 ease-in mx-auto w-full ${isShrunk ? "max-w-6xl" : "max-w-screen-2xl"}`}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
