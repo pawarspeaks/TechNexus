@@ -8,6 +8,11 @@ function EventList({ events }) {
   const eventsPerPage = 10;
   const initialFilters = { eventName: '', startDate: '', endDate: '', location: '', sortBy: '' };
   const [filters, setFilters] = useState(initialFilters);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   
   // Filter the events based on the provided filters
   const filteredEvents = events.filter(event => {
@@ -23,21 +28,7 @@ function EventList({ events }) {
       !filters.location ||
       event.location.toLowerCase().includes(filters.location.toLowerCase());
 
-    const namePass =
-      !filters.eventName ||
-      event.title.toLowerCase().includes(filters.eventName.toLowerCase());
-
-    return datePass && locationPass && namePass;
-  }).sort((a,b)=>{
-    const firstDate = new Date(a.date);
-    const secondDate = new Date(b.date);
-    if(filters.sortBy === 'earliest') {
-      return firstDate.getTime() - secondDate.getTime();
-    } else if(filters.sortBy === 'upcoming') {
-      return secondDate.getTime() - firstDate.getTime();
-    } else {
-      return 0;
-    }
+    return datePass && locationPass;
   });
 
   // Calculate total pages
@@ -111,6 +102,9 @@ function EventList({ events }) {
         >
           Event List
         </motion.h1>
+
+        {/* Dropdown Menu */}
+       
 
         {/* Filter Form */}
         <motion.div variants={itemVariants}>

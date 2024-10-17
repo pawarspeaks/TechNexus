@@ -57,6 +57,41 @@ nav a:hover {
   color: var(--accent-color);
 }
 
+/* Dropdown Menu Fix */
+.relative.group {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: block;
+ 
+  position:absolute;
+  justify-content: space-between;
+  z-index:1;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  background-color: rgba(0, 0, 0, 0.3); /* Darker translucent background */
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(108, 99, 255, 0.7);
+  color: white;
+}
+
+.relative.group:hover .dropdown-menu {
+  display: flex; /* Show on hover over the group */
+}
+
 /* Event List Styles */
 .event-sort {
   margin-bottom: 2rem;
@@ -84,6 +119,7 @@ nav a:hover {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  position:relative
 }
 
 .event-image {
@@ -146,7 +182,7 @@ footer {
 }
 
 .social-icons a {
-  color: var(--text-primary);
+  color: var (--text-primary);
   font-size: 1.5rem;
 }
 
@@ -154,37 +190,6 @@ footer {
   margin-top: 2rem;
   text-align: center;
   color: var(--text-secondary);
-}
-
-/* Contributors Page Styles */
-.contributors-page h1 {
-  color: var(--accent-color);
-}
-
-.contributors-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.contributor-card {
-  background-color: var(--bg-secondary);
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.contributor-card h2 {
-  color: var(--accent-color);
-}
-
-.contributor-card a {
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-.space-x-4{
-  padding: 10px;
-  margin: 20px;
 }
 
 /* Responsive Design */
@@ -203,6 +208,7 @@ footer {
   header {
     flex-direction: column;
   }
+  
 
   nav ul {
     flex-direction: column;
@@ -215,6 +221,10 @@ footer {
 
   .event-image {
     height: 150px;
+  }
+
+  .dropdown-menu {
+    flex-direction: row; /* Column layout for smaller screens */
   }
 }
 

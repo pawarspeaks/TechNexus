@@ -23,6 +23,7 @@ function App() {
   }, []);
 
   useEffect(() => {
+    console.log("Online Events Data:", onlineEventsData);  // Ensure this prints correctly
     setOnlineEvents(onlineEventsData);
   }, []);
 
@@ -70,3 +71,4 @@ function App() {
 }
 
 export default App;
+ 
