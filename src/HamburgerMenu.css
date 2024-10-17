@@ -33,7 +33,14 @@
   .menu.open {
     display: block;
   }
-  
+  .dropdown-menu {
+    display: block; /* Make sure dropdown is always block */
+    position: absolute; /* Position it absolutely */
+    z-index: 30; /* Higher z-index to appear above other content */
+    left: 0; /* Align to the left */
+    margin-top: 8px; /* Space from the button */
+}
+
   @media (min-width: 768px) {
     .hamburger-icon {
       display: none;

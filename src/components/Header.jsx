@@ -5,34 +5,24 @@ import '../HamburgerMenu.css';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const containerVariants = {
-    hidden: { opacity: 0, y: -50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 20,
-        staggerChildren: 0.1
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0 }
-  };
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    setIsDropdownOpen(false); // Close dropdown if menu is closed
+  };
+
+  const toggleDropdown = (e) => {
+    e.stopPropagation();
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
   };
 
   const navItems = [
     { to: "/", label: "Home" },
-    { to: "/offline-events", label: "Offline Events" },
-    { to: "/virtual-events", label: "Online Events" },
     { to: "/contributors", label: "Contributors ♥️" },
     { to: "/favorites", label: "Favorites ♥️" },
     { to: "/contact", label: "Contact" }
@@ -41,14 +31,11 @@ function Header() {
   return (
     <motion.header
       className="bg-gray-900 text-white p-6"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
+      onClick={closeDropdown} // Close dropdown on clicking outside
     >
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="flex justify-between items-center mb-6"
-          variants={itemVariants}
         >
           {/* Logo 1 */}
           <motion.a
@@ -90,10 +77,7 @@ function Header() {
 
         {/* Navigation Menu */}
         <nav className={`md:flex md:justify-center md:space-x-6 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <motion.ul 
-            className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 flex-wrap"
-            variants={itemVariants}
-          >
+          <motion.ul className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 flex-wrap">
             {navItems.map((item, index) => (
               <motion.li key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                 <Link
@@ -104,6 +88,26 @@ function Header() {
                 </Link>
               </motion.li>
             ))}
+
+            {/* Dropdown for Events */}
+            <div className="relative group">
+              <button
+                className="dropbtn text-lg font-medium hover:text-purple-400 transition-colors duration-300"
+                onClick={toggleDropdown}
+              >
+                Events
+              </button>
+              {isDropdownOpen && (
+                <div className="dropdown-menu">
+                  <Link to="/offline-events" className="block text-white" onClick={closeDropdown}>
+                    Offline Events
+                  </Link>
+                  <Link to="/virtual-events" className="block text-white" onClick={closeDropdown}>
+                    Online Events
+                  </Link>
+                </div>
+              )}
+            </div>
           </motion.ul>
         </nav>
       </div>

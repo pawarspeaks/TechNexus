@@ -8,6 +8,11 @@ function EventList({ events }) {
   const eventsPerPage = 10;
   const initialFilters = { eventName: '', startDate: '', endDate: '', location: '', sortBy: '' };
   const [filters, setFilters] = useState(initialFilters);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   
   // Filter the events based on the provided filters
   const filteredEvents = events.filter(event => {
@@ -19,7 +24,7 @@ function EventList({ events }) {
       (!startDate || eventDate >= startDate) &&
       (!endDate || eventDate <= endDate);
 
-      const locationPass =
+    const locationPass =
       !filters.location ||
       event.location.toLowerCase().includes(filters.location.toLowerCase());
 
@@ -97,6 +102,9 @@ function EventList({ events }) {
         >
           Event List
         </motion.h1>
+
+        {/* Dropdown Menu */}
+       
 
         {/* Filter Form */}
         <motion.div variants={itemVariants}>
