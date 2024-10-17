@@ -110,5 +110,13 @@
   "description": "To learn Azure AI Studio - a cutting-edge 'code first' experience for building generative AI copilots along with some interesting topics.",
   "image": "/images/onlineEvents/ddd.png",
   "link": "https://www.meetup.com/pune-tech-community/events/303915867/?eventOrigin=group_upcoming_events&_gl=1*1xu42tm*_up*MQ..*_ga*NzE4NDUwMDQzLjE3MjkxMDQ2NjE.*_ga_NP82XMKW0P*MTcyOTEwNDY2MS4xLjAuMTcyOTEwNDY2MS4wLjAuMA.."
+},
+  {
+    "id": 15,
+  "title": "Implementing Responsible AI Practices in Azure AI Studio",
+  "date": "2024-11-19",
+  "description": "The principles of Responsible AI and their role in AI development , How Azure AI Studio utilizes content safety for ethical AI usage.",
+  "image": "/images/onlineEvents/microsoftazure-featured.png",
+  "link": "https://www.meetup.com/pune-tech-community/events/303917216/?eventOrigin=group_events_list"
 }
 ]
