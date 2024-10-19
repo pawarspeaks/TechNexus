@@ -41,25 +41,45 @@ function Footer() {
       className="bg-gray-900 text-white p-8"
       id="contact"
     >
+    <div className="flex flex-wrap gap-16 top-10 justify-between">
+       <motion.a 
+                href="https://devcode-technexus.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+              >
+                <img 
+                  src="/images/logos/logo-no-background.png" 
+                  alt="TechNexus Logo" 
+                  className="h-16 w-auto ml-3 "
+                />
+              </motion.a>
 
-      <div className="max-w-6xl mx-auto">
-        <motion.h2
-          className="text-4xl font-bold text-center mb-12 text-purple-400"
-          variants={itemVariants}
-        >
-          Contact Us
-        </motion.h2>
-        <div className="flex flex-wrap -mx-4">
+
+              <motion.a 
+                href="https://dev-code-community.github.io/bio/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+              >
+                <img 
+                  src="/images/logos/DevCode-without-BG.png" 
+                  alt="Dev Code Logo" 
+                  className="h-16 w-auto "
+                />
+              </motion.a>
+
+              <div className="flex  flex-wrap -mx-4 ml-3">
           <motion.div className="w-full md:w-1/2 px-4 mb-8" variants={itemVariants}>
-            <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
-            <motion.p
-  className="mb-2"
+            <h3 className="text-2xl font-semibold mb-4 ml-2">Get in Touch</h3>
+            <motion.p 
+              className="mb-2"
               whileHover={{ scale: 1.05, color: "#bb86fc" }}
             >
               <i className="fa-sharp fa-solid fa-paper-plane mr-2"></i>
               <a href="mailto:iampratappawar@gmail.com">iampratappawar@gmail.com</a>
             </motion.p>
-            <motion.p
+            <motion.p 
               className="mb-4"
               whileHover={{ scale: 1.05, color: "#bb86fc" }}
             >
@@ -89,32 +109,7 @@ function Footer() {
 
 
             <div className="flex items-center justify-between">
-
-              <motion.a
-                href="https://devcode-technexus.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-              >
-                <img
-                  src="/images/logos/logo-no-background.png"
-                  alt="TechNexus Logo"
-                  className="h-16 w-auto"
-                />
-              </motion.a>
-              <motion.a
-                href="https://dev-code-community.github.io/bio/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-              >
-                <img
-                  src="/images/logos/DevCode-without-BG.png"
-                  alt="Dev Code Logo"
-                  className="h-16 w-auto"
-                />
-              </motion.a>
-
+             
             </div>
           </motion.div>
          
