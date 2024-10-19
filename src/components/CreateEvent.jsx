@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, useMapEvents, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import { createEvent } from '../services/eventsservice';
+import { useNavigate, useParams } from 'react-router-dom'
 
 const CreateEvent = () => {
+
+    const navigate = useNavigate()
+
     const [formData, setFormData] = useState({
         title: '',
         date: '',
         description: '',
         link: '',
+        type: '',
         location: { lat: 51.505, lng: -0.09 },
         amenity: '',
         street: '',
@@ -33,23 +39,10 @@ const CreateEvent = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            // const response = await fetch('http://localhost:3000/api/events', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify(formData),
-            // });
-            // if (!response.ok) {
-            //     throw new Error('Network response was not ok');
-            // }
+        createEvent(formData).then((response) => {
+            navigate('/offline-events');
+        });
 
-            alert('Event created successfully!');
-        } catch (error) {
-            console.error('Error creating event:', error);
-            alert('Error creating event');
-        }
     };
 
     const handleLocationSearch = async () => {
@@ -62,7 +55,6 @@ const CreateEvent = () => {
             if (data.length > 0) {
                 const newLocation = { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
                 setFormData({ ...formData, location: newLocation });
-                // map.setView(newLocation, 13);
             }
         } catch (error) {
             console.error('Error fetching location coordinates:', error);
@@ -136,7 +128,20 @@ const CreateEvent = () => {
                         className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
                 </div>
-
+                <div className="form-group">
+                    <label className="block text-sm font-medium text-gray-300">Event Type:</label>
+                    <select
+                        name="type"
+                        value={formData.type}
+                        onChange={handleChange}
+                        required
+                        className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    >
+                        <option value="">Select Type</option>
+                        <option value="offline">Offline</option>
+                        <option value="online">Online</option>
+                    </select>
+                </div>
                 <div className="form-group">
                     <label className="block text-sm font-medium text-gray-300">Event Location:</label>
                     <div className="flex space-x-2">

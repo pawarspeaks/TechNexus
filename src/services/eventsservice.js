@@ -1,5 +1,6 @@
-const API_BASE_URL = 'http://localhost:3000';
+import axios from 'axios';
 
+const API_BASE_URL = 'http://localhost:3000';
 
 const fetchEvents = async (endpoint) => {
     try {
@@ -17,3 +18,7 @@ const fetchEvents = async (endpoint) => {
   
   export const fetchOfflineEvents = () => fetchEvents('/events/offline');
   export const fetchOnlineEvents = () => fetchEvents('/events/online');
+
+  export const createEvent = (eventData) => {
+    return axios.post(`${API_BASE_URL}/createevent`, eventData);
+  }
