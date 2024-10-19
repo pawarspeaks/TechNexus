@@ -15,6 +15,8 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
+import ContactForm from './components/ContactForm';
+
 function App() {
   const [offlineEvents, setOfflineEvents] = useState([]);
   const [onlineEvents, setOnlineEvents] = useState([]);
@@ -62,7 +64,7 @@ function App() {
             />
             <Route path="/contributors" element={<ContributorsPage />} />
             <Route path="/favorites" element={<Favorites />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactForm />} />
           </Routes>
         </main>
         <Footer />
