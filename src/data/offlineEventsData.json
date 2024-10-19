@@ -104,20 +104,29 @@
       "date": "2024-11-21",
       "location": "Punjab, India",
       "description": "The aim of the conference is to highlight the latest advances, problems and challenges and to present the latest research results in the field of soft computing with a link to scientific research and its practical implementation. ",
-      "image": "public/images/offlineEvents/g81.jpg",
+      "image": "/images/offlineEvents/g81.jpg",
       "link": "http://2018.socta.in/"
     },
     {
       "id": 13,
+      "title": "Latitude59 Kenya Edition 2024",
+      "date": "2024-11-28",
+      "location": "A.S.K Dome, Nairobi, Kenya",
+      "description": "Join us for the Latitude59 Global Village event, a vibrant gathering of tech enthusiasts, startups, and innovators from around the world. This November, Latitude59 collaborates with Tech Safari to foster connections within the international tech community and explore opportunities in East Africa. This event will feature inspiring talks, networking opportunities, and discussions on the latest trends in technology and entrepreneurship. Be part of this unique experience, share ideas, and help shape the future of tech in Africa and beyond!",
+      "image": "/images/offlineEvents/latitude59.png",
+      "link": "https://latitude59.ee/kenya/"
+    },
+    {
+      "id": 14,
       "title": "AI Reality Tour Mumbai",
       "date": "2024-10-24",
       "location": "Mumbai, India",
       "description": "This year’s AI Reality Tour is making a stop in Mumbai, where you will learn how your organisation can leverage the latest advancements in AI to maximise the value of your data ",
-      "image": "public/images/offlineEvents/dwnld.jpg",
+      "image": "/images/offlineEvents/dwnld.jpg",
       "link": "https://www.eventbrite.com/e/ai-reality-tour-mumbai-tickets-1029626208707?aff=ebdssbdestsearch&_gl=1*1j0z2eg*_up*MQ..*_ga*MTI0MjY3MzcwMC4xNzI5MTA0NjU4*_ga_TQVES5V6SH*MTcyOTEwNDY1OC4xLjAuMTcyOTEwNDY1OC4wLjAuMA.."
-    },
+    } ,
     {
-      "id": 14,
+      "id": 15,
       "title": "Engiexpo Industrial Exhibition 2024 Pune",
       "date": "2024-11-28",
       "location": "Pune, India",
@@ -126,3 +135,5 @@
       "link": "https://allevents.in/pune/engiexpo-industrial-exhibition-2024-pune/80001535828708"
     }
   ]
+
+
