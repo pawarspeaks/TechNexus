@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import locationsData from '../data/offlineEventsData.json';
 
 function FilterForm({ filters, onFilterChange, onReset }) {
   const location = useLocation();
+  const [locations, setLocations] = useState([]);
+
+  useEffect(() => {
+    const uniqueLocations = Array.from(new Set(locationsData.map(item=>item.location)));
+    setLocations(uniqueLocations); // Set the unique locations to state variable
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -83,7 +90,7 @@ function FilterForm({ filters, onFilterChange, onReset }) {
         />
       </motion.div>
 
-      {/* Location Filter */}
+      {/* Sort By Filter */}
       <motion.div className="mb-6" variants={inputVariants}>
         <label htmlFor="sort-by" className="block text-purple-400 mb-2">
           Sort By:
@@ -101,6 +108,7 @@ function FilterForm({ filters, onFilterChange, onReset }) {
         </motion.select>
       </motion.div>
 
+      {/* Location Filter (Dropdown with unique locations fetched from offline events json file) */}
       <AnimatePresence>
         {location.pathname !== '/virtual-events' && (
           <motion.div 
@@ -111,16 +119,23 @@ function FilterForm({ filters, onFilterChange, onReset }) {
             exit="hidden"
           >
             <label htmlFor="sort-location" className="block text-purple-400 mb-2">Location:</label>
-            <motion.input
-              type="text"
+            <motion.select  
+              //type="text"
               id="sort-location"
               name="location"
               value={filters.location}
-              placeholder="Search by location"
+              //placeholder="Search by location"
               onChange={handleInputChange}
               className="w-full bg-gray-800 text-white p-2 rounded border border-purple-500 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50"
               whileFocus={{ scale: 1.02 }}
-            />
+            >
+            <motion.option value="">Select Location</motion.option>
+              {locations.map((loc, index) => (  // <-- Populating the dropdown with unique locations
+                <motion.option key={index} value={loc}>
+                  {loc}
+                </motion.option>
+              ))}
+            </motion.select>
           </motion.div>
         )}
       </AnimatePresence>
