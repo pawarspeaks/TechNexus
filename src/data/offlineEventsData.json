@@ -104,7 +104,7 @@
       "date": "2024-11-21",
       "location": "Punjab, India",
       "description": "The aim of the conference is to highlight the latest advances, problems and challenges and to present the latest research results in the field of soft computing with a link to scientific research and its practical implementation. ",
-      "image": "public/images/offlineEvents/g81.jpg",
+      "image": "/images/offlineEvents/g81.jpg",
       "link": "http://2018.socta.in/"
     },
     {
@@ -113,7 +113,7 @@
       "date": "2024-11-28",
       "location": "A.S.K Dome, Nairobi, Kenya",
       "description": "Join us for the Latitude59 Global Village event, a vibrant gathering of tech enthusiasts, startups, and innovators from around the world. This November, Latitude59 collaborates with Tech Safari to foster connections within the international tech community and explore opportunities in East Africa. This event will feature inspiring talks, networking opportunities, and discussions on the latest trends in technology and entrepreneurship. Be part of this unique experience, share ideas, and help shape the future of tech in Africa and beyond!",
-      "image": "public/images/onlineEvents/latitude59.png",
+      "image": "/images/offlineEvents/latitude59.png",
       "link": "https://latitude59.ee/kenya/"
     }
     
