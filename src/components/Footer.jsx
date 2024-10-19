@@ -27,10 +27,10 @@ const Footer = () => {
             <p className="text-base text-gray-400 mb-4">FOLLOW US:</p>
             <div className="flex justify-center md:justify-start space-x-4">
               {[
-                { icon: Instagram, name: 'Instagram', link: 'https://www.instagram.com/dev_codecommunity/' },
+                { icon: Instagram, name: 'Instagram', link: 'https://www.instagram.com/devcode.community/' },
                 { icon: Linkedin, name: 'LinkedIn', link: 'https://www.linkedin.com/company/dev-code-community/' },
                 { icon: Github, name: 'GitHub', link: 'https://github.com/Dev-Code-Community' },
-                { icon: Twitter, name: 'Twitter', link: 'https://twitter.com/devcodecommunity' },
+                { icon: Twitter, name: 'Twitter', link: 'https://x.com/_DEVCODE_' },
               ].map(({ icon: Icon, name, link }) => (
                 <a 
                   key={name} 
@@ -54,7 +54,7 @@ const Footer = () => {
           <h3 className="text-3xl font-semibold mb-4">Share</h3>
           <ul className="space-y-2">
             {[
-              { name: 'X (Twitter)', link: 'https://twitter.com/share?url=https://twitter.com/devcodecommunity' },
+              { name: 'X (Twitter)', link: 'https://twitter.com/share?url=https://x.com/_DEVCODE_' },
               { name: 'WhatsApp', link: 'https://api.whatsapp.com/send?text=Check%20this%20out!%20https://chat.whatsapp.com/F2njAIyHZzyEoE8BP75crT' },
               { name: 'LinkedIn', link: 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/dev-code-community/' },
               { name: 'Telegram', link: 'https://t.me/share/url?url=https://t.me/DevCodeCommunity' }
