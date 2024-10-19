@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import EventCard from './EventCard';
 import FilterForm from './FilterForm';
+import { Link } from 'react-router-dom';
 
 function EventList({ events }) {
   const [currentPage, setCurrentPage] = useState(1);
   const eventsPerPage = 10;
   const initialFilters = { eventName: '', startDate: '', endDate: '', location: '', sortBy: '' };
   const [filters, setFilters] = useState(initialFilters);
-  
+
   // Filter the events based on the provided filters
   const filteredEvents = events.filter(event => {
     const eventDate = new Date(event.date);
@@ -28,12 +29,12 @@ function EventList({ events }) {
       event.title.toLowerCase().includes(filters.eventName.toLowerCase());
 
     return datePass && locationPass && namePass;
-  }).sort((a,b)=>{
+  }).sort((a, b) => {
     const firstDate = new Date(a.date);
     const secondDate = new Date(b.date);
-    if(filters.sortBy === 'earliest') {
+    if (filters.sortBy === 'earliest') {
       return firstDate.getTime() - secondDate.getTime();
-    } else if(filters.sortBy === 'upcoming') {
+    } else if (filters.sortBy === 'upcoming') {
       return secondDate.getTime() - firstDate.getTime();
     } else {
       return 0;
@@ -105,12 +106,23 @@ function EventList({ events }) {
         animate="visible"
         variants={containerVariants}
       >
-        <motion.h1 
+        <motion.h1
           className="text-4xl font-bold text-center mb-8 text-purple-400"
           variants={itemVariants}
         >
           Event List
         </motion.h1>
+
+        {/* Link to Create Event Page */}
+        <motion.div className="mb-8 text-center" variants={itemVariants}>
+          <Link
+            to="/createevent"
+            className="inline-block px-4 py-2 bg-purple-600 text-white font-semibold rounded-md shadow-sm hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+          >
+            Create New Event
+          </Link>
+        </motion.div>
+
 
         {/* Filter Form */}
         <motion.div variants={itemVariants}>
@@ -120,7 +132,7 @@ function EventList({ events }) {
         {/* Display paginated events */}
         <AnimatePresence>
           {paginatedEvents.length > 0 ? (
-            <motion.div 
+            <motion.div
               className="grid gap-6 mt-8"
               variants={containerVariants}
             >
@@ -148,18 +160,17 @@ function EventList({ events }) {
 
         {/* Pagination Controls */}
         {filteredEvents.length > eventsPerPage && (
-          <motion.div 
+          <motion.div
             className="flex justify-center items-center space-x-4 mt-8"
             variants={itemVariants}
           >
             <motion.button
               onClick={goToFirstPage}
               disabled={currentPage === 1}
-              className={`px-4 py-2 rounded-full ${
-                currentPage === 1
+              className={`px-4 py-2 rounded-full ${currentPage === 1
                   ? 'bg-gray-600 cursor-not-allowed'
                   : 'bg-purple-500 hover:bg-purple-600'
-              } transition-colors duration-300`}
+                } transition-colors duration-300`}
               whileHover={currentPage !== 1 ? { scale: 1.05 } : {}}
               whileTap={currentPage !== 1 ? { scale: 0.95 } : {}}
             >
@@ -169,29 +180,27 @@ function EventList({ events }) {
             <motion.button
               onClick={goToPreviousPage}
               disabled={currentPage === 1}
-              className={`px-4 py-2 rounded-full ${
-                currentPage === 1
+              className={`px-4 py-2 rounded-full ${currentPage === 1
                   ? 'bg-gray-600 cursor-not-allowed'
                   : 'bg-purple-500 hover:bg-purple-600'
-              } transition-colors duration-300`}
+                } transition-colors duration-300`}
               whileHover={currentPage !== 1 ? { scale: 1.05 } : {}}
               whileTap={currentPage !== 1 ? { scale: 0.95 } : {}}
             >
               Previous
             </motion.button>
-            
+
             <span className="text-lg">
               Page {currentPage} of {totalPages}
             </span>
-            
+
             <motion.button
               onClick={goToNextPage}
               disabled={currentPage === totalPages}
-              className={`px-4 py-2 rounded-full ${
-                currentPage === totalPages
+              className={`px-4 py-2 rounded-full ${currentPage === totalPages
                   ? 'bg-gray-600 cursor-not-allowed'
                   : 'bg-purple-500 hover:bg-purple-600'
-              } transition-colors duration-300`}
+                } transition-colors duration-300`}
               whileHover={currentPage !== totalPages ? { scale: 1.05 } : {}}
               whileTap={currentPage !== totalPages ? { scale: 0.95 } : {}}
             >
@@ -201,11 +210,10 @@ function EventList({ events }) {
             <motion.button
               onClick={goToLastPage}
               disabled={currentPage === totalPages}
-              className={`px-4 py-2 rounded-full ${
-                currentPage === totalPages
+              className={`px-4 py-2 rounded-full ${currentPage === totalPages
                   ? 'bg-gray-600 cursor-not-allowed'
                   : 'bg-purple-500 hover:bg-purple-600'
-              } transition-colors duration-300`}
+                } transition-colors duration-300`}
               whileHover={currentPage !== totalPages ? { scale: 1.05 } : {}}
               whileTap={currentPage !== totalPages ? { scale: 0.95 } : {}}
             >

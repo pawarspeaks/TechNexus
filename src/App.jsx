@@ -8,13 +8,14 @@ import Contact from './pages/Contact';
 import offlineEventsData from './data/offlineEventsData.json';
 import onlineEventsData from './data/onlineEventsData.json';
 import HomePage from './components/HomePage';
+import './index.css';
+import { fetchOfflineEvents, fetchOnlineEvents } from './services/eventsservice';
 import { FavoritesProvider } from './components/FavoritesContext';
 import './index.css';
 import Favorites from './components/Favorites';
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import CreateEvent from './components/CreateEvent';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
-
 import ContactForm from './components/ContactForm';
 
 function App() {
@@ -23,11 +24,27 @@ function App() {
   const [filters, setFilters] = useState({ startDate: '', endDate: '', location: '' });
 
   useEffect(() => {
-    setOfflineEvents(offlineEventsData);
+    const loadOfflineEvents = async () => {
+      try {
+        const data = await fetchOfflineEvents();
+        setOfflineEvents(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    loadOfflineEvents();
   }, []);
 
   useEffect(() => {
-    setOnlineEvents(onlineEventsData);
+    const loadOnlineEvents = async () => {
+      try {
+        const data = await fetchOnlineEvents();
+        setOnlineEvents(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    loadOnlineEvents();
   }, []);
 
   const handleFilterChange = (newFilters) => {
@@ -62,6 +79,8 @@ function App() {
                 />
               } 
             />
+            <Route path="/createevent" element={<CreateEvent />} />
+            
             <Route path="/contributors" element={<ContributorsPage />} />
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/contact" element={<ContactForm />} />
