@@ -16,21 +16,21 @@ function Footer() {
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
-        type: "spring", 
+      transition: {
+        type: 'spring',
         stiffness: 300,
         damping: 20,
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -41,57 +41,75 @@ function Footer() {
       className="bg-gray-900 text-white p-8"
       id="contact"
     >
-    <div className="flex flex-wrap gap-16 top-10 justify-between">
-       <motion.a 
-                href="https://devcode-technexus.vercel.app/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-              >
-                <img 
-                  src="/images/logos/logo-no-background.png" 
-                  alt="TechNexus Logo" 
-                  className="h-16 w-auto ml-3 "
-                />
-              </motion.a>
+      <div className="flex flex-wrap gap-16 top-10 justify-center  ">
+        <motion.a
+          href="https://devcode-technexus.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05 }}
+        >
+          <img
+            src="/images/logos/logo-no-background.png"
+            alt="TechNexus Logo"
+            className="h-16 w-auto ml-3 "
+          />
+        </motion.a>
 
+        <motion.a
+          href="https://dev-code-community.github.io/bio/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.05 }}
+        >
+          <img
+            src="/images/logos/DevCode-without-BG.png"
+            alt="Dev Code Logo"
+            className="h-16 w-auto "
+          />
+        </motion.a>
 
-              <motion.a 
-                href="https://dev-code-community.github.io/bio/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-              >
-                <img 
-                  src="/images/logos/DevCode-without-BG.png" 
-                  alt="Dev Code Logo" 
-                  className="h-16 w-auto "
-                />
-              </motion.a>
-
-              <div className="flex  flex-wrap -mx-4 ml-3">
-          <motion.div className="w-full md:w-1/2 px-4 mb-8" variants={itemVariants}>
-            <h3 className="text-2xl font-semibold mb-4 ml-2">Get in Touch</h3>
-            <motion.p 
-              className="mb-2"
-              whileHover={{ scale: 1.05, color: "#bb86fc" }}
+        <div className="flex justify-center flex-wrap mx-4 ml-3  ">
+          <motion.div
+            className="w-full px-4 mb-8  "
+            variants={itemVariants}
+          >
+            <h3 className="text-2xl w-full  font-semibold mb-4 whitespace-nowrap text-center">Get in Touch</h3>
+            <motion.p
+              className="mb-2 text-center"
+              whileHover={{ scale: 1.05, color: '#bb86fc' }}
             >
               <i className="fa-sharp fa-solid fa-paper-plane mr-2"></i>
-              <a href="mailto:iampratappawar@gmail.com">iampratappawar@gmail.com</a>
+              <a href="mailto:iampratappawar@gmail.com">
+                iampratappawar@gmail.com
+              </a>
             </motion.p>
-            <motion.p 
-              className="mb-4"
-              whileHover={{ scale: 1.05, color: "#bb86fc" }}
+            <motion.p
+              className="mb-4 text-center"
+              whileHover={{ scale: 1.05, color: '#bb86fc' }}
             >
               <i className="fa-sharp fa-solid fa-paper-plane mr-2"></i>
-              <a href="mailto:devcode.community@gmail.com">devcode.community@gmail.com</a>
+              <a href="mailto:devcode.community@gmail.com">
+                devcode.community@gmail.com
+              </a>
             </motion.p>
             <div className="flex space-x-4 mb-8">
               {[
-                { name: 'instagram', link: 'https://www.instagram.com/dev_codecommunity/' },
-                { name: 'linkedin', link: 'https://www.linkedin.com/company/dev-code-community/' },
-                { name: 'twitter', link: 'https://twitter.com/devcodecommunity' },
-                { name: 'github', link: 'https://github.com/Dev-Code-Community' }
+                {
+                  name: 'instagram',
+                  link: 'https://www.instagram.com/dev_codecommunity/',
+                },
+                {
+                  name: 'linkedin',
+                  link: 'https://www.linkedin.com/company/dev-code-community/',
+                },
+                {
+                  name: 'twitter',
+                  link: 'https://twitter.com/devcodecommunity',
+                },
+                {
+                  name: 'github',
+                  link: 'https://github.com/Dev-Code-Community',
+                },
               ].map((social) => (
                 <motion.a
                   key={social.name}
@@ -107,21 +125,12 @@ function Footer() {
               ))}
             </div>
 
-
-            <div className="flex items-center justify-between">
-             
-            </div>
+            <div className="flex items-center justify-between"></div>
           </motion.div>
-         
         </div>
-        </div>
+      </div>
       <div className="max-w-6xl mx-auto">
-           
-      
-        <motion.div 
-          className="text-center mt-12"
-          variants={itemVariants}
-        >
+        <motion.div className="text-center mt-12" variants={itemVariants}>
           <p>&copy; {currentYear} Dev Code &amp; TechNexus | Made with ♥️</p>
         </motion.div>
       </div>
