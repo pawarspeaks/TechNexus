@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, useMapEvents, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './CreateEvent.css'; // Import the CSS file
 
 const CreateEvent = () => {
     const [formData, setFormData] = useState({
@@ -9,7 +8,13 @@ const CreateEvent = () => {
         date: '',
         description: '',
         link: '',
-        location: { lat: 12.97679125932766, lng: 437.583389282226 },
+        location: { lat: 51.505, lng: -0.09 },
+        amenity: '',
+        street: '',
+        city: '',
+        country: '',
+        state: '',
+        postalCode: ''
     });
 
     const handleChange = (e) => {
@@ -47,6 +52,23 @@ const CreateEvent = () => {
         }
     };
 
+    const handleLocationSearch = async () => {
+        const { amenity, street, city, country, state, postalCode } = formData;
+        const query = `${amenity ? `amenity=${amenity}&` : ''}${street ? `street=${street}&` : ''}${city ? `city=${city}&` : ''}${state ? `state=${state}&` : ''}${country ? `country=${country}&` : ''}${postalCode ? `postalcode=${postalCode}&` : ''}`;
+        try {
+            const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&${query}`);
+            const data = await response.json();
+            console.log('response from openstreetmap:', data[0].lat, data[0].lon);
+            if (data.length > 0) {
+                const newLocation = { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+                setFormData({ ...formData, location: newLocation });
+                // map.setView(newLocation, 13);
+            }
+        } catch (error) {
+            console.error('Error fetching location coordinates:', error);
+        }
+    };
+
     const LocationMarker = () => {
         useMapEvents({
             click: handleMapClick,
@@ -55,6 +77,16 @@ const CreateEvent = () => {
         return formData.location === null ? null : (
             <Marker position={formData.location}></Marker>
         );
+    };
+
+    const MapUpdater = () => {
+        const map = useMap();
+        React.useEffect(() => {
+            if (formData.location) {
+                map.setView(formData.location, 13);
+            }
+        }, [formData.location, map]);
+        return null;
     };
 
     return (
@@ -104,6 +136,68 @@ const CreateEvent = () => {
                         className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
                 </div>
+
+                <div className="form-group">
+                    <label className="block text-sm font-medium text-gray-300">Event Location:</label>
+                    <div className="flex space-x-2">
+                        <input
+                            type="text"
+                            name="amenity"
+                            value={formData.amenity}
+                            onChange={handleChange}
+                            placeholder="Amenity"
+                            className="mt-1 block w-1/6 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        />
+                        <input
+                            type="text"
+                            name="street"
+                            value={formData.street}
+                            onChange={handleChange}
+                            placeholder="Street"
+                            className="mt-1 block w-1/6 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        />
+                        <input
+                            type="text"
+                            name="city"
+                            value={formData.city}
+                            onChange={handleChange}
+                            placeholder="City"
+                            className="mt-1 block w-1/6 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        />
+                        <input
+                            type="text"
+                            name="state"
+                            value={formData.state}
+                            onChange={handleChange}
+                            placeholder="State"
+                            className="mt-1 block w-1/6 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        />
+                        <input
+                            type="text"
+                            name="country"
+                            value={formData.country}
+                            onChange={handleChange}
+                            placeholder="Country"
+                            className="mt-1 block w-1/6 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        />
+                        <input
+                            type="text"
+                            name="postalCode"
+                            value={formData.postalCode}
+                            onChange={handleChange}
+                            placeholder="Postal Code"
+                            className="mt-1 block w-1/6 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        />
+                        <button
+                            type="button"
+                            onClick={handleLocationSearch}
+                            className="mt-1 w-1/6 py-2 px-4 bg-indigo-600 text-white font-semibold rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        >
+                            Search
+                        </button>
+                    </div>
+                </div>
+
                 <div className="form-group">
                     <label className="block text-sm font-medium text-gray-300">Event Location:</label>
                     <MapContainer
@@ -116,6 +210,7 @@ const CreateEvent = () => {
                             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         />
                         <LocationMarker />
+                        <MapUpdater />
                     </MapContainer>
                 </div>
                 <button
