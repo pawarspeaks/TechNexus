@@ -20,5 +20,5 @@ const fetchEvents = async (endpoint) => {
   export const fetchOnlineEvents = () => fetchEvents('/events/online');
 
   export const createEvent = (eventData) => {
-    return axios.post(`${API_BASE_URL}/createevent`, eventData);
+    return axios.post(`${API_BASE_URL}/events/createevent`, eventData);
   }
