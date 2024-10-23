@@ -170,6 +170,56 @@
     "description": "Hear from renowned experts in AI ethics and technology who will share their insights on responsible AI practices.",
     "image": "/images/offlineEvents/DevFest 2024 Gurugram.png",
     "link": "https://www.commudle.com/communities/gdg-gurugram/events/devfest-2024-gurugram"
+  },
+
+  {
+    "id":20,
+    "title":"ETCIO AI Vision Conclave",
+    "date":"2024-12-05",
+    "location":"Ritz Carlton,Bengaluru",
+    "description":"'Powering the Future with AI', highlights how Artificial Intelligence helps business leaders create valuable use cases, leverage robust datasets, and meet business expectations. The summit will also explore the challenges of AI and its legal implications",
+    "image":"/images/offlineEvents/AI-Vision-Conclave.png",
+    "link":"https://cio.economictimes.indiatimes.com/ai-vision-conclave?ag=events_listing&utm_source=events_listing&utm_medium=eventListing"
+  },
+
+  {
+    "id":21,
+    "title":"RT Spectrum 2025",
+    "date":"2025-02-27",
+    "location":"JB Marriot|UB City,Bengaluru",
+    "description":"RT Spectrum 2025 is focused on improving spectrum management and utilization to support advanced communication technologies like 5G and beyond",
+    "image":"images/offlineEvents/RT-SPECTRUM-2025.jpg",
+    "link":"https://cio.economictimes.indiatimes.com/spectrum"
+  },
+
+  {
+    "id":22,
+    "title":"Leveraging AI to Enhance Cybersecurity Practices and Frameworks",
+    "date":"2024-10-25",
+    "location":"Mumbai",
+    "description":"'Leveraging AI to Enhance Cybersecurity Practices and Frameworks', focuses on how AI can automate threat detection and strengthen cybersecurity frameworks to address modern cyber threats.",
+    "image":"images/offlineEvents/leverage.png",
+    "link":"https://cio.economictimes.indiatimes.com/leverageai-mum?ag=events_listing&utm_source=events_listing&utm_medium=eventListing"
+
+  },
+  {
+    "id":"23",
+    "title":"Bengaluru Tech Summit 2024",
+    "date":"2024-11-19",
+    "location":"Bengaluru, India",
+    "description":"The 27th edition of Bengaluru Tech Summit 2024, proudly hosted by the Department of E, IT and Bt, Government of Karnataka",
+    "image":"/images/offlineEvents/bengalurutechsummit.png",
+    "link":"https://www.bengalurutechsummit.com/"
+  },
+
+  {
+    "id":"24",
+    "title":"ET TECH X 2024",
+    "date":"2024-12-05",
+    "location":"Hitex Exhibition Centre, Hyderabad, India",
+    "description":"ET TECH X 2024 is an B2B Expo and exhibition on education and training resources & technology, educational material training & technology based solution",
+    "image":"images/offlineEvents/ET-TECH-X",
+    "link":"https://ettechx.com/"
   }
   
 
