@@ -206,7 +206,24 @@
     "description": "In this 15-minute session, we will explore how to use AWS Cost Explorer to gain valuable insights into your cloud spending. You’ll learn how to identify key cost drivers, analyze usage trends, and understand the difference between amortized and unblended costs. Whether you're looking to optimize your AWS budget or improve financial transparency, this session will provide practical tips to help you get started.",
     "image": "/images/onlineEvents/awscostexplorer.png",
     "link": "https://www.meetup.com/aws-finops/events/304019918/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link"
-  }
+  },
+{
+    "id": 27,
+    "title": "Samsung EDGE 9.0",
+    "date": "2024-11-17",
+    "description": "At Samsung, turning possibilities into reality is our biggest strength. Presenting E.D.G.E. Season 9, where the brightest minds from the top colleges of the country work on real-time challenges, interact with Samsung’s top leaders and provide one-of-a-kind solutions to the problem at hand.It's time to participate in the campus programme and give a head start to your career!",
+    "image": "/images/onlineEvents/SamsungEdge.jpg",
+    "link": "https://unstop.com/competitions/samsung-edge-90-samsung-1176880?refId=FECOM"
+    },
+    {
+    "id": 28,
+    "title": "EY Techathon 5.0",
+    "date": "2024-11-18",
+    "description": "EY Techathon is more than just a competition; it is a platform where India's brightest young minds converge to shape the nation's future through innovation and creativity. Now in its fifth year, this event invites students to show their skills and share how you would change the future of Tech Consulting by harnessing the power of AI to address real-world challenges and drive Bharat's progress.",
+    "image": "/images/onlineEvents/EYtechathon.jpg",
+    "link": "https://unstop.com/competitions/ey-techathon-50-ey-1153249?refId=FECOM"
+    }
+
 ]
 
 
