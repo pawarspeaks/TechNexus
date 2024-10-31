@@ -124,7 +124,7 @@
       "description": "This year’s AI Reality Tour is making a stop in Mumbai, where you will learn how your organisation can leverage the latest advancements in AI to maximise the value of your data ",
       "image": "/images/offlineEvents/dwnld.jpg",
       "link": "https://www.eventbrite.com/e/ai-reality-tour-mumbai-tickets-1029626208707?aff=ebdssbdestsearch&_gl=1*1j0z2eg*_up*MQ..*_ga*MTI0MjY3MzcwMC4xNzI5MTA0NjU4*_ga_TQVES5V6SH*MTcyOTEwNDY1OC4xLjAuMTcyOTEwNDY1OC4wLjAuMA.."
-    } ,
+    },
     {
       "id": 15,
       "title": "Engiexpo Industrial Exhibition 2024 Pune",
@@ -133,7 +133,52 @@
       "description": "13th -ENGIEXPO INDUSTRIAL EXHIBITION - 𝐏𝐔𝐍𝐄",
       "image": "public/images/offlineEvents/expo.jpg",
       "link": "https://allevents.in/pune/engiexpo-industrial-exhibition-2024-pune/80001535828708"
-    }
-  ]
+    },  
+  {
+    "id": 16,
+    "title": "Innovating with AI: Insights into Gemma, Gemini AI, and Google’s AI Landscape",
+    "date": "2024-10-26",
+    "location": "Greater Noida, India",
+    "description": " Hear from industry experts, covering the latest in AI, machine learning, web development, and must-have developer tools.",
+    "image": "/images/offlineEvents/TensorFlow User Group Delhi.png",
+    "link": "https://www.commudle.com/communities/tensorflow-delhi/events/innovating-with-ai-insights-into-gemma-gemini-ai-and-google-s-ai-landscape"
+  },
+  {
+    "id": 17,
+    "title": "Innova 2024 Delhi NCR",
+    "date": "2024-11-16",
+    "location": "New Delhi, India",
+    "description": "Prepare to be part of a dazzling whirlwind of innovation and inspiration — where the future of technology unfolds before your eyes!",
+    "image": "/images/offlineEvents/Innova 2024 Delhi NCR.jpg",
+    "link": "https://www.commudle.com/communities/gdsc-gcet/events/innova-2024-delhi-ncr"
+  },
+  {
+    "id": 18,
+    "title": "DevFest Noida 2024",
+    "date": "2024-11-07",
+    "location": "Noida, India",
+    "description": "Our flagship annual fest, DevFest Noida, is the ultimate celebration of technology, bringing together professionals and students, communities and leaders, tech giants, and emerging startups, to foster deeper connections with technology as well as one another. ",
+    "image": "/images/offlineEvents/DevFest Noida 2024.png",
+    "link": "https://www.commudle.com/communities/gdg-noida/events/devfest-noida-2024"
+  },
+  {
+    "id": 19,
+    "title": "DevFest 2024 Gurugram",
+    "date": "2024-12-14",
+    "location": "Gurugram, India",
+    "description": "Hear from renowned experts in AI ethics and technology who will share their insights on responsible AI practices.",
+    "image": "/images/offlineEvents/DevFest 2024 Gurugram.png",
+    "link": "https://www.commudle.com/communities/gdg-gurugram/events/devfest-2024-gurugram"
+  },
+{
+      "id": 20,
+      "title": "Priority Hackfest 2024",
+      "date": "2024-11-23",
+      "location": "Chandigarh Mohali, India",
+      "description": "We’re calling on individuals with 3+ years of Technical Industry experience—whether you prefer to compete solo or form a team of up to 3. And don't forget your laptop",
+      "image": "/images/offlineEvents/thumb6709106705a7d.webp",
+      "link": "https://allevents.in/mohali/priority-hackfest-2024/80002615970769"
+    },
 
-
+  
+]

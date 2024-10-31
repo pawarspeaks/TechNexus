@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import EventList from './components/EventList';
@@ -8,27 +8,16 @@ import Contact from './pages/Contact';
 import offlineEventsData from './data/offlineEventsData.json';
 import onlineEventsData from './data/onlineEventsData.json';
 import HomePage from './components/HomePage';
-import { FavoritesProvider } from './components/FavoritesContext';
 import './index.css';
+import { FavoritesProvider } from './components/FavoritesContext';
 import Favorites from './components/Favorites';
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import CreateEvent from './components/CreateEvent';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
-
 import ContactForm from './components/ContactForm';
 
 function App() {
-  const [offlineEvents, setOfflineEvents] = useState([]);
-  const [onlineEvents, setOnlineEvents] = useState([]);
   const [filters, setFilters] = useState({ startDate: '', endDate: '', location: '' });
-
-  useEffect(() => {
-    setOfflineEvents(offlineEventsData);
-  }, []);
-
-  useEffect(() => {
-    setOnlineEvents(onlineEventsData);
-  }, []);
 
   const handleFilterChange = (newFilters) => {
     setFilters(newFilters);
@@ -46,7 +35,7 @@ function App() {
               path="/offline-events" 
               element={
                 <EventList 
-                  events={offlineEvents} 
+                  events={offlineEventsData} 
                   filters={filters} 
                   onFilterChange={handleFilterChange} 
                 />
@@ -56,12 +45,13 @@ function App() {
               path="/virtual-events" 
               element={
                 <EventList 
-                  events={onlineEvents} 
+                  events={onlineEventsData} 
                   filters={filters} 
                   onFilterChange={handleFilterChange} 
                 />
               } 
             />
+            <Route path="/createevent" element={<CreateEvent />} />
             <Route path="/contributors" element={<ContributorsPage />} />
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/contact" element={<ContactForm />} />
