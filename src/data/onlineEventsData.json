@@ -151,14 +151,14 @@
     "image": "/images/onlineEvents/Screenshot 2024-10-16 012348.png",
     "link": "https://microsoftfabric.devpost.com/"
   },
-    {
+  {
     "id": 20,
   "title": "Season of AI - Season 2 - Copilots",
   "date": "2024-11-16",
   "description": "To learn Azure AI Studio - a cutting-edge 'code first' experience for building generative AI copilots along with some interesting topics.",
   "image": "/images/onlineEvents/ddd.png",
   "link": "https://www.meetup.com/pune-tech-community/events/303915867/?eventOrigin=group_upcoming_events&_gl=1*1xu42tm*_up*MQ..*_ga*NzE4NDUwMDQzLjE3MjkxMDQ2NjE.*_ga_NP82XMKW0P*MTcyOTEwNDY2MS4xLjAuMTcyOTEwNDY2MS4wLjAuMA.."
-},
+  },
   {
     "id": 21,
   "title": "Implementing Responsible AI Practices in Azure AI Studio",
@@ -166,7 +166,63 @@
   "description": "The principles of Responsible AI and their role in AI development , How Azure AI Studio utilizes content safety for ethical AI usage.",
   "image": "/images/onlineEvents/microsoftazure-featured.png",
   "link": "https://www.meetup.com/pune-tech-community/events/303917216/?eventOrigin=group_events_list"
-}
+  },
+  {
+    "id": 22,
+    "title": "Zo x Farcaster Launch Party",
+    "date": "2024-11-10",
+    "description": "Zo's farcaster frame launches on 10th November – here's why you can't miss it!​Imagine talking to your farcaster clone in a world where your social interactions are personalized,decentralized, more rewarding and more engaging than ever before. That's exactly what Zo and Farcaster are bringing to life. ​Farcaster has been a game changer in Web3 Social space lately, tackling identity, authentication, availability, and consistency. Now, Zo is joining forces to take this to the next level by launching it's first farcaster frame.",
+    "image": "/images/onlineEvents/onlineEvent-10-Nov-6-PM.png",
+    "link": "https://lu.ma/b5d8wujt"
+  },
+  {
+    "id": 23,
+    "title": "October PythonPune Meetup 2024",
+    "date": "2024-10-20",
+    "description": "Hello Pythonistas :) This time we are having a free-flowing discussion about Python, Python libraries, projects, coding challenges, or anything else of your interest. The meetup welcomes Python novices as well as experts. If you need help with an existing project, bring it. If you want to interact with other Pythonistas, do join and say hello.",
+    "image": "/images/onlineEvents/pythonpune.png",
+    "link": "https://www.meetup.com/pythonpune/events/303988151/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link"
+  },
+  {
+    "id": 24,
+    "title": "GitHub Copilot Adventures with Bunmi Akinremi",
+    "date": "2024-10-24",
+    "description": "This session is led by a Gold Milestone Microsoft Learn Student Ambassador. Embark on a coding quest with Copilot Adventures! This interactive series is designed to enhance your coding skills through practical exercises, aided by GitHub Copilot. In this session, you'll select a unique Copilot adventure, set up your GitHub Codespace, and dive into coding. Start your adventure now and explore new programming horizons!",
+    "image": "/images/onlineEvents/githubcopilot.png",
+    "link": "https://www.meetup.com/microsoft-reactor-toronto/events/303691367/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link"
+  },
+  {
+    "id": 25,
+    "title": "Finetuning & Customizing your Generative AI Apps",
+    "date": "2024-10-30",
+    "description": "Learn how to finetune and customize generative AI models. Discover techniques for improving model performance and adapting them to your specific needs, while exploring best practices for deployment.",
+    "image": "/images/onlineEvents/finetuning.png",
+    "link": "https://www.meetup.com/microsoft-reactor-toronto/events/303769602/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link"
+  },
+  {
+    "id": 26,
+    "title": "Leveraging AWS Cost Explorer for Better Insights",
+    "date": "2024-10-22",
+    "description": "In this 15-minute session, we will explore how to use AWS Cost Explorer to gain valuable insights into your cloud spending. You’ll learn how to identify key cost drivers, analyze usage trends, and understand the difference between amortized and unblended costs. Whether you're looking to optimize your AWS budget or improve financial transparency, this session will provide practical tips to help you get started.",
+    "image": "/images/onlineEvents/awscostexplorer.png",
+    "link": "https://www.meetup.com/aws-finops/events/304019918/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link"
+  },
+{
+    "id": 27,
+    "title": "Samsung EDGE 9.0",
+    "date": "2024-11-17",
+    "description": "At Samsung, turning possibilities into reality is our biggest strength. Presenting E.D.G.E. Season 9, where the brightest minds from the top colleges of the country work on real-time challenges, interact with Samsung’s top leaders and provide one-of-a-kind solutions to the problem at hand.It's time to participate in the campus programme and give a head start to your career!",
+    "image": "/images/onlineEvents/SamsungEdge.jpg",
+    "link": "https://unstop.com/competitions/samsung-edge-90-samsung-1176880?refId=FECOM"
+    },
+    {
+    "id": 28,
+    "title": "EY Techathon 5.0",
+    "date": "2024-11-18",
+    "description": "EY Techathon is more than just a competition; it is a platform where India's brightest young minds converge to shape the nation's future through innovation and creativity. Now in its fifth year, this event invites students to show their skills and share how you would change the future of Tech Consulting by harnessing the power of AI to address real-world challenges and drive Bharat's progress.",
+    "image": "/images/onlineEvents/EYtechathon.jpg",
+    "link": "https://unstop.com/competitions/ey-techathon-50-ey-1153249?refId=FECOM"
+    }
 
 ]
 
