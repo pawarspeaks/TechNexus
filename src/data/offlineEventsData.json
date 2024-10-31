@@ -125,16 +125,15 @@
       "image": "/images/offlineEvents/dwnld.jpg",
       "link": "https://www.eventbrite.com/e/ai-reality-tour-mumbai-tickets-1029626208707?aff=ebdssbdestsearch&_gl=1*1j0z2eg*_up*MQ..*_ga*MTI0MjY3MzcwMC4xNzI5MTA0NjU4*_ga_TQVES5V6SH*MTcyOTEwNDY1OC4xLjAuMTcyOTEwNDY1OC4wLjAuMA.."
     },
-      {
+    {
       "id": 15,
-      "title": "Priority Hackfest 2024",
-      "date": "2024-11-23",
-      "location": "Chandigarh Mohali, India",
-      "description": "We’re calling on individuals with 3+ years of Technical Industry experience—whether you prefer to compete solo or form a team of up to 3. And don't forget your laptop",
-      "image": "/images/offlineEvents/thumb6709106705a7d.webp",
-      "link": "https://allevents.in/mohali/priority-hackfest-2024/80002615970769"
-    },
-  
+      "title": "Engiexpo Industrial Exhibition 2024 Pune",
+      "date": "2024-11-28",
+      "location": "Pune, India",
+      "description": "13th -ENGIEXPO INDUSTRIAL EXHIBITION - 𝐏𝐔𝐍𝐄",
+      "image": "/images/offlineEvents/expo.jpg",
+      "link": "https://allevents.in/pune/engiexpo-industrial-exhibition-2024-pune/80001535828708"
+    },  
   {
     "id": 16,
     "title": "Innovating with AI: Insights into Gemma, Gemini AI, and Google’s AI Landscape",
@@ -170,7 +169,16 @@
     "description": "Hear from renowned experts in AI ethics and technology who will share their insights on responsible AI practices.",
     "image": "/images/offlineEvents/DevFest 2024 Gurugram.png",
     "link": "https://www.commudle.com/communities/gdg-gurugram/events/devfest-2024-gurugram"
-  }
-  
+  },
+{
+      "id": 20,
+      "title": "Priority Hackfest 2024",
+      "date": "2024-11-23",
+      "location": "Chandigarh Mohali, India",
+      "description": "We’re calling on individuals with 3+ years of Technical Industry experience—whether you prefer to compete solo or form a team of up to 3. And don't forget your laptop",
+      "image": "/images/offlineEvents/thumb6709106705a7d.webp",
+      "link": "https://allevents.in/mohali/priority-hackfest-2024/80002615970769"
+    }
 
+  
 ]
