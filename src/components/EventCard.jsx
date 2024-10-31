@@ -22,7 +22,7 @@ function EventCard({ event }) {
         </p>
         <p className="event-location text-sm text-gray-400 mb-1">{event.location}</p>
         <p className="event-description text-gray-300 mb-4">{event.description}</p>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center h-min">
           <a
             href={event.link}
             target="_blank"
@@ -34,7 +34,9 @@ function EventCard({ event }) {
           <button
             type="button"
             onClick={() => toggleFavorite(`${event.id}-${event.location ? 'offline' : 'online'}`)}
-            className={`favorite-btn ml-4 p-2 rounded-full transition-colors duration-300 ${isFavorited ? 'bg-purple-600 text-white' : 'bg-gray-700 text-gray-400'}`}
+            className={`favorite-btn ml-4 p-2 rounded-full transition-colors duration-300 ${
+              isFavorited ? 'bg-purple-600 text-white' : 'bg-gray-700 text-gray-400'
+            }`}
           >
             {isFavorited ? '❤️' : '🤍'}
           </button>
