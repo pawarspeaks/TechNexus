@@ -54,10 +54,10 @@ const Footer = () => {
           <h3 className="text-3xl font-semibold mb-4">Share</h3>
           <ul className="space-y-2">
             {[
-              { name: 'X (Twitter)', link: 'https://twitter.com/share?url=https://x.com/_DEVCODE_' },
-              { name: 'WhatsApp', link: 'https://api.whatsapp.com/send?text=Check%20this%20out!%20https://chat.whatsapp.com/F2njAIyHZzyEoE8BP75crT' },
-              { name: 'LinkedIn', link: 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/dev-code-community/' },
-              { name: 'Telegram', link: 'https://t.me/share/url?url=https://t.me/DevCodeCommunity' }
+              { name: 'X (Twitter)', link: 'https://x.com/_DEVCODE_' },
+              { name: 'WhatsApp', link: 'https://chat.whatsapp.com/F2njAIyHZzyEoE8BP75crT' },
+              { name: 'LinkedIn', link: 'https://www.linkedin.com/company/dev-code-community/' },
+              { name: 'Telegram', link: 'https://t.me/DevCodeCommunity' }
             ].map(({ name, link }) => (
               <li key={name}>
                 <a 
