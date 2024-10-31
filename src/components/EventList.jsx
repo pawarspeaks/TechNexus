@@ -77,7 +77,7 @@ function EventList({ events }) {
 
   const handleResetFilters = () => {
     setFilters(initialFilters);
-    setCurrentPage(1);
+    // setCurrentPage();
   };
 
   // Animation variants
