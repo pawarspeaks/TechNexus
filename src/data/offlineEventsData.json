@@ -127,13 +127,13 @@
     },
     {
       "id": 15,
-      "title": "Engiexpo Industrial Exhibition 2024 Pune",
-      "date": "2024-11-28",
-      "location": "Pune, India",
-      "description": "13th -ENGIEXPO INDUSTRIAL EXHIBITION - 𝐏𝐔𝐍𝐄",
-      "image": "/images/offlineEvents/expo.jpg",
-      "link": "https://allevents.in/pune/engiexpo-industrial-exhibition-2024-pune/80001535828708"
-    },  
+      "title": "Priority Hackfest 2024",
+      "date": "2024-11-23",
+      "location": "Chandigarh Mohali, India",
+      "description": "We’re calling on individuals with 3+ years of Technical Industry experience—whether you prefer to compete solo or form a team of up to 3. And don't forget your laptop",
+      "image": "/images/offlineEvents/thumb6709106705a7d.webp",
+      "link": "https://allevents.in/mohali/priority-hackfest-2024/80002615970769"
+   },
   {
     "id": 16,
     "title": "Innovating with AI: Insights into Gemma, Gemini AI, and Google’s AI Landscape",
@@ -170,15 +170,49 @@
     "image": "/images/offlineEvents/DevFest 2024 Gurugram.png",
     "link": "https://www.commudle.com/communities/gdg-gurugram/events/devfest-2024-gurugram"
   },
-{
-      "id": 20,
-      "title": "Priority Hackfest 2024",
-      "date": "2024-11-23",
-      "location": "Chandigarh Mohali, India",
-      "description": "We’re calling on individuals with 3+ years of Technical Industry experience—whether you prefer to compete solo or form a team of up to 3. And don't forget your laptop",
-      "image": "/images/offlineEvents/thumb6709106705a7d.webp",
-      "link": "https://allevents.in/mohali/priority-hackfest-2024/80002615970769"
-    }
-
-  
+  {
+    "id": 20,
+    "title": "Bengaluru Blockchain/ICP Dev. workshop",
+    "date": "2024-10-20",
+    "location": "Bengaluru, India",
+    "description": "Hands-on workshop on Blockchain Development with the Internet Computer Protocol (ICP) This workshop is designed to take you step-by-step through the process of building and deploying decentralized projects on the ICP blockchain. Whether you’re new to blockchain or want to expand your skills, this workshop offers everything you need—from setting up your development environment to launching your project on the ICP mainnet.",
+    "image": "public/images/offlineEvents/devworkshop.png",
+    "link": "https://lu.ma/plqeuc9q"
+  },
+  {
+    "id": 21,
+    "title": "ROAD TO #IBW2024 - NEW DELHI EDITION - VERSEATILE X IBW2024",
+    "date": "2024-10-20",
+    "location": "New Delhi, India",
+    "description": "Join us for an exclusive evening powered by IBW2024 and VERSEATILE. The #R2IBW24 Event is your perfect space to meet professionals seeking to network, collaborate and partner up!",
+    "image": "images/offlineEvents/IBW-20-oct-offline-event-8-30-PM.png",
+    "link": "https://lu.ma/hkh0w4kq"
+  },
+  {
+    "id": 22,
+    "title": "Sigma: Sync & Sprint",
+    "date": "2024-10-20",
+    "location": "Vadodara, India",
+    "description": "Join a private gathering of high-signal Sigmas, who are eager to take that crucial step and build for everyone, not just for a specific chain!​Limited to a few carefully selected individuals, this event promises an intimate and focused environment to push you forward into the Sprint!",
+    "image": "public/images/offlineEvents/sigma-sync-sprint-20-oct-offline-event-7-oct-04-PM.png",
+    "link": "https://lu.ma/1snwqnsz"
+  },
+  {
+    "id": 23,
+    "title": "India Blockchain Week (IBW) Conference 2024",
+    "date": "2024-12-04",
+    "location": "Bengaluru, India",
+    "description": "Elevate your India Blockchain Week experience with the IBW2024 Conference hosted at the Sheraton Grand, Bangalore on December 4-5, 2024. The IBW2024 Conference is the two-day headline event anchoring India Blockchain Week (IBW), crafted by Hashed Emergent, a team and brand dedicated to accelerating the mass adoption of web3 in India. Amplifying the discourse on blockchain and its myriad potential, the IBW2024 Conference offers a unique blend of invaluable key-note speeches, expert dialogues, dynamic panel discussions, and unparalleled networking opportunities.",
+    "image": "public/images/offlineEvents/IBW-04-05-dec-thur-10-AM-offline-event.png",
+    "link": "https://lu.ma/shw972s1"
+  },
+  {
+    "id": 24,
+    "title": "ROAD TO DevCon: Delhi Edition",
+    "date": "2024-10-31",
+    "location": "New Delhi, India",
+    "description": "Join us for a beginner-friendly meetup to kickstart your blockchain journey and explore the importance of decentralization 😇",
+    "image": "public/images/offlineEvents/road-to-devcon-31st-oct-thur-1-PM.png",
+    "link": "http://2018.socta.in/"
+  }  
 ]
