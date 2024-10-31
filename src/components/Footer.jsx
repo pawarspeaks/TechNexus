@@ -1,141 +1,120 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { Instagram, Linkedin, Github, Twitter } from 'lucide-react';
 
-function Footer() {
-  const currentYear = new Date().getFullYear();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [msg, setMsg] = useState('');
-  const [error, setError] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // ... (rest of the handleSubmit function remains the same)
-  };
-
-  const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'spring',
-        stiffness: 300,
-        damping: 20,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
+const Footer = () => {
   return (
-    <motion.footer
-      initial="hidden"
-      animate="visible"
-      variants={containerVariants}
-      className="bg-gray-900 text-white p-8"
-      id="contact"
-    >
-      <div className="flex flex-wrap gap-16 top-10 justify-center  ">
-        <motion.a
-          href="https://devcode-technexus.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-        >
-          <img
-            src="/images/logos/logo-no-background.png"
-            alt="TechNexus Logo"
-            className="h-16 w-auto ml-3 "
-          />
-        </motion.a>
+    <footer className="bg-[#111827] text-white py-12 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col items-center text-center md:text-left md:items-start md:flex-row md:justify-between gap-8">
 
-        <motion.a
-          href="https://dev-code-community.github.io/bio/"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.05 }}
-        >
-          <img
-            src="/images/logos/DevCode-without-BG.png"
-            alt="Dev Code Logo"
-            className="h-16 w-auto "
-          />
-        </motion.a>
-
-        <div className="flex justify-center flex-wrap mx-4 ml-3  ">
-          <motion.div
-            className="w-full px-4 mb-8  "
-            variants={itemVariants}
-          >
-            <h3 className="text-2xl w-full  font-semibold mb-4 whitespace-nowrap text-center">Get in Touch</h3>
-            <motion.p
-              className="mb-2 text-center"
-              whileHover={{ scale: 1.05, color: '#bb86fc' }}
-            >
-              <i className="fa-sharp fa-solid fa-paper-plane mr-2"></i>
-              <a href="mailto:iampratappawar@gmail.com">
-                iampratappawar@gmail.com
-              </a>
-            </motion.p>
-            <motion.p
-              className="mb-4 text-center"
-              whileHover={{ scale: 1.05, color: '#bb86fc' }}
-            >
-              <i className="fa-sharp fa-solid fa-paper-plane mr-2"></i>
-              <a href="mailto:devcode.community@gmail.com">
-                devcode.community@gmail.com
-              </a>
-            </motion.p>
-            <div className="flex space-x-4 mb-8">
+        {/* Newsletter Subscription */}
+        <div className="text-center md:text-left mb-8">
+          <h2 className="text-3xl font-bold mb-4 transition-all duration-300 hover:text-gray-300">
+            Unlock Exclusive Updates!
+          </h2>
+          <div className="flex justify-center md:justify-start items-center bg-[#1c1c3d] rounded-full border border-gray-500 px-4 py-3">
+            <input
+              type="email"
+              placeholder="Your email address"
+              className="bg-transparent text-lg text-white placeholder-gray-400 w-full focus:outline-none pr-6"
+            />
+            <button className="bg-white text-black rounded-full p-2 transition-transform duration-300 transform hover:scale-125 hover:bg-[#24246a] hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.5 5.25L18 8M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z" />
+              </svg>
+            </button>
+          </div>
+          <div className="mt-8">
+            <p className="text-base text-gray-400 mb-4">FOLLOW US:</p>
+            <div className="flex justify-center md:justify-start space-x-4">
               {[
-                {
-                  name: 'instagram',
-                  link: 'https://www.instagram.com/dev_codecommunity/',
-                },
-                {
-                  name: 'linkedin',
-                  link: 'https://www.linkedin.com/company/dev-code-community/',
-                },
-                {
-                  name: 'twitter',
-                  link: 'https://twitter.com/devcodecommunity',
-                },
-                {
-                  name: 'github',
-                  link: 'https://github.com/Dev-Code-Community',
-                },
-              ].map((social) => (
-                <motion.a
-                  key={social.name}
-                  href={social.link}
-                  target="_blank"
+                { icon: Instagram, name: 'Instagram', link: 'https://www.instagram.com/devcode.community/' },
+                { icon: Linkedin, name: 'LinkedIn', link: 'https://www.linkedin.com/company/dev-code-community/' },
+                { icon: Github, name: 'GitHub', link: 'https://github.com/Dev-Code-Community' },
+                { icon: Twitter, name: 'Twitter', link: 'https://x.com/_DEVCODE_' },
+              ].map(({ icon: Icon, name, link }) => (
+                <a 
+                  key={name} 
+                  href={link} 
+                  target="_blank" 
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.2, rotate: 360 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="text-2xl"
+                  className="text-white hover:text-blue-400 transition-colors duration-300"
+                  aria-label={name}
                 >
-                  <i className={`fa-brands fa-${social.name}`}></i>
-                </motion.a>
+                  <div className="w-10 h-10 rounded-full border border-white flex items-center justify-center transition-transform duration-300 transform hover:scale-125 hover:bg-white hover:text-[#0c0c21]">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                </a>
               ))}
             </div>
+          </div>
+        </div>
 
-            <div className="flex items-center justify-between"></div>
-          </motion.div>
+        {/* Navigation Links */}
+        <div className="text-center md:text-left mb-8">
+          <h3 className="text-3xl font-semibold mb-4">Share</h3>
+          <ul className="space-y-2">
+            {[
+              { name: 'X (Twitter)', link: 'https://twitter.com/share?url=https://x.com/_DEVCODE_' },
+              { name: 'WhatsApp', link: 'https://api.whatsapp.com/send?text=Check%20this%20out!%20https://chat.whatsapp.com/F2njAIyHZzyEoE8BP75crT' },
+              { name: 'LinkedIn', link: 'https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/dev-code-community/' },
+              { name: 'Telegram', link: 'https://t.me/share/url?url=https://t.me/DevCodeCommunity' }
+            ].map(({ name, link }) => (
+              <li key={name}>
+                <a 
+                  href={link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="relative inline-block text-white transition-colors duration-300 before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-white hover:before:scale-x-[1] before:scale-x-[0]"
+                >
+                  {name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Contact Information */}
+        <div className="text-center md:text-left mb-8">
+          <h3 className="text-3xl font-semibold mb-4">Feedback</h3>
+          <p className="text-sm text-gray-400 mb-2">DROP US A LINE</p>
+          <a href="mailto:iampratappawar@gmail.com" className="relative inline-block text-blue-400 transition-colors duration-300 before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-blue-400 hover:before:scale-x-[1] before:scale-x-[0]">iampratappawar@gmail.com</a><br/>
+          <a href="mailto:devcode.community@gmail.com" className="relative inline-block text-blue-400 transition-colors duration-300 before:absolute before:left-[50%] before:-bottom-[1px] before:w-full before:h-[2px] before:bg-transparent before:-translate-x-[50%] before:transition-all before:duration-300 hover:before:bg-blue-400 hover:before:scale-x-[1] before:scale-x-[0]">devcode.community@gmail.com</a>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto">
-        <motion.div className="text-center mt-12" variants={itemVariants}>
-          <p>&copy; {currentYear} Dev Code &amp; TechNexus | Made with ♥️</p>
-        </motion.div>
+
+      {/* Image Section for the Logos */}
+      <div className="max-w-6xl mx-auto flex justify-center md:justify-between items-center space-x-6 mt-8">
+        {[
+          { src: "/images/logos/logo-no-background.png", alt: "Dev Code Logo", link: "https://devcode-technexus.vercel.app" },
+          { src: "/images/logos/DevCode-without-BG.png", alt: "TechNexus Logo", link: "https://dev-code-community.github.io/bio/" }
+        ].map(({ src, alt, link }) => (
+          <a key={alt} href={link} target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 transform hover:scale-110">
+            <img
+              src={src}
+              alt={alt}
+              className="h-12 md:h-16 lg:h-20 object-contain max-h-24"
+            />
+          </a>
+        ))}
       </div>
-    </motion.footer>
+
+      {/* Horizontal Divider */}
+      <hr className="border-t border-gray-600 mt-12 mb-4" />
+
+      {/* Footer Bottom Section */}
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-lg text-gray-400 text-center md:text-left">
+        {/* Copyright */}
+        <p className="mb-4 md:mb-0">© 2024 Dev Code & TechNexus | Made with ♥️</p>
+
+        {/* Footer Links */}
+        <div className="flex space-x-6 justify-center md:justify-start text-base">
+          <a href="#" className="hover:text-white transition-colors duration=300">Terms and Conditions</a>
+          <a href="#" className="hover:text-white transition-colors duration=300">Privacy Policy</a>
+          <a href="#" className="hover:text-white transition-colors duration=300">Guidelines</a>
+        </div>
+      </div>
+    </footer> 
   );
-}
+};
 
 export default Footer;
