@@ -131,7 +131,7 @@
       "date": "2024-11-28",
       "location": "Pune, India",
       "description": "13th -ENGIEXPO INDUSTRIAL EXHIBITION - 𝐏𝐔𝐍𝐄",
-      "image": "public/images/offlineEvents/expo.jpg",
+      "image": "/images/offlineEvents/expo.jpg",
       "link": "https://allevents.in/pune/engiexpo-industrial-exhibition-2024-pune/80001535828708"
     },  
   {
@@ -178,7 +178,7 @@
       "description": "We’re calling on individuals with 3+ years of Technical Industry experience—whether you prefer to compete solo or form a team of up to 3. And don't forget your laptop",
       "image": "/images/offlineEvents/thumb6709106705a7d.webp",
       "link": "https://allevents.in/mohali/priority-hackfest-2024/80002615970769"
-    },
+    }
 
   
 ]
