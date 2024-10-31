@@ -176,7 +176,7 @@
     "date": "2024-10-20",
     "location": "Bengaluru, India",
     "description": "Hands-on workshop on Blockchain Development with the Internet Computer Protocol (ICP) This workshop is designed to take you step-by-step through the process of building and deploying decentralized projects on the ICP blockchain. Whether you’re new to blockchain or want to expand your skills, this workshop offers everything you need—from setting up your development environment to launching your project on the ICP mainnet.",
-    "image": "public/images/offlineEvents/devworkshop.png",
+    "image": "/images/offlineEvents/devworkshop.png",
     "link": "https://lu.ma/plqeuc9q"
   },
   {
@@ -194,7 +194,7 @@
     "date": "2024-10-20",
     "location": "Vadodara, India",
     "description": "Join a private gathering of high-signal Sigmas, who are eager to take that crucial step and build for everyone, not just for a specific chain!​Limited to a few carefully selected individuals, this event promises an intimate and focused environment to push you forward into the Sprint!",
-    "image": "public/images/offlineEvents/sigma-sync-sprint-20-oct-offline-event-7-oct-04-PM.png",
+    "image": "/images/offlineEvents/sigma-sync-sprint-20-oct-offline-event-7-oct-04-PM.png",
     "link": "https://lu.ma/1snwqnsz"
   },
   {
@@ -203,7 +203,7 @@
     "date": "2024-12-04",
     "location": "Bengaluru, India",
     "description": "Elevate your India Blockchain Week experience with the IBW2024 Conference hosted at the Sheraton Grand, Bangalore on December 4-5, 2024. The IBW2024 Conference is the two-day headline event anchoring India Blockchain Week (IBW), crafted by Hashed Emergent, a team and brand dedicated to accelerating the mass adoption of web3 in India. Amplifying the discourse on blockchain and its myriad potential, the IBW2024 Conference offers a unique blend of invaluable key-note speeches, expert dialogues, dynamic panel discussions, and unparalleled networking opportunities.",
-    "image": "public/images/offlineEvents/IBW-04-05-dec-thur-10-AM-offline-event.png",
+    "image": "/images/offlineEvents/IBW-04-05-dec-thur-10-AM-offline-event.png",
     "link": "https://lu.ma/shw972s1"
   },
   {
@@ -212,7 +212,7 @@
     "date": "2024-10-31",
     "location": "New Delhi, India",
     "description": "Join us for a beginner-friendly meetup to kickstart your blockchain journey and explore the importance of decentralization 😇",
-    "image": "public/images/offlineEvents/road-to-devcon-31st-oct-thur-1-PM.png",
+    "image": "/images/offlineEvents/road-to-devcon-31st-oct-thur-1-PM.png",
     "link": "http://2018.socta.in/"
   }  
 ]
