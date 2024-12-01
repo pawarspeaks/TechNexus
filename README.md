@@ -2,7 +2,7 @@
 
 ![Hacktoberfest 2024 Banner](public/images/hacktoberfest_logo.jpg)
 
-# TechNexus
+# TechNexus 
 
 ![TechNexus Logo](public/images/logos/logo-no-background.png)
 
