@@ -20,7 +20,7 @@ Dev Code Community is a vibrant group of tech enthusiasts and developers. We're 
 
 ## How to Contribute
 
-There are two main ways you can contribute to TechNexus:
+There are two main ways you can contribute to TechNexus platform:
 
 ### 1. Adding an Event to TechNexus (beginner friendly)
 
