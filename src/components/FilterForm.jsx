@@ -101,6 +101,7 @@ function FilterForm({ filters, onFilterChange, onReset }) {
           onChange={handleInputChange}
           className="w-full bg-gray-800 text-white p-2 rounded border border-purple-500 focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50"
           whileFocus={{ scale: 1.02 }}
+          defaultValue="earliest"
         >
           <motion.option className="w-full" value="" selected>Select</motion.option>
           <motion.option className="w-full" value="earliest">Earliest Events</motion.option>
